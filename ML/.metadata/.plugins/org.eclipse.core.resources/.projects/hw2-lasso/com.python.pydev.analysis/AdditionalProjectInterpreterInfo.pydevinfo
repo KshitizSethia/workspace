@@ -1,0 +1,20 @@
+-- VERSION_4
+-- START DISKCACHE
+C:\Cloud\Copy\workspace\ML\.metadata\.plugins\org.eclipse.core.resources\.projects\hw2-lasso\com.python.pydev.analysis\v2_indexcache
+ridge_skeleton|1423676146829|C:\Cloud\Copy\workspace\ML\hw2-lasso\ridge_skeleton.py
+-- END DISKCACHE
+-- START DICTIONARY
+1
+1=ridge_skeleton
+-- END DICTIONARY
+-- START TREE 1
+5
+X|1|X!11@
+com|1|compute_loss!10@
+rid|1|ridge!10@
+w|1|w!11@
+y|1|y!11@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

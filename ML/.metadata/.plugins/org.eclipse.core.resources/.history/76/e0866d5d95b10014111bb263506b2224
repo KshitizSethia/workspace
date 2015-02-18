@@ -1,0 +1,6 @@
+#1.1 Dataset construction
+numExamples=150
+numFeatures=75
+
+def generateData():
+    

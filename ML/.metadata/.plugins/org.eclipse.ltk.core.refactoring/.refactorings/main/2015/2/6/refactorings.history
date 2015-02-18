@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;HW1/stochastic_gradient_descent&apos; to &apos;stochastic_gradient_descent.py&apos;" description="Rename resource &apos;stochastic_gradient_descent&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="stochastic_gradient_descent" name="stochastic_gradient_descent.py" stamp="1422895873566" updateReferences="true"/>
+</session>

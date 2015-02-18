@@ -1,0 +1,12 @@
+MODULES_MANAGER_V2
+helpers|C:\Cloud\Copy\workspace\ML\main\helpers.py
+hw1.__init__|C:\Cloud\Copy\workspace\ML\main\hw1\__init__.py
+hw1.batch_gradient_descent|C:\Cloud\Copy\workspace\ML\main\hw1\batch_gradient_descent.py
+hw1.hw1_skeleton_code|C:\Cloud\Copy\workspace\ML\main\hw1\hw1_skeleton_code.py
+hw1.regularized_gradient_descent|C:\Cloud\Copy\workspace\ML\main\hw1\regularized_gradient_descent.py
+hw1.stochastic_gradient_descent|C:\Cloud\Copy\workspace\ML\main\hw1\stochastic_gradient_descent.py
+hw2.__init__|C:\Cloud\Copy\workspace\ML\main\hw2\__init__.py
+hw2.conjugate_grad_desent_lasso|C:\Cloud\Copy\workspace\ML\main\hw2\conjugate_grad_desent_lasso.py
+hw2.conjugate_grad_desent_lasso_homotopy|C:\Cloud\Copy\workspace\ML\main\hw2\conjugate_grad_desent_lasso_homotopy.py
+hw2.hw2|C:\Cloud\Copy\workspace\ML\main\hw2\hw2.py
+hw2.regularized_gradient_descent_optimize|C:\Cloud\Copy\workspace\ML\main\hw2\regularized_gradient_descent_optimize.py

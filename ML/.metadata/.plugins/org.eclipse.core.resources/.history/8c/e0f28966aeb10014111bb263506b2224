@@ -1,0 +1,7 @@
+class data:
+    train_x        =None
+    train_y        =None
+    test_x         =None
+    test_y         =None
+    validation_x   =None
+    validation_y   =None

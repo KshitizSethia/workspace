@@ -1,0 +1,34 @@
+import numpy as np
+
+numExamples=150
+numFeatures=75
+csvFileName = "hw2_autogen_data.csv"
+
+#1.1 Dataset construction
+def generateData():
+    samples = np.random.rand(numExamples, numFeatures)
+    trueWeight = np.zeros(numFeatures)
+    for index in range(10):
+        trueWeight[index] = 10
+    for index in range(10,20):
+        trueWeight[index] = -10
+    
+    noise = np.random.randn(numExamples)
+    trueOutput = np.dot(samples,trueWeight) + noise
+    
+    dataToStore = np.c_[samples, trueOutput];
+    
+    np.savetxt(csvFileName, dataToStore,delimiter=",")
+
+def splitData(dataArray):
+    
+
+# reading the data from csv
+def main():
+    generateData()
+    dataArray = np.loadtxt(csvFileName, delimiter=",")
+    
+    train, test, validation = splitData(dataArray)
+    
+if __name__ == "__main__":
+    main()

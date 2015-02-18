@@ -1,0 +1,8 @@
+#1.1 Dataset construction
+import numpy
+numExamples=150
+numFeatures=75
+
+def generateData():
+    samples = numpy.random.rand()
+    

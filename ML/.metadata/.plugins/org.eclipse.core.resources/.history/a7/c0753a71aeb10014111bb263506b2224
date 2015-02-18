@@ -1,0 +1,14 @@
+class data:
+    
+    def __init__(self, train_x        
+    ,train_y
+    ,test_x
+    ,test_y
+    ,validation_x
+    ,validation_y):
+    train_x        
+    train_y
+    test_x
+    test_y
+    validation_x
+    validation_y

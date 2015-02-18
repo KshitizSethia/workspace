@@ -1,0 +1,69 @@
+-- VERSION_4
+-- START DISKCACHE
+C:\Cloud\Copy\workspace\ML\.metadata\.plugins\org.eclipse.core.resources\.projects\main\com.python.pydev.analysis\v2_indexcache
+hw2.conjugate_grad_desent_lasso_homotopy|1423842433157|C:\Cloud\Copy\workspace\ML\main\hw2\conjugate_grad_desent_lasso_homotopy.py
+hw1.stochastic_gradient_descent|1423774874015|C:\Cloud\Copy\workspace\ML\main\hw1\stochastic_gradient_descent.py
+hw2.__init__|1423774852208|C:\Cloud\Copy\workspace\ML\main\hw2\__init__.py
+hw2.conjugate_grad_desent_lasso|1423859525149|C:\Cloud\Copy\workspace\ML\main\hw2\conjugate_grad_desent_lasso.py
+hw1.batch_gradient_descent|1423682327425|C:\Cloud\Copy\workspace\ML\main\hw1\batch_gradient_descent.py
+hw1.hw1_skeleton_code|1423774879038|C:\Cloud\Copy\workspace\ML\main\hw1\hw1_skeleton_code.py
+hw2.regularized_gradient_descent_optimize|1423793481992|C:\Cloud\Copy\workspace\ML\main\hw2\regularized_gradient_descent_optimize.py
+hw2.hw2|1423859744059|C:\Cloud\Copy\workspace\ML\main\hw2\hw2.py
+hw1.regularized_gradient_descent|1423793436325|C:\Cloud\Copy\workspace\ML\main\hw1\regularized_gradient_descent.py
+hw1.__init__|1423774809848|C:\Cloud\Copy\workspace\ML\main\hw1\__init__.py
+helpers|1423670871014|C:\Cloud\Copy\workspace\ML\main\helpers.py
+-- END DISKCACHE
+-- START DICTIONARY
+13
+13=data.__init__
+9=hw1.stochastic_gradient_descent
+8=hw2.conjugate_grad_desent_lasso
+3=hw1.batch_gradient_descent
+11=data
+4=hw2.regularized_gradient_descent_optimize
+10=params
+1=helpers
+7=hw2.conjugate_grad_desent_lasso_homotopy
+2=hw1.hw1_skeleton_code
+5=hw1.regularized_gradient_descent
+6=hw2.hw2
+12=params.__init__
+-- END DICTIONARY
+-- START TREE 1
+22
+add|1|add_bias_term!10@
+bat|1|batch_analysis!18@
+com|5|compute_loss!26@compute_loss_gradient!26@compute_loss!34@compute_loss!42@compute_loss_gradient!42@
+csv|1|csvFileName!51@
+dat|1|data!9@
+do_|3|do_stochastic_gradient_descent!18@do_regularized_gradient_descent!18@do_batch_gradient_descent!18@
+doc|2|doConjugateDescentLassoWithHomotopy!58@doConjugateDescentLasso!66@
+dog|1|doGridSearch!50@
+fea|1|feature_normalization!18@
+gen|3|generic_gradient_checker!26@generic_regularized_gradient_checker!42@generateData!50@
+mai|2|main!18@main!50@
+min|2|minimize_slow!66@minimize!66@
+mod|1|modify_bias_term!10@
+obj|1|objective!34@
+par|4|params!41@params!73@params!33@params!25@
+plo|1|plot_iterations_vs_loss!18@
+pri|1|print_summary!18@
+reg|2|regularized_analysis!18@regularized_gradient_checker!42@
+run|4|run!34@run!42@run!74@run!26@
+sof|1|soft!66@
+spl|1|splitData!50@
+sto|1|stochastic_analysis!18@
+-- END TREE
+-- START TREE 2
+10
+__i|5|__init__!10&42@__init__!11&10@__init__!10&74@__init__!10&26@__init__!10&34@
+__s|4|__str__!10&34@__str__!10&74@__str__!10&26@__str__!10&42@
+alp|4|alpha!12&43@alpha!12&27@alpha!12&75@alpha!12&35@
+ini|3|initial_bias!12&75@initial_bias!12&43@initial_bias!12&35@
+lam|3|lambda_reg!12&75@lambda_reg!12&43@lambda_reg!12&35@
+num|4|num_iter!12&35@num_iter!12&43@num_iter!12&75@num_iter!12&27@
+tes|2|test_y!13&11@test_x!13&11@
+tra|2|train_x!13&11@train_y!13&11@
+use|4|use_grad_checker!12&35@use_grad_checker!12&43@use_grad_checker!12&27@use_grad_checker!12&75@
+val|2|validation_x!13&11@validation_y!13&11@
+-- END TREE

@@ -1,0 +1,1508 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\title{Machine Learning and Computational Statistics, Spring 2015\\
+Homework 2: Lasso} 
+
+%\date{Due: February $4^{th}$, 4pm}
+
+
+
+
+\usepackage{amsfonts}\usepackage{capt-of}
+%\usepackage{url}
+\usepackage{color}
+\usepackage{bbm}
+\usepackage{enumerate}
+\newcommand{\carlos}[1]{\textcolor{red}{Carlos: #1}}
+\newcommand{\field}[1]{\mathbb{#1}} 
+\newcommand{\hide}[1]{#1}
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+\providecommand{\m}[1]{\mathbf{#1}}
+\providecommand{\norm}[1]{\left\|#1\right\|}
+\providecommand{\sign}[1]{\text{sign}\left(#1\right)}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\providecommand{\what}{\m{\hat{w}}}
+\providecommand{\dw}{\Delta w}
+\providecommand{\dmw}{\Delta \m{w}}
+\providecommand{\hy}{\hat{y}}
+\end_preamble
+\options ruled
+\use_default_options false
+\begin_modules
+algorithm2e
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding iso8859-15
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter courier
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks false
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref section
+\pdf_pdfusetitle false
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\reals}{\mathbf{R}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\integers}{\mathbf{Z}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\naturals}{\mathbf{N}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\rationals}{\mathbf{Q}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ca}{\mathcal{A}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cb}{\mathcal{B}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cc}{\mathcal{C}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cd}{\mathcal{D}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ce}{\mathcal{E}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cf}{\mathcal{F}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cg}{\mathcal{G}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ch}{\mathcal{H}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ci}{\mathcal{I}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cj}{\mathcal{J}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ck}{\mathcal{K}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cl}{\mathcal{L}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cm}{\mathcal{M}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cn}{\mathcal{N}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\co}{\mathcal{O}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cp}{\mathcal{P}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cq}{\mathcal{Q}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\calr}{\mathcal{R}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cs}{\mathcal{S}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ct}{\mathcal{T}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cu}{\mathcal{U}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cv}{\mathcal{V}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cw}{\mathcal{W}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cx}{\mathcal{X}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cy}{\mathcal{Y}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cz}{\mathcal{Z}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ind}[1]{1(#1)}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\pr}{\mathbb{P}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\predsp}{\cy}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\outsp}{\cy}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\prxy}{P_{\cx\times\cy}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\prx}{P_{\cx}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\prygivenx}{P_{\cy\mid\cx}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ex}{\mathbb{E}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\var}{\textrm{Var}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cov}{\textrm{Cov}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\sgn}{\textrm{sgn}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\sign}{\textrm{sign}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\kl}{\textrm{KL}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\law}{\mathcal{L}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\eps}{\varepsilon}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\as}{\textrm{ a.s.}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\io}{\textrm{ i.o.}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ev}{\textrm{ ev.}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\convd}{\stackrel{d}{\to}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\eqd}{\stackrel{d}{=}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\del}{\nabla}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\loss}{\ell}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\risk}{R}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\emprisk}{\hat{R}_{\ell}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\lossfnl}{L}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\emplossfnl}{\hat{L}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\empminimizer}[1]{\hat{#1}_{\ell}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\minimizer}[1]{#1_{*}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\etal}{\textrm{et. al.}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\tr}{\operatorname{tr}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\trace}{\operatorname{trace}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\diag}{\text{diag}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\rank}{\text{rank}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\linspan}{\text{span}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\proj}{\text{Proj}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\argmax}{\operatornamewithlimits{arg\, max}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\argmin}{\operatornamewithlimits{arg\, min}}
+{\text{arg min}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\bfx}{\mathbf{x}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\bfy}{\mathbf{y}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\bfl}{\mathbf{\lambda}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\bfm}{\mathbf{\mu}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\calL}{\mathcal{L}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\vw}{\boldsymbol{w}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\vx}{\boldsymbol{x}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\vxi}{\boldsymbol{\xi}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\valpha}{\boldsymbol{\alpha}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\vbeta}{\boldsymbol{\beta}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\vsigma}{\boldsymbol{\sigma}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\vmu}{\boldsymbol{\mu}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\vtheta}{\boldsymbol{\theta}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\vd}{\boldsymbol{d}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\vs}{\boldsymbol{s}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\vt}{\boldsymbol{t}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\vh}{\boldsymbol{h}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ve}{\boldsymbol{e}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\vf}{\boldsymbol{f}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\vg}{\boldsymbol{g}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\vz}{\boldsymbol{z}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\vk}{\boldsymbol{k}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\va}{\boldsymbol{a}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\vb}{\boldsymbol{b}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\vv}{\boldsymbol{v}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\vy}{\boldsymbol{y}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\hil}{\ch}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\rkhs}{\hil}
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+maketitle
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Due: Friday, February 13, 2015, at 4pm (Submit via NYU Classes)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Instructions
+\series default
+: Your answers to the questions below, including plots and mathematical
+ work, should be submitted as a single PDF file.
+ You may include your code inline or submit it as a separate file.
+ You may either scan hand-written work or, preferably, write your answers
+ using software that typesets mathematics (e.g.
+ LaTeX, LyX, or MathJax via iPython).
+\end_layout
+
+\begin_layout Section
+Preliminaries
+\end_layout
+
+\begin_layout Subsection
+Dataset construction
+\end_layout
+
+\begin_layout Standard
+Start by creating a design matrix for regression with 
+\begin_inset Formula $m=150$
+\end_inset
+
+ examples, each of dimension 
+\begin_inset Formula $d=75$
+\end_inset
+
+.
+ We will choose a true weight vector 
+\begin_inset Formula $\boldsymbol{\theta}$
+\end_inset
+
+ that has only a few non-zero components: 
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $X\in\reals^{m\times d}$
+\end_inset
+
+ be the 
+\begin_inset Quotes eld
+\end_inset
+
+design matrix,
+\begin_inset Quotes erd
+\end_inset
+
+ where the 
+\begin_inset Formula $i$
+\end_inset
+
+'th row of 
+\begin_inset Formula $X$
+\end_inset
+
+ is 
+\begin_inset Formula $x_{i}\in\reals^{d}$
+\end_inset
+
+.
+ Construct a random design matrix 
+\begin_inset Formula $X$
+\end_inset
+
+ using 
+\family typewriter
+numpy.random.rand()
+\family default
+ function.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Construct a true weight vector 
+\begin_inset Formula $\boldsymbol{\theta}\in\reals^{d\times1}$
+\end_inset
+
+ as follows: Set the first 10 components of 
+\begin_inset Formula $\boldsymbol{\theta}$
+\end_inset
+
+ to 10 or -10 arbitrarily, and all the other components to zero.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $y=\left(y_{1},\ldots,y_{m}\right)^{T}\in\reals^{m\times1}$
+\end_inset
+
+ be the response.
+ Construct the vector 
+\begin_inset Formula $y=X\boldsymbol{\theta}+\epsilon$
+\end_inset
+
+, where 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ is an 
+\begin_inset Formula $m\times1$
+\end_inset
+
+ random noise vector generated using 
+\family typewriter
+numpy.random.randn()
+\family default
+ with mean 
+\begin_inset Formula $0$
+\end_inset
+
+ and standard deviation 
+\begin_inset Formula $0.1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Split the dataset by taking the first 
+\begin_inset Formula $80$
+\end_inset
+
+ points for training, the next 
+\begin_inset Formula $20$
+\end_inset
+
+ points for validation, and the last 
+\begin_inset Formula $50$
+\end_inset
+
+ points for testing.
+ 
+\end_layout
+
+\begin_layout Standard
+Note that we are not adding an extra feature for the bias in this problem.
+ By construction, the true model does not have a bias term.
+\end_layout
+
+\begin_layout Subsection
+Experiments with Ridge Regression
+\end_layout
+
+\begin_layout Standard
+By construction, we know that our dataset admits a sparse solution.
+ Here, we want to evaluate the performance of ridge regression (i.e.
+ 
+\begin_inset Formula $\ell_{2}$
+\end_inset
+
+-regularized linear regression) on this dataset.
+\end_layout
+
+\begin_layout Enumerate
+Run ridge regression on this dataset.
+ Choose the 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ that minimizes the square loss on the validation set.
+ For the chosen 
+\begin_inset Formula $\lambda$
+\end_inset
+
+, examine the model coefficients.
+ Report on how many components with true value 
+\begin_inset Formula $0$
+\end_inset
+
+ have been estimated to be non-zero, and vice-versa (don't worry if they
+ are all nonzero).
+ Now choose a small threshold (say 
+\begin_inset Formula $10^{-3}$
+\end_inset
+
+ or smaller), count anything with magnitude smaller than the threshold as
+ zero, and repeat the report.
+ (For running ridge regression, you may either use your code from HW1, or
+ you may use 
+\family typewriter
+scipy.optimize.minimize
+\family default
+ (see the demo code provided for guidance).
+ For debugging purposes, you are welcome, even encouraged, to compare your
+ results to what you get from 
+\family typewriter
+sklearn.linear_model.Ridge
+\family default
+.) 
+\end_layout
+
+\begin_layout Section
+Lasso
+\end_layout
+
+\begin_layout Standard
+The Lasso optimization problem can be formulated as 
+\begin_inset Formula 
+\[
+\hat{w}={\displaystyle \argmin_{w\in\reals^{d}}\sum_{i=1}^{m}(h_{w}(x_{i})-y_{i})^{2}+\lambda\|w\|_{1}},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $h_{w}(x)=w^{T}x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Since the 
+\begin_inset Formula $\ell_{1}$
+\end_inset
+
+-regularization term in the objective function is non-differentiable, vanilla
+ gradient descent cannot solve this optimization problem.
+ Next, we will learn two techniques to solve the optimization problem.
+\end_layout
+
+\begin_layout Subsection
+Shooting algorithm
+\end_layout
+
+\begin_layout Standard
+One standard way to solve an optimization problem is coordinate descent,
+ in which at each step, we optimize over one component of the unknown vector,
+ fixing all other components.
+ The descent path so obtained is a sequence of steps each of which is parallel
+ to a coordinate axis in 
+\begin_inset Formula $\reals^{d}$
+\end_inset
+
+, hence the name.
+ It turns out that for the Lasso optimization problem, we can find a closed
+ form solution for optimization over a single component fixing all other
+ components.
+ This gives us the following algorithm:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename shooting_algo.png
+	width 100text%
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+(Source: Murphy, Kevin P.
+ Machine learning: a probabilistic perspective.
+ MIT press, 2012.) 
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Quotes eld
+\end_inset
+
+soft thresholding
+\begin_inset Quotes erd
+\end_inset
+
+ function is defined as
+\begin_inset Formula 
+\[
+\text{soft}\left(a,\delta\right)=\text{sign}(a)\left(\left|a\right|-\delta\right)_{+}.
+\]
+
+\end_inset
+
+Note that Murphy is suggesting to initialize the optimization with the ridge
+ regession solution, though this is not necessary.
+ 
+\end_layout
+
+\begin_layout Standard
+The solution should have a sparsity pattern that is similar to the ground
+ truth.
+ Estimators that preserve the sparsity pattern (with enough training data)
+ are said to be 
+\series bold
+
+\begin_inset Quotes eld
+\end_inset
+
+sparsistent
+\series default
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Li, Yen-Huan, et al.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Sparsistency of 
+\begin_inset Formula $\ l_{1}$
+\end_inset
+
+-Regularized 
+\begin_inset Formula $M$
+\end_inset
+
+-Estimators.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\series bold
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\series default
+ (sparse + consistent).
+ Formally, an estimator 
+\begin_inset Formula $\hat{\beta}$
+\end_inset
+
+ of parameter 
+\begin_inset Formula $\beta$
+\end_inset
+
+ is said to be consistent if the estimator 
+\begin_inset Formula $\hat{\beta}$
+\end_inset
+
+ converges to the true value 
+\begin_inset Formula $\beta$
+\end_inset
+
+ in probability.
+ Analogously, if we define the support of a vector 
+\begin_inset Formula $\beta$
+\end_inset
+
+ as the indices with non-zero components, i.e.
+ 
+\begin_inset Formula $\text{Supp}(\beta)=\{j\mid\beta_{j}\neq0\}$
+\end_inset
+
+, then an estimator 
+\begin_inset Formula $\hat{\beta}$
+\end_inset
+
+ is said to be sparsistent if as the number of samples becomes large, the
+ support of 
+\begin_inset Formula $\hat{\beta}$
+\end_inset
+
+ converges to the support of 
+\begin_inset Formula $\beta$
+\end_inset
+
+, or 
+\begin_inset Formula ${\displaystyle \lim_{m\rightarrow\infty}P[\text{Supp}(\hat{\beta}_{m})=\text{Supp}(\beta)]}$
+\end_inset
+
+ = 1.
+ 
+\end_layout
+
+\begin_layout Standard
+There are a few tricks that can make selecting the hyperparameter 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ easier and faster.
+ First, you can show that for any 
+\begin_inset Formula $\lambda>2\|X^{T}(y-\bar{y})\|_{\infty}$
+\end_inset
+
+, the estimated weight vector 
+\begin_inset Formula $\hat{w}$
+\end_inset
+
+ is entirely zero, where 
+\begin_inset Formula $\bar{y}$
+\end_inset
+
+ is the mean of values in the vector 
+\begin_inset Formula $y$
+\end_inset
+
+, and 
+\begin_inset Formula $\|\cdot\|_{\infty}$
+\end_inset
+
+ is the infinity norm (or supremum norm), which is the maximum absolute
+ value of any component of the vector.
+ Thus, we need to search for an optimal 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ in 
+\begin_inset Formula $\left[0,\lambda_{\text{max}}\right]$
+\end_inset
+
+, where 
+\begin_inset Formula $\lambda_{\text{max}}=2\|X^{T}(y-\bar{y})\|_{\infty}$
+\end_inset
+
+.
+ (Note: This expression for 
+\begin_inset Formula $\lambda_{\text{max}}$
+\end_inset
+
+ assumes we have an unregularized bias term in our model.
+ That is, our decision functions are 
+\begin_inset Formula $h_{w,b}(x)=w^{T}x+b$
+\end_inset
+
+.
+ For the experiments, you can exclude the bias term, in which case 
+\begin_inset Formula $\lambda_{\text{max}}=2\|X^{T}y\|_{\infty}$
+\end_inset
+
+.)
+\end_layout
+
+\begin_layout Standard
+Second, we can make use of the fact that when 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda'$
+\end_inset
+
+ are close, so are the corresponding solutions 
+\begin_inset Formula $\hat{w}(\lambda)$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{w}(\lambda')$
+\end_inset
+
+.
+ Start by finding 
+\begin_inset Formula $\hat{w}(\lambda_{\text{max}})$
+\end_inset
+
+ and initialize the optimization at 
+\begin_inset Formula $w=0$
+\end_inset
+
+.
+ Next, 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is reduced (e.g.
+ by a constant factor), and the optimization problem is solved using the
+ previous optimal point as the starting point.
+ This is called 
+\series bold
+warm starting
+\series default
+ the optimization.
+ The entire technique of computing a set of solutions for a chain of nearby
+ 
+\begin_inset Formula $\lambda$
+\end_inset
+
+'s is called a 
+\series bold
+continuation 
+\series default
+or
+\series bold
+ homotopy method
+\series default
+.
+ In the context of finding a good regularization hyperparameter, it may
+ be referred to as a 
+\series bold
+regularization path 
+\series default
+approach.
+ (Lots of names for this!) 
+\end_layout
+
+\begin_layout Enumerate
+Write a function that computes the Lasso solution for a given 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ using the shooting algorithm described above.
+ This function should take a starting point for the optimization as a parameter.
+ Run it on the dataset constructed in (1.1), and select the 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ that minimizes the square error on the validation set.
+ Report the optimal value of 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ found, and the corresponding test error.
+ Plot the validation error vs 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Analyze the sparsity of your solution, reporting how many components with
+ true value zero have been estimated to be non-zero, and vice-versa.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Implement the homotopy method described above.
+ Compare the runtime for computing the full regularization path (for the
+ same set of 
+\begin_inset Formula $\lambda$
+\end_inset
+
+'s you tried in the first question above) using the homotopy method compared
+ to the basic shooting algorithm.
+\end_layout
+
+\begin_layout Enumerate
+The algorithm as described above is not ready for a large dataset (at least
+ if it has been implemented in basic Python) because of the implied loop
+ over the dataset (i.e.
+ where we sum over the training set).
+ By using matrix and vector operations, we can eliminate the loops.
+ This is called 
+\begin_inset Quotes eld
+\end_inset
+
+vectorization
+\begin_inset Quotes erd
+\end_inset
+
+ and can lead to dramatic speedup in languages such as Python, Matlab, and
+ R.
+ Derive matrix expressions for computing 
+\begin_inset Formula $a_{j}$
+\end_inset
+
+ and 
+\begin_inset Formula $c_{j}$
+\end_inset
+
+.
+ (Hint: A matlab version of this vectorized method can be found here: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://code.google.com/p/pmtk3/source/browse/trunk/toolbox/Variable_selection/las
+soExtra/LassoShooting.m?r=1393
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
+Implement the matrix expressions and measure the speedup to compute the
+ regularization path.
+\end_layout
+
+\begin_layout Enumerate
+(Optional) Derive the expression used in the algorithm for the coordinate
+ minimizer 
+\begin_inset Formula $w_{j}$
+\end_inset
+
+.
+ (Hint: Most of it is worked out in KPM's book as well as our slides on
+ subgradients.
+ The missing piece is writing the derivative of the empirical loss in terms
+ of 
+\begin_inset Formula $a_{j}$
+\end_inset
+
+ and 
+\begin_inset Formula $c_{j}$
+\end_inset
+
+.)
+\end_layout
+
+\begin_layout Enumerate
+(Optional) Derive the above expression for 
+\begin_inset Formula $\lambda_{\text{max}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+(Optional) Projected SGD via Variable Splitting
+\end_layout
+
+\begin_layout Standard
+In this question, we consider another general technique that can be used
+ on the Lasso problem.
+ We first use the variable splitting method to transform the Lasso problem
+ to a smooth problem with linear inequality constraints, and then we can
+ apply a variant of SGD.
+\end_layout
+
+\begin_layout Standard
+Representing the unknown vector 
+\begin_inset Formula $\theta$
+\end_inset
+
+ as a difference of two non-negative vectors 
+\begin_inset Formula $\theta^{+}$
+\end_inset
+
+ and 
+\begin_inset Formula $\theta^{-}$
+\end_inset
+
+, the 
+\begin_inset Formula $\ell{}_{1}$
+\end_inset
+
+-norm of 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is given by 
+\begin_inset Formula ${\displaystyle \sum_{i=1}^{d}{\theta_{i}^{+}}}$
+\end_inset
+
+ + 
+\begin_inset Formula ${\displaystyle \sum_{i=1}^{d}{\theta_{i}^{-}}}$
+\end_inset
+
+.
+ Thus, the optimization problem can be written as 
+\begin_inset Formula 
+\begin{gather*}
+(\hat{\theta}^{+},\hat{\theta}^{-})={\displaystyle \argmin_{\theta^{+},\theta^{-}\in\reals^{d}}{\sum_{i=1}^{m}{(h_{\theta^{+},\theta^{-}}(x_{i})-y_{i})^{2}}}+\lambda\sum_{i=1}^{d}{\theta_{i}^{+}}+\lambda\sum_{i=1}^{d}{\theta_{i}^{-}}}\\
+\mbox{such that }\theta^{+}\ge0\mbox{ and }\theta^{-}\ge0,
+\end{gather*}
+
+\end_inset
+
+where 
+\begin_inset Formula $h_{\theta^{+},\theta^{-}}(x)=(\theta^{+}-\theta^{-})^{T}x$
+\end_inset
+
+.
+ The original parameter 
+\begin_inset Formula $\theta$
+\end_inset
+
+ can then be estimated as 
+\begin_inset Formula $\hat{\theta}=(\hat{\theta}^{+}-\hat{\theta}^{-})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+This is a convex optimization problem with a differentiable objective and
+ linear inequality constraints.
+ We can approach this problem using projected stochastic gradient descent,
+ as discussed in lecture.
+ Here, after taking our stochastic gradient step, we project the result
+ back into the feasible set by setting any negative components of 
+\begin_inset Formula $\theta^{+}$
+\end_inset
+
+ and 
+\begin_inset Formula $\theta^{-}$
+\end_inset
+
+ to zero.
+\end_layout
+
+\begin_layout Enumerate
+(Optional) Implement projected SGD to solve the above optimization problem
+ for the same 
+\begin_inset Formula $\lambda$
+\end_inset
+
+'s as used with the shooting algorithm.
+ Since the two optimization algorithms should find essentially the same
+ solutions, you can check the algorithms against each other.
+ Report the differences in validation loss for each 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ between the two optimization methods.
+ (You can make a table or plot the differences.) 
+\end_layout
+
+\begin_layout Enumerate
+(Optional) Choose the 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ that gives the best performance on the validation set.
+ Describe the solution 
+\begin_inset Formula $\hat{w}$
+\end_inset
+
+ in term of its sparsity.
+ How does the sparsity compare to the solution from the shooting algorithm?
+ 
+\end_layout
+
+\begin_layout Subsection
+Feature Correlation
+\end_layout
+
+\begin_layout Standard
+In this problem, we will examine and compare the behavior of the Lasso and
+ ridge regression in the case of an exactly repeated feature.
+ That is, consider the design matrix 
+\begin_inset Formula $X\in\reals^{m\times d}$
+\end_inset
+
+, where 
+\begin_inset Formula $X_{\cdot,i}=X_{\cdot,j}$
+\end_inset
+
+ for some 
+\begin_inset Formula $i$
+\end_inset
+
+ and 
+\begin_inset Formula $j$
+\end_inset
+
+, where 
+\begin_inset Formula $X_{\cdot,i}$
+\end_inset
+
+ is the 
+\begin_inset Formula $i^{th}$
+\end_inset
+
+ column of 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ We will see that ridge regression divides the weight equally among identical
+ features, while Lasso divides the weight arbitrarily.
+ In an optional part to this problem, we will consider what changes when
+ 
+\begin_inset Formula $X_{\cdot,i}$
+\end_inset
+
+ and 
+\begin_inset Formula $X_{\cdot,j}$
+\end_inset
+
+ are highly correlated (e.g.
+ exactly the same except for some small random noise) rather than exactly
+ the same.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Derive the relation between 
+\begin_inset Formula $\hat{\theta}_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{\theta}_{j}$
+\end_inset
+
+, the 
+\begin_inset Formula $i^{th}$
+\end_inset
+
+ and the 
+\begin_inset Formula $j^{th}$
+\end_inset
+
+ components of the optimal weight vector obtained by solving the Lasso optimizat
+ion problem.
+ 
+\begin_inset Newline newline
+\end_inset
+
+[Hint: Assume that in the optimal solution, 
+\begin_inset Formula $\hat{\theta}_{i}$
+\end_inset
+
+ = 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{\theta}_{j}$
+\end_inset
+
+ = 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ First show that 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ must have the same sign.
+ Then, using this result, rewrite the optimization problem to derive a relation
+ between 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+.] 
+\end_layout
+
+\begin_layout Enumerate
+Derive the relation between 
+\begin_inset Formula $\hat{\theta}_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{\theta}_{j}$
+\end_inset
+
+, the 
+\begin_inset Formula $i^{th}$
+\end_inset
+
+ and the 
+\begin_inset Formula $j^{th}$
+\end_inset
+
+ components of the optimal weight vector obtained by solving the ridge regressio
+n optimization problem.
+ 
+\end_layout
+
+\begin_layout Enumerate
+(Optional) What do you think would happen with Lasso and ridge when 
+\begin_inset Formula $X_{\cdot i}$
+\end_inset
+
+ and 
+\begin_inset Formula $X_{\cdot j}$
+\end_inset
+
+ are highly correlated, but not exactly the same.
+ You may investigate this experimentally.
+\end_layout
+
+\begin_layout Section
+Feedback (not graded)
+\end_layout
+
+\begin_layout Enumerate
+Approximately how long did it take to complete this assignment?
+\end_layout
+
+\begin_layout Enumerate
+Any other feedback?
+\end_layout
+
+\end_body
+\end_document

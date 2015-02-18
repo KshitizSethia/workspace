@@ -1,0 +1,22 @@
+#1.1 Dataset construction
+import numpy as np
+
+numExamples=150
+numFeatures=75
+
+def generateData():
+    samples = np.random.rand(numExamples, numFeatures)
+    trueWeight = np.zeros(numFeatures)
+    for index in range(10):
+        trueWeight[index] = 10
+    for index in range(10,20):
+        trueWeight[index] = -10
+    
+    noise = np.random.randn(numFeatures) 
+    
+    trueOutput = np.dot(samples,trueWeight)
+    dataToStore = samples
+    np.c_[dataToStore, trueOutput];
+    
+    np.savetxt("hw2_autogen_data.csv", dataToStore,delimiter=",")
+    

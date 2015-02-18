@@ -1,0 +1,25 @@
+import numpy as np
+class data:
+    
+    def __init__(self, train_x        
+    ,validation_x
+    ,test_x
+    ,train_y
+    ,validation_y
+    ,test_y):
+        self.train_x      =train_x        
+        self.train_y      =train_y
+        self.test_x       =test_x
+        self.test_y       =test_y
+        self.validation_x =validation_x
+        self.validation_y =validation_y
+        
+def modify_bias_term(X_train, X_test, bias_initializer):
+    X_train[:,-1] = bias_initializer
+    X_test[:,-1] = bias_initializer
+    return X_train, X_test
+
+def add_bias_term(X_train, X_test, bias_initializer):
+    X_train = np.hstack((X_train, np.ones((X_train.shape[0], 1))*bias_initializer)) #Add bias term
+    X_test = np.hstack((X_test, np.ones((X_test.shape[0], 1))*bias_initializer)) #Add bias term
+    

@@ -1,0 +1,139 @@
+import pandas as pd
+import logging
+import numpy as np
+import sys
+import matplotlib.pyplot as plt
+from sklearn.cross_validation import train_test_split
+import batch_gradient_descent
+import regularized_gradient_descent
+
+### Assignment Owner: Hao Xu
+### Edited By: Kshitiz Sethia
+
+#######################################
+####Q2.1: Normalization
+def feature_normalization(train, test):
+    """Rescale the data so that each feature in the training set is in
+    the interval [0,1], and apply the same transformations to the test
+    set, using the statistics computed on the training set.
+    
+    Args:
+        train - training set, a 2D numpy array of size (num_instances, num_features)
+        test  - test set, a 2D numpy array of size (num_instances, num_features)
+    Returns:
+        train_normalized - training set after normalization
+        test_normalized  - test set after normalization
+
+    """
+    mins_of_features = np.amin(train, axis=0)
+    maxs_of_features = np.amax(train, axis=0)
+    range_of_features = maxs_of_features-mins_of_features
+    range_of_features[range_of_features==0] = 1
+    
+    train_normalized = (train - mins_of_features)/range_of_features
+    test_normalized = (test - mins_of_features)/range_of_features
+    
+    return (train_normalized, test_normalized)
+    
+####################################
+###Q2.4b: Implement backtracking line search in batch_gradient_descent
+###Check http://en.wikipedia.org/wiki/Backtracking_line_search for details
+#TODO
+    
+#############################################
+##Q2.5c: Visualization of Regularized Batch Gradient Descent
+##X-axis: log(lambda_reg)
+##Y-axis: square_loss
+def plot_these(X_train, y_train, X_test, y_test, alpha=0.1, num_iter=1000):
+    
+    lambdas = np.array([0.01, 0.1, 1, 10, 100])
+    alphas = np.array([0.1,0.1, 0.01, 0.01, 0.001])
+    training_losses = np.zeros(len(lambdas))
+    test_losses = np.zeros(len(lambdas))
+    
+    for index in range(len(lambdas)):
+        #print "regularized gradient descent for lambda: " +str(lambdas[index])
+        theta_hist, loss_hist = regularized_gradient_descent.regularized_grad_descent(X_train, y_train, alphas[index], lambdas[index], num_iter, True)
+        training_losses[index] = loss_hist[-1]
+        test_losses[index] = batch_gradient_descent.compute_square_loss(X_test, y_test, theta_hist[-1], lambdas[index])
+    
+    figure = plt.figure()
+    
+    rect = 0.1,0.1,0.8,0.8
+    axes = figure.add_axes(rect)
+    axes.plot(np.log(lambdas), training_losses, 'r')
+    axes.plot(np.log(lambdas), test_losses, 'g')
+    
+    axes.set_xlabel("log lambda")
+    axes.set_ylabel("losses")
+    
+    plt.show()
+
+def plot_iterations_vs_loss(iterations, loss_hist, alpha, test_loss, lambda_reg=-1):
+    figure = plt.figure()
+    rect = 0.1,0.1,0.8,0.8
+    axes = figure.add_axes(rect)
+    axes.plot(np.arange(iterations+1), loss_hist, 'r')
+    axes.set_xlabel("iteration")
+    axes.set_ylabel("losses")
+    title=""
+    if(lambda_reg>0):
+        title+="regularized_gradient_descent for step="
+    else:
+        title+="batch_gradient_descent for step="
+    
+    title+=str(alpha)\
+            +", iter=" +str(iterations)
+    if(lambda_reg>0):
+        title+=" and lambda=" +str(lambda_reg)
+    title+=" | test loss = " +str(test_loss)
+    
+    axes.set_title(title)
+    plt.show()
+
+
+################################################
+###Q2.6b Visualization that compares the convergence speed of batch
+###and stochastic gradient descent for various approaches to step_size
+##X-axis: Step number (for gradient descent) or Epoch (for SGD)
+##Y-axis: log(objective_function_value)
+
+def main():
+    #Loading the dataset
+    print('loading the dataset')
+    
+    #df = pd.read_csv('hw1_my_data.csv', delimiter=',')
+    df = pd.read_csv('hw1-data.csv', delimiter=',')
+    X = df.values[:,:-1]
+    y = df.values[:,-1]
+    print "range of y: " +str(y.max()-y.min())
+    
+    
+    print('Split into Train and Test')
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size =40, random_state=10)
+    
+    X_train = X[np.arange(8),:]
+    X_test = X[[8,9],:]
+    y_train = y[np.arange(8)]
+    y_test = y[[8,9]]
+    
+    print("Scaling all to [0, 1]")
+    X_train, X_test = feature_normalization(X_train, X_test)
+    bias_initializer = 10
+    X_train = np.hstack((X_train, np.ones((X_train.shape[0], 1))*bias_initializer)) #Add bias term
+    X_test = np.hstack((X_test, np.ones((X_test.shape[0], 1))*bias_initializer)) #Add bias term
+
+    #do your thing here
+    #plot_these(X_train, y_train, X_test, y_test, 0.1, 1000)
+    alpha = 0.01
+    iterations = 1000
+    lambda_reg = 0.1
+    theta_hist, loss_hist = regularized_gradient_descent.run(X_train, y_train, alpha, lambda_reg, iterations, True)
+    test_loss = batch_gradient_descent.compute_loss(X_test, y_test, theta_hist[-1])
+    #print "theta: " +str(theta_hist[-1])
+    print "test_loss: " +str(test_loss)
+    
+        
+
+if __name__ == "__main__":
+    main()

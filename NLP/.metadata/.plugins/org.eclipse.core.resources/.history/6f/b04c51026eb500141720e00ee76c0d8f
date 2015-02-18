@@ -1,0 +1,17 @@
+import Jet.*;
+import Jet.Tipster.*;
+import java.util.Vector;
+import java.io.IOException;
+
+public class jet {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		System.out.println("Hello World!");
+		
+	}
+
+}

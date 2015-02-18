@@ -1,0 +1,30 @@
+import Jet.*;
+import Jet.Tipster.*;
+import java.util.Vector;
+import java.io.IOException;
+
+public class jet {
+
+	/**
+	 * @param args
+	 * @throws IOException 
+	 */
+	public static void main(String[] args) throws IOException {
+		
+		System.out.println("Starting JET");
+		
+		JetTest.initializeFromConfig("tagPOS.jet");
+		
+		String text = "<TEXT>My first sentence to be analyzed for class.</TEXT>";
+		Document doc = new Document(text);
+		Control.processDocument(doc, null, true, 1);
+		Vector vec = doc.annotationsOfType("constit");
+		
+		for(int index=0; index<vec.size();index++)
+		{
+			Annotation annotation = (Annotation) vec.get(index);
+			System.out.println();
+		}
+	}
+
+}

@@ -1,0 +1,8 @@
+INSTUPhw2.conjugate_grad_desent_lasso
+C:\Cloud\Copy\workspace\ML\main\hw2\conjugate_grad_desent_lasso.py
+INFOS:&&2|1|2|0&&2|3|2|0&&2|4|2|0&&2|5|2|0
+hw2.conjugate_grad_desent_lasso=2
+doConjugateDescentLasso=1
+minimize=3
+minimize_slow=4
+soft=5

@@ -1,0 +1,43 @@
+import numpy as np
+from sklearn.tests.test_cross_validation import test_train_test_split
+import helpers as help
+
+numExamples=150
+numFeatures=75
+csvFileName = "hw2_autogen_data.csv"
+
+#1.1 Dataset construction
+def generateData():
+    samples = np.random.rand(numExamples, numFeatures)
+    trueWeight = np.zeros(numFeatures)
+    for index in range(10):
+        trueWeight[index] = 10
+    for index in range(10,20):
+        trueWeight[index] = -10
+    
+    noise = np.random.randn(numExamples)
+    trueOutput = np.dot(samples,trueWeight) + noise
+    
+    dataToStore = np.c_[samples, trueOutput];
+    
+    np.savetxt(csvFileName, dataToStore,delimiter=",")
+
+def splitData(dataArray):
+    X = dataArray[:,:-1]
+    y = dataArray[:,-1]
+    data = help.data
+    
+    X_train, X_test, y_train, y_test = test_train_test_split(X, y, train_size=80, RandomState=10)
+    X_test, X_validate, y_test, y_validate = test_train_test_split(X_test, y_test, train_size=50, RandomState=10)
+    
+    return help.data(X_train, X_validate, X_test, y_train, y_validate, y_test)
+
+# reading the data from csv
+def main():
+    generateData()
+    dataArray = np.loadtxt(csvFileName, delimiter=",")
+    
+    help.data = splitData(dataArray)
+    
+if __name__ == "__main__":
+    main()

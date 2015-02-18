@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;HW1/coordinate_descent_lasso&apos; to &apos;coordinate_descent_lasso.py&apos;" description="Rename resource &apos;coordinate_descent_lasso&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="coordinate_descent_lasso" name="coordinate_descent_lasso.py" stamp="1423684970638" updateReferences="true"/>
+</session>
