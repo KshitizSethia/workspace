@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Default C++ source template" key="LastUsedSourceTemplate"/>
+	<item value="Default C++ header template" key="LastUsedHeaderTemplate"/>
+	<section name="OptionalMessageDialog.hide.">
+		<item value="0" key="askReindex.detail"/>
+		<item value="true" key="askReindex"/>
+	</section>
+	<section name="ExtractFunctionWizard">
+		<item value="private" key="AccessModifier"/>
+	</section>
+	<section name="completion_proposal_size">
+	</section>
+	<section name="PDOMSearchPage">
+	</section>
+	<section name="org.eclipse.cdt.internal.ui.typehierarchy.OpenTypeInHierarchyActionSettings">
+		<item value="true" key="show_structs"/>
+		<item value="true" key="show_lowlevel"/>
+		<item value="false" key="show_macros"/>
+		<item value="false" key="show_variables"/>
+		<item value="588" key="width"/>
+		<item value="false" key="show_functions"/>
+		<item value="true" key="show_enums"/>
+		<item value="1063" key="height"/>
+		<item value="true" key="show_classes"/>
+		<item value="true" key="show_typedefs"/>
+		<item value="false" key="show_namespaces"/>
+		<item value="true" key="show_unions"/>
+		<item value="false" key="show_enumerators"/>
+		<item value="0" key="y"/>
+		<item value="786" key="x"/>
+	</section>
+	<section name="RefactoringWizard.preview">
+		<item value="400" key="height"/>
+		<item value="600" key="width"/>
+	</section>
+	<section name="NewClassWizardPage">
+		<item value="false" key="stubSelected1"/>
+		<item value="false" key="testFileSelected"/>
+		<item value="false" key="namespaceSelected"/>
+		<item value="false" key="stubInline1"/>
+		<item value="true" key="stubVirtual1"/>
+		<item value="false" key="stubInline0"/>
+		<item value="false" key="stubSelected0"/>
+		<item value="" key="namespace"/>
+	</section>
+	<section name="RenameInformationPopup">
+	</section>
+	<section name="CRenameRefactoringInputPage">
+		<item value="false" key="exhausiveFileSearch"/>
+		<item value="3" key="scope"/>
+		<item value="false" key="macroDefinition"/>
+		<item value="false" key="comment"/>
+		<item value="" key="workingset"/>
+		<item value="false" key="references_inv"/>
+	</section>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
+	</section>
+</section>

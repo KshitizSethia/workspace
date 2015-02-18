@@ -1,0 +1,150 @@
+package bg;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class BloodGroup {
+
+	boolean rhFactor;
+	BloodType bloodType; 	
+
+	public static enum BloodType
+	{
+		A(1), B(2), AB(2), O(0);
+
+		final int id;
+
+		BloodType(int id) { this.id = id; }
+		public int getValue() { return id; }
+
+		public static BloodType getBloodType(int id)
+		{
+			switch(id)
+			{
+			case BloodType.O.id: return BloodType.O;
+			case BloodType.A.id: return BloodType.A;
+			case BloodType.B.id: return BloodType.B;
+			case BloodType.AB.id: return BloodType.AB;
+			}
+		}
+
+	}
+
+	public BloodGroup(String description) {
+		if(description.toUpperCase().contains("A"))
+		{
+			
+		}
+			
+	}
+
+	public static String getRhFactorStr(boolean rhFactor)
+	{
+		if(rhFactor)
+			return "+";
+
+		return "-";
+	}
+
+	public Set<BloodType> populateBloodTypeMarkers()
+	{
+		Set<BloodType> bloodTypeMarkers = new HashSet<BloodType>(); /* Holds A, B, O */
+
+		switch(this.bloodType)
+		{
+		case AB: bloodTypeMarkers.add(BloodType.A);
+		bloodTypeMarkers.add(BloodType.B);
+		break;
+
+		case O:  bloodTypeMarkers.add(BloodType.O);
+		break;
+
+		case A:  bloodTypeMarkers.add(BloodType.A);
+		bloodTypeMarkers.add(BloodType.O);
+		break;
+
+		case B: bloodTypeMarkers.add(BloodType.B);
+		bloodTypeMarkers.add(BloodType.O);
+		break;
+		} 
+		return bloodTypeMarkers;
+	}
+
+	private static String getPossibleBloodGroupsForChild(BloodGroup parent1,
+			BloodGroup parent2) {
+		// TODO Auto-generated method stub
+		Set<BloodType> bloodTypesForChild = crossProduct(parent1.populateBloodTypeMarkers(), parent2.populateBloodTypeMarkers());
+
+		return null;
+	}
+
+	public static BloodType determineBloodType(BloodType marker1, BloodType marker2)
+	{
+		return BloodType.getBloodType(marker1.id | marker2.id);
+	}	
+
+	private static Set<BloodType> crossProduct(
+			Set<BloodType> parent1bloodMarkers,
+			Set<BloodType> parent2bloodMarkers) {
+
+		Set<BloodType> bloodTypeMarkers = new HashSet<BloodType>(); /* Holds A, B, O */
+
+		for(BloodType bt1 : parent1bloodMarkers)
+		{
+			for(BloodType bt2 : parent2bloodMarkers)
+			{
+				bloodTypeMarkers.add(determineBloodType(bt1, bt2));
+			}
+		}
+
+		return null;
+	}
+
+	public static void main(String[] args) {
+		BufferedReader fileReader = new BufferedReader(new FileReader(args[0]));
+		BufferedWriter fileWriter = new BufferedWriter(new FileWriter(args[0]));
+
+		int numTestCases = Integer.parseInt(fileReader.readLine());
+
+		for(int testCaseNumber=1;testCaseNumber<=numTestCases;)
+		{
+			String testCase = fileReader.readLine();
+
+			BloodGroup parent1, parent2, child;
+
+			fillBloodGroups(testCase, parent1, parent2, child);
+
+			boolean childIsMissing = child==null;
+
+			if(childIsMissing)
+			{
+				fileWriter.write(""/*parent1 bloodGroup*/);
+				fileWriter.write(""/*parent2 bloodGroup*/);
+				fileWriter.write(getPossibleBloodGroupsForChild(parent1, parent2));
+			}
+			else
+			{
+				fileWriter.write(""/*parent1 bloodGroup*/);
+				fileWriter.write(getPossibleBloodGroupsForParent(parent1==null?parent2:parent1, child));
+				fileWriter.write(""/*child bloodGroup*/);
+			}
+		}
+	}
+
+	private static void fillBloodGroups(String testCase, BloodGroup parent1, BloodGroup parent2,
+			BloodGroup child) {
+			String[] bloodGroups = testCase.split(" ");
+			
+			parent1 = bloodGroups[0] == "?"?null: new BloodGroup(bloodGroups[0]);
+			parent2 = bloodGroups[0] == "?"?null: new BloodGroup(bloodGroups[1]);
+			child = bloodGroups[0] == "?"?null: new BloodGroup(bloodGroups[2]);
+	}
+
+}
+
+}

@@ -1,0 +1,21 @@
+-- VERSION_4
+-- START DISKCACHE
+C:\Users\Kshitiz\Documents\Cloud\Copy\workspace\SMM\.metadata\.plugins\org.eclipse.core.resources\.projects\as9\com.python.pydev.analysis\v2_indexcache
+q2|1417123052287|C:\Users\Kshitiz\Documents\Cloud\Copy\workspace\SMM\as9\q2.py
+-- END DISKCACHE
+-- START DICTIONARY
+1
+1=q2
+-- END DICTIONARY
+-- START TREE 1
+6
+exp|1|expected_freq!11@
+max|1|max_children!11@
+my_|1|my_binomial!11@
+obs|4|observed_val!11@observed_mean!11@observed_freq!11@observed_prob_male_child!11@
+squ|1|squared_error!11@
+tot|2|total!11@total_families!11@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

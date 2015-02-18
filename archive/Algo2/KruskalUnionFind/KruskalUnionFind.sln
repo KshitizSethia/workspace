@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KruskalUnionFind", "KruskalUnionFind.csproj", "{D99249D2-2DAC-402E-8AB0-AEF37E6A1884}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoHelperLib", "..\AlgoHelperLib\AlgoHelperLib.csproj", "{0296C838-1B7D-4FE5-B35C-5F9DA888FE1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.KruskalUnionFind", "Test.KruskalUnionFind\Test.KruskalUnionFind.csproj", "{C5E51E77-7C09-4FBA-95DE-6B1AD44E08AC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D99249D2-2DAC-402E-8AB0-AEF37E6A1884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D99249D2-2DAC-402E-8AB0-AEF37E6A1884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D99249D2-2DAC-402E-8AB0-AEF37E6A1884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D99249D2-2DAC-402E-8AB0-AEF37E6A1884}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0296C838-1B7D-4FE5-B35C-5F9DA888FE1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0296C838-1B7D-4FE5-B35C-5F9DA888FE1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0296C838-1B7D-4FE5-B35C-5F9DA888FE1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0296C838-1B7D-4FE5-B35C-5F9DA888FE1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5E51E77-7C09-4FBA-95DE-6B1AD44E08AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5E51E77-7C09-4FBA-95DE-6B1AD44E08AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5E51E77-7C09-4FBA-95DE-6B1AD44E08AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5E51E77-7C09-4FBA-95DE-6B1AD44E08AC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

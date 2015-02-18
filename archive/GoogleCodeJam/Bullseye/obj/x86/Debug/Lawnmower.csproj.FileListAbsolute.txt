@@ -1,0 +1,4 @@
+C:\Dropbox\workspace\GoogleCodeJam\Lawnmower\bin\Debug\Lawnmower.exe
+C:\Dropbox\workspace\GoogleCodeJam\Lawnmower\bin\Debug\Lawnmower.pdb
+C:\Dropbox\workspace\GoogleCodeJam\Lawnmower\obj\x86\Debug\Lawnmower.exe
+C:\Dropbox\workspace\GoogleCodeJam\Lawnmower\obj\x86\Debug\Lawnmower.pdb

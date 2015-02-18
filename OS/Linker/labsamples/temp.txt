@@ -1,0 +1,1 @@
+Syntax Error line 1 offset 0

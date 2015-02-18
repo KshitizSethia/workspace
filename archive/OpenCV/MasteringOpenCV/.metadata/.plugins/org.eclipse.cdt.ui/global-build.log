@@ -1,0 +1,963 @@
+17:09:32 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+..\src\main_desktop.cpp: In function 'int main(int, char**)':
+..\src\main_desktop.cpp:18:2: error: 'VideoCapture' was not declared in this scope
+..\src\main_desktop.cpp:18:2: note: suggested alternative:
+C:\Dropbox\devtools\opencv\build\include/opencv2/highgui/highgui.hpp:204:20: note:   'cv::VideoCapture'
+..\src\main_desktop.cpp:18:15: error: expected ';' before 'camera'
+..\src\main_desktop.cpp:19:2: error: 'camera' was not declared in this scope
+17:10:23 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 
+Info: Nothing to build for test
+Info: Nothing to build for Cartoonifier_desktop
+Info: Nothing to build for test
+17:37:11 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+..\src\main_desktop.cpp: In function 'int main(int, char**)':
+..\src\main_desktop.cpp:40:45: error: 'cartoonifyImage' was not declared in this scope
+17:37:33 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+..\src\main_desktop.cpp: In function 'int main(int, char**)':
+..\src\main_desktop.cpp:40:45: error: 'cartoonifyImage' was not declared in this scope
+..\src\main_desktop.cpp: At global scope:
+..\src\main_desktop.cpp:59:13: warning: 'void cartoonifyImage(cv::Mat, cv::Mat)' defined but not used [-Wunused-function]
+Info: Nothing to build for test
+17:37:54 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+..\src\main_desktop.cpp: In function 'int main(int, char**)':
+..\src\main_desktop.cpp:40:45: error: 'cartoonifyImage' was not declared in this scope
+..\src\main_desktop.cpp: At global scope:
+..\src\main_desktop.cpp:59:13: warning: 'void cartoonifyImage(cv::Mat, cv::Mat)' defined but not used [-Wunused-function]
+Info: Nothing to build for test
+17:41:43 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+..\src\main_desktop.cpp:9:20: warning: extra tokens at end of #include directive [enabled by default]
+..\src\main_desktop.cpp:10:30: warning: extra tokens at end of #include directive [enabled by default]
+..\src\main_desktop.cpp:11:21: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ..\src\main_desktop.cpp:11:0:
+..\src\/cartoon.h:35:1: error: expected ';' after class definition
+..\src\/cartoon.h:35:1: error: a storage class can only be specified for objects and functions
+..\src\main_desktop.cpp: In function 'int main(int, char**)':
+..\src\main_desktop.cpp:41:45: error: 'cartoonifyImage' was not declared in this scope
+Info: Nothing to build for test
+17:42:58 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+In file included from ..\src\main_desktop.cpp:11:0:
+..\src\/cartoon.h:36:1: error: expected ';' after class definition
+..\src\/cartoon.h:36:1: error: a storage class can only be specified for objects and functions
+..\src\main_desktop.cpp: In function 'int main(int, char**)':
+..\src\main_desktop.cpp:41:10: error: expected unqualified-id before '.' token
+Info: Nothing to build for test
+17:43:39 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+In file included from ..\src\main_desktop.cpp:11:0:
+..\src\/cartoon.h:36:1: error: expected ';' after class definition
+..\src\/cartoon.h:36:1: error: a storage class can only be specified for objects and functions
+Info: Nothing to build for test
+17:44:02 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+In file included from ..\src\main_desktop.cpp:11:0:
+..\src\/cartoon.h:36:2: error: a storage class can only be specified for objects and functions
+Info: Nothing to build for test
+17:44:32 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+In file included from ..\src\main_desktop.cpp:11:0:
+..\src\/cartoon.h:36:2: error: a storage class can only be specified for objects and functions
+Info: Nothing to build for test
+17:48:23 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 
+src\main_desktop.o: In function `ZN7Cartoon15cartoonifyImageEN2cv3MatES1_':
+C:\Dropbox\workspace\OpenCV\Eclipse\Cartoonifier_desktop\Debug/../src//cartoon.h:21: undefined reference to `cv::cvtColor(cv::_InputArray const&, cv::_OutputArray const&, int, int)'
+C:\Dropbox\workspace\OpenCV\Eclipse\Cartoonifier_desktop\Debug/../src//cartoon.h:23: undefined reference to `cv::medianBlur(cv::_InputArray const&, cv::_OutputArray const&, int)'
+C:\Dropbox\workspace\OpenCV\Eclipse\Cartoonifier_desktop\Debug/../src//cartoon.h:27: undefined reference to `cv::Laplacian(cv::_InputArray const&, cv::_OutputArray const&, int, int, double, double, int)'
+C:\Dropbox\workspace\OpenCV\Eclipse\Cartoonifier_desktop\Debug/../src//cartoon.h:31: undefined reference to `cv::threshold(cv::_InputArray const&, cv::_OutputArray const&, double, double, int)'
+collect2: ld returned 1 exit status
+Info: Nothing to build for test
+17:49:44 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+..\src\main_desktop.cpp: In function 'int main(int, char**)':
+..\src\main_desktop.cpp:41:54: error: cannot call member function 'void Cartoon::cartoonifyImage(cv::Mat, cv::Mat)' without object
+Info: Nothing to build for test
+17:50:27 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 
+src\main_desktop.o: In function `ZN7Cartoon15cartoonifyImageEN2cv3MatES1_':
+C:\Dropbox\workspace\OpenCV\Eclipse\Cartoonifier_desktop\Debug/../src//cartoon.h:21: undefined reference to `cv::cvtColor(cv::_InputArray const&, cv::_OutputArray const&, int, int)'
+C:\Dropbox\workspace\OpenCV\Eclipse\Cartoonifier_desktop\Debug/../src//cartoon.h:23: undefined reference to `cv::medianBlur(cv::_InputArray const&, cv::_OutputArray const&, int)'
+C:\Dropbox\workspace\OpenCV\Eclipse\Cartoonifier_desktop\Debug/../src//cartoon.h:27: undefined reference to `cv::Laplacian(cv::_InputArray const&, cv::_OutputArray const&, int, int, double, double, int)'
+C:\Dropbox\workspace\OpenCV\Eclipse\Cartoonifier_desktop\Debug/../src//cartoon.h:31: undefined reference to `cv::threshold(cv::_InputArray const&, cv::_OutputArray const&, double, double, int)'
+collect2: ld returned 1 exit status
+Info: Nothing to build for test
+17:50:58 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+In file included from ..\src\main_desktop.cpp:11:0:
+..\src\/cartoon.h:38:8: warning: "/*" within comment [-Wcomment]
+..\src\main_desktop.cpp: In function 'int main(int, char**)':
+..\src\main_desktop.cpp:32:2: error: 'Cartoon' was not declared in this scope
+..\src\main_desktop.cpp:32:10: error: expected ';' before 'cartoon'
+..\src\main_desktop.cpp:42:3: error: 'cartoon' was not declared in this scope
+Info: Nothing to build for test
+17:51:57 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+In file included from ..\src\main_desktop.cpp:11:0:
+..\src\/cartoon.h:38:8: warning: "/*" within comment [-Wcomment]
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 
+src\main_desktop.o: In function `main':
+C:\Dropbox\workspace\OpenCV\Eclipse\Cartoonifier_desktop\Debug/../src/main_desktop.cpp:43: undefined reference to `cv::cvtColor(cv::_InputArray const&, cv::_OutputArray const&, int, int)'
+C:\Dropbox\workspace\OpenCV\Eclipse\Cartoonifier_desktop\Debug/../src/main_desktop.cpp:45: undefined reference to `cv::medianBlur(cv::_InputArray const&, cv::_OutputArray const&, int)'
+collect2: ld returned 1 exit status
+Info: Nothing to build for test
+17:54:28 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+In file included from ..\src\main_desktop.cpp:12:0:
+..\src\/cartoon.h:38:8: warning: "/*" within comment [-Wcomment]
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 
+src\main_desktop.o: In function `main':
+C:\Dropbox\workspace\OpenCV\Eclipse\Cartoonifier_desktop\Debug/../src/main_desktop.cpp:44: undefined reference to `cv::cvtColor(cv::_InputArray const&, cv::_OutputArray const&, int, int)'
+C:\Dropbox\workspace\OpenCV\Eclipse\Cartoonifier_desktop\Debug/../src/main_desktop.cpp:46: undefined reference to `cv::medianBlur(cv::_InputArray const&, cv::_OutputArray const&, int)'
+collect2: ld returned 1 exit status
+Info: Nothing to build for test
+17:56:44 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 
+src\main_desktop.o: In function `ZN7Cartoon15cartoonifyImageEN2cv3MatES1_':
+C:\Dropbox\workspace\OpenCV\Eclipse\Cartoonifier_desktop\Debug/../src//cartoon.h:21: undefined reference to `cv::cvtColor(cv::_InputArray const&, cv::_OutputArray const&, int, int)'
+C:\Dropbox\workspace\OpenCV\Eclipse\Cartoonifier_desktop\Debug/../src//cartoon.h:23: undefined reference to `cv::medianBlur(cv::_InputArray const&, cv::_OutputArray const&, int)'
+C:\Dropbox\workspace\OpenCV\Eclipse\Cartoonifier_desktop\Debug/../src//cartoon.h:27: undefined reference to `cv::Laplacian(cv::_InputArray const&, cv::_OutputArray const&, int, int, double, double, int)'
+C:\Dropbox\workspace\OpenCV\Eclipse\Cartoonifier_desktop\Debug/../src//cartoon.h:31: undefined reference to `cv::threshold(cv::_InputArray const&, cv::_OutputArray const&, double, double, int)'
+collect2: ld returned 1 exit status
+Info: Nothing to build for test
+18:02:25 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core -lopencv_highgui -lopencv_imgproc 
+c:/dropbox/devtools/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/bin/ld.exe: cannot find -lopencv_core
+c:/dropbox/devtools/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/bin/ld.exe: cannot find -lopencv_highgui
+c:/dropbox/devtools/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/bin/ld.exe: cannot find -lopencv_imgproc
+collect2: ld returned 1 exit status
+Info: Nothing to build for test
+18:02:57 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+Info: Nothing to build for Cartoonifier_desktop
+Info: Nothing to build for test
+Info: Nothing to build for Cartoonifier_desktop
+18:05:01 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+Info: Nothing to build for Cartoonifier_desktop
+18:06:26 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+Info: Nothing to build for Cartoonifier_desktop
+18:08:09 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+Info: Nothing to build for Cartoonifier_desktop
+18:08:38 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+Info: Nothing to build for Cartoonifier_desktop
+18:49:41 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+In file included from ..\src\main_desktop.cpp:11:0:
+..\src\/cartoon.h: In static member function 'static void Cartoon::cartoonifyImage(cv::Mat, cv::Mat)':
+..\src\/cartoon.h:35:38: error: no matching function for call to 'cv::Mat::Mat(cv::Mat::MSize&, int)'
+..\src\/cartoon.h:35:38: note: candidates are:
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1731:14: note: cv::Mat::Mat(const cv::gpu::GpuMat&)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1731:14: note:   candidate expects 1 argument, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1728:37: note: template<class _Tp> cv::Mat::Mat(const cv::MatCommaInitializer_<_Tp>&)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1726:37: note: template<class _Tp> cv::Mat::Mat(const cv::Point3_<_Tp>&, bool)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1724:37: note: template<class _Tp> cv::Mat::Mat(const cv::Point_<_Tp>&, bool)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1722:51: note: template<class _Tp, int m, int n> cv::Mat::Mat(const cv::Matx<_Tp, m, n>&, bool)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1720:44: note: template<class _Tp, int n> cv::Mat::Mat(const cv::Vec<_Tp, cn>&, bool)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1718:37: note: template<class _Tp> cv::Mat::Mat(const std::vector<_Tp>&, bool)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1716:5: note: cv::Mat::Mat(const IplImage*, bool)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1716:5: note:   no known conversion for argument 1 from 'cv::Mat::MSize' to 'const IplImage* {aka const _IplImage*}'
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1714:5: note: cv::Mat::Mat(const CvMatND*, bool)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1714:5: note:   no known conversion for argument 1 from 'cv::Mat::MSize' to 'const CvMatND*'
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1712:5: note: cv::Mat::Mat(const CvMat*, bool)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1712:5: note:   no known conversion for argument 1 from 'cv::Mat::MSize' to 'const CvMat*'
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1710:5: note: cv::Mat::Mat(const cv::Mat&, const cv::Range*)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1710:5: note:   no known conversion for argument 1 from 'cv::Mat::MSize' to 'const cv::Mat&'
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1709:5: note: cv::Mat::Mat(const cv::Mat&, const Rect&)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1709:5: note:   no known conversion for argument 1 from 'cv::Mat::MSize' to 'const cv::Mat&'
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1708:5: note: cv::Mat::Mat(const cv::Mat&, const cv::Range&, const cv::Range&)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1708:5: note:   no known conversion for argument 1 from 'cv::Mat::MSize' to 'const cv::Mat&'
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1705:5: note: cv::Mat::Mat(int, const int*, int, void*, const size_t*)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1705:5: note:   candidate expects 5 arguments, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:151:8: note: cv::Mat::Mat(cv::Size, int, void*, size_t)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:151:8: note:   candidate expects 4 arguments, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:129:8: note: cv::Mat::Mat(int, int, int, void*, size_t)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:129:8: note:   candidate expects 5 arguments, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:111:8: note: cv::Mat::Mat(const cv::Mat&)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:111:8: note:   candidate expects 1 argument, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:104:8: note: cv::Mat::Mat(int, const int*, int, const Scalar&)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:104:8: note:   candidate expects 4 arguments, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:98:8: note: cv::Mat::Mat(int, const int*, int)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:98:8: note:   candidate expects 3 arguments, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:91:8: note: cv::Mat::Mat(cv::Size, int, const Scalar&)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:91:8: note:   candidate expects 3 arguments, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:78:8: note: cv::Mat::Mat(int, int, int, const Scalar&)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:78:8: note:   candidate expects 4 arguments, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:85:8: note: cv::Mat::Mat(cv::Size, int)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:85:8: note:   no known conversion for argument 1 from 'cv::Mat::MSize' to 'cv::Size'
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:72:8: note: cv::Mat::Mat(int, int, int)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:72:8: note:   candidate expects 3 arguments, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:67:8: note: cv::Mat::Mat()
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:67:8: note:   candidate expects 0 arguments, 2 provided
+Info: Nothing to build for test
+18:49:49 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+In file included from ..\src\main_desktop.cpp:11:0:
+..\src\/cartoon.h: In static member function 'static void Cartoon::cartoonifyImage(cv::Mat, cv::Mat)':
+..\src\/cartoon.h:35:38: error: no matching function for call to 'cv::Mat::Mat(cv::Mat::MSize&, int)'
+..\src\/cartoon.h:35:38: note: candidates are:
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1731:14: note: cv::Mat::Mat(const cv::gpu::GpuMat&)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1731:14: note:   candidate expects 1 argument, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1728:37: note: template<class _Tp> cv::Mat::Mat(const cv::MatCommaInitializer_<_Tp>&)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1726:37: note: template<class _Tp> cv::Mat::Mat(const cv::Point3_<_Tp>&, bool)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1724:37: note: template<class _Tp> cv::Mat::Mat(const cv::Point_<_Tp>&, bool)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1722:51: note: template<class _Tp, int m, int n> cv::Mat::Mat(const cv::Matx<_Tp, m, n>&, bool)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1720:44: note: template<class _Tp, int n> cv::Mat::Mat(const cv::Vec<_Tp, cn>&, bool)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1718:37: note: template<class _Tp> cv::Mat::Mat(const std::vector<_Tp>&, bool)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1716:5: note: cv::Mat::Mat(const IplImage*, bool)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1716:5: note:   no known conversion for argument 1 from 'cv::Mat::MSize' to 'const IplImage* {aka const _IplImage*}'
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1714:5: note: cv::Mat::Mat(const CvMatND*, bool)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1714:5: note:   no known conversion for argument 1 from 'cv::Mat::MSize' to 'const CvMatND*'
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1712:5: note: cv::Mat::Mat(const CvMat*, bool)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1712:5: note:   no known conversion for argument 1 from 'cv::Mat::MSize' to 'const CvMat*'
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1710:5: note: cv::Mat::Mat(const cv::Mat&, const cv::Range*)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1710:5: note:   no known conversion for argument 1 from 'cv::Mat::MSize' to 'const cv::Mat&'
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1709:5: note: cv::Mat::Mat(const cv::Mat&, const Rect&)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1709:5: note:   no known conversion for argument 1 from 'cv::Mat::MSize' to 'const cv::Mat&'
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1708:5: note: cv::Mat::Mat(const cv::Mat&, const cv::Range&, const cv::Range&)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1708:5: note:   no known conversion for argument 1 from 'cv::Mat::MSize' to 'const cv::Mat&'
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1705:5: note: cv::Mat::Mat(int, const int*, int, void*, const size_t*)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1705:5: note:   candidate expects 5 arguments, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:151:8: note: cv::Mat::Mat(cv::Size, int, void*, size_t)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:151:8: note:   candidate expects 4 arguments, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:129:8: note: cv::Mat::Mat(int, int, int, void*, size_t)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:129:8: note:   candidate expects 5 arguments, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:111:8: note: cv::Mat::Mat(const cv::Mat&)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:111:8: note:   candidate expects 1 argument, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:104:8: note: cv::Mat::Mat(int, const int*, int, const Scalar&)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:104:8: note:   candidate expects 4 arguments, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:98:8: note: cv::Mat::Mat(int, const int*, int)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:98:8: note:   candidate expects 3 arguments, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:91:8: note: cv::Mat::Mat(cv::Size, int, const Scalar&)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:91:8: note:   candidate expects 3 arguments, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:78:8: note: cv::Mat::Mat(int, int, int, const Scalar&)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:78:8: note:   candidate expects 4 arguments, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:85:8: note: cv::Mat::Mat(cv::Size, int)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:85:8: note:   no known conversion for argument 1 from 'cv::Mat::MSize' to 'cv::Size'
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:72:8: note: cv::Mat::Mat(int, int, int)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:72:8: note:   candidate expects 3 arguments, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:67:8: note: cv::Mat::Mat()
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:67:8: note:   candidate expects 0 arguments, 2 provided
+18:50:14 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+In file included from ..\src\main_desktop.cpp:11:0:
+..\src\/cartoon.h: In static member function 'static void Cartoon::cartoonifyImage(cv::Mat, cv::Mat)':
+..\src\/cartoon.h:35:38: error: no matching function for call to 'cv::Mat::Mat(cv::Mat::MSize&, int)'
+..\src\/cartoon.h:35:38: note: candidates are:
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1731:14: note: cv::Mat::Mat(const cv::gpu::GpuMat&)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1731:14: note:   candidate expects 1 argument, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1728:37: note: template<class _Tp> cv::Mat::Mat(const cv::MatCommaInitializer_<_Tp>&)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1726:37: note: template<class _Tp> cv::Mat::Mat(const cv::Point3_<_Tp>&, bool)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1724:37: note: template<class _Tp> cv::Mat::Mat(const cv::Point_<_Tp>&, bool)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1722:51: note: template<class _Tp, int m, int n> cv::Mat::Mat(const cv::Matx<_Tp, m, n>&, bool)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1720:44: note: template<class _Tp, int n> cv::Mat::Mat(const cv::Vec<_Tp, cn>&, bool)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1718:37: note: template<class _Tp> cv::Mat::Mat(const std::vector<_Tp>&, bool)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1716:5: note: cv::Mat::Mat(const IplImage*, bool)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1716:5: note:   no known conversion for argument 1 from 'cv::Mat::MSize' to 'const IplImage* {aka const _IplImage*}'
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1714:5: note: cv::Mat::Mat(const CvMatND*, bool)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1714:5: note:   no known conversion for argument 1 from 'cv::Mat::MSize' to 'const CvMatND*'
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1712:5: note: cv::Mat::Mat(const CvMat*, bool)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1712:5: note:   no known conversion for argument 1 from 'cv::Mat::MSize' to 'const CvMat*'
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1710:5: note: cv::Mat::Mat(const cv::Mat&, const cv::Range*)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1710:5: note:   no known conversion for argument 1 from 'cv::Mat::MSize' to 'const cv::Mat&'
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1709:5: note: cv::Mat::Mat(const cv::Mat&, const Rect&)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1709:5: note:   no known conversion for argument 1 from 'cv::Mat::MSize' to 'const cv::Mat&'
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1708:5: note: cv::Mat::Mat(const cv::Mat&, const cv::Range&, const cv::Range&)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1708:5: note:   no known conversion for argument 1 from 'cv::Mat::MSize' to 'const cv::Mat&'
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1705:5: note: cv::Mat::Mat(int, const int*, int, void*, const size_t*)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:1705:5: note:   candidate expects 5 arguments, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:151:8: note: cv::Mat::Mat(cv::Size, int, void*, size_t)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:151:8: note:   candidate expects 4 arguments, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:129:8: note: cv::Mat::Mat(int, int, int, void*, size_t)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:129:8: note:   candidate expects 5 arguments, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:111:8: note: cv::Mat::Mat(const cv::Mat&)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:111:8: note:   candidate expects 1 argument, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:104:8: note: cv::Mat::Mat(int, const int*, int, const Scalar&)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:104:8: note:   candidate expects 4 arguments, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:98:8: note: cv::Mat::Mat(int, const int*, int)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:98:8: note:   candidate expects 3 arguments, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:91:8: note: cv::Mat::Mat(cv::Size, int, const Scalar&)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:91:8: note:   candidate expects 3 arguments, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:78:8: note: cv::Mat::Mat(int, int, int, const Scalar&)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:78:8: note:   candidate expects 4 arguments, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:85:8: note: cv::Mat::Mat(cv::Size, int)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:85:8: note:   no known conversion for argument 1 from 'cv::Mat::MSize' to 'cv::Size'
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:72:8: note: cv::Mat::Mat(int, int, int)
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:72:8: note:   candidate expects 3 arguments, 2 provided
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:67:8: note: cv::Mat::Mat()
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/mat.hpp:67:8: note:   candidate expects 0 arguments, 2 provided
+Info: Nothing to build for test
+18:50:53 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+Info: Nothing to build for Cartoonifier_desktop
+Info: Nothing to build for Cartoonifier_desktop
+Info: Nothing to build for test
+19:28:41 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+Info: Nothing to build for Cartoonifier_desktop
+19:30:18 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+Info: Nothing to build for Cartoonifier_desktop
+Info: Nothing to build for test
+Info: Nothing to build for Cartoonifier_desktop
+19:31:12 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+Info: Nothing to build for Cartoonifier_desktop
+19:32:39 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+Info: Nothing to build for Cartoonifier_desktop
+19:33:33 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+Info: Nothing to build for Cartoonifier_desktop
+19:36:12 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+Info: Nothing to build for Cartoonifier_desktop
+19:37:57 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+Info: Nothing to build for Cartoonifier_desktop
+19:38:58 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+Info: Nothing to build for Cartoonifier_desktop
+19:39:56 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+Info: Nothing to build for Cartoonifier_desktop
+19:40:41 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+Info: Nothing to build for Cartoonifier_desktop
+19:41:24 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+Info: Nothing to build for Cartoonifier_desktop
+19:42:16 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+Info: Nothing to build for Cartoonifier_desktop
+19:44:14 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+Info: Nothing to build for Cartoonifier_desktop
+19:45:11 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+19:45:22 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+19:46:05 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+Info: Nothing to build for Cartoonifier_desktop
+19:46:53 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+Info: Nothing to build for Cartoonifier_desktop
+19:47:15 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+19:54:33 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+In file included from ..\src\main_desktop.cpp:11:0:
+..\src\/cartoon.h: In static member function 'static cv::Mat& Cartoon::cartoonifyImage(cv::Mat&)':
+..\src\/cartoon.h:45:18: error: invalid initialization of non-const reference of type 'cv::Mat&' from an rvalue of type 'cv::Mat'
+..\src\/cartoon.h:46:2: warning: control reaches end of non-void function [-Wreturn-type]
+19:55:04 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+In file included from ..\src\main_desktop.cpp:11:0:
+..\src\/cartoon.h: In static member function 'static cv::Mat& Cartoon::cartoonifyImage(cv::Mat&)':
+..\src\/cartoon.h:45:19: error: taking address of temporary [-fpermissive]
+..\src\/cartoon.h:45:19: error: invalid initialization of non-const reference of type 'cv::Mat&' from an rvalue of type 'cv::Mat*'
+..\src\/cartoon.h:46:2: warning: control reaches end of non-void function [-Wreturn-type]
+Info: Nothing to build for test
+19:55:21 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+In file included from ..\src\main_desktop.cpp:11:0:
+..\src\/cartoon.h: In static member function 'static cv::Mat& Cartoon::cartoonifyImage(cv::Mat&)':
+..\src\/cartoon.h:45:19: error: taking address of temporary [-fpermissive]
+..\src\/cartoon.h:45:19: error: invalid initialization of non-const reference of type 'cv::Mat&' from an rvalue of type 'cv::Mat*'
+..\src\/cartoon.h:46:2: warning: control reaches end of non-void function [-Wreturn-type]
+Info: Nothing to build for test
+19:55:50 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+In file included from ..\src\main_desktop.cpp:11:0:
+..\src\/cartoon.h: In static member function 'static cv::Mat& Cartoon::cartoonifyImage(cv::Mat&)':
+..\src\/cartoon.h:45:7: warning: reference to local variable 'result' returned [enabled by default]
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+Info: Nothing to build for Cartoonifier_desktop
+19:56:52 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+Info: Nothing to build for Cartoonifier_desktop
+19:57:44 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+20:07:44 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+20:14:25 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+20:14:53 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+20:15:10 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+20:16:31 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+In file included from ..\src\main_desktop.cpp:11:0:
+..\src\/cartoon.h:18:38: error: ISO C++ forbids initialization of member 'MEDIAN_BLUR_FILTER_SIZE' [-fpermissive]
+..\src\/cartoon.h:18:38: error: making 'MEDIAN_BLUR_FILTER_SIZE' static [-fpermissive]
+..\src\/cartoon.h:19:36: error: ISO C++ forbids initialization of member 'LAPLACIAN_FILTER_SIZE' [-fpermissive]
+..\src\/cartoon.h:19:36: error: making 'LAPLACIAN_FILTER_SIZE' static [-fpermissive]
+..\src\/cartoon.h:20:30: error: ISO C++ forbids initialization of member 'EDGES_THRESHOLD' [-fpermissive]
+..\src\/cartoon.h:20:30: error: making 'EDGES_THRESHOLD' static [-fpermissive]
+20:16:57 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+In file included from ..\src\main_desktop.cpp:11:0:
+..\src\/cartoon.h:18:38: error: ISO C++ forbids initialization of member 'MEDIAN_BLUR_FILTER_SIZE' [-fpermissive]
+..\src\/cartoon.h:18:38: error: making 'MEDIAN_BLUR_FILTER_SIZE' static [-fpermissive]
+..\src\/cartoon.h:19:36: error: ISO C++ forbids initialization of member 'LAPLACIAN_FILTER_SIZE' [-fpermissive]
+..\src\/cartoon.h:19:36: error: making 'LAPLACIAN_FILTER_SIZE' static [-fpermissive]
+..\src\/cartoon.h:20:30: error: ISO C++ forbids initialization of member 'EDGES_THRESHOLD' [-fpermissive]
+..\src\/cartoon.h:20:30: error: making 'EDGES_THRESHOLD' static [-fpermissive]
+Info: Nothing to build for test
+20:17:04 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+In file included from ..\src\main_desktop.cpp:11:0:
+..\src\/cartoon.h:18:38: error: ISO C++ forbids initialization of member 'MEDIAN_BLUR_FILTER_SIZE' [-fpermissive]
+..\src\/cartoon.h:18:38: error: making 'MEDIAN_BLUR_FILTER_SIZE' static [-fpermissive]
+..\src\/cartoon.h:19:36: error: ISO C++ forbids initialization of member 'LAPLACIAN_FILTER_SIZE' [-fpermissive]
+..\src\/cartoon.h:19:36: error: making 'LAPLACIAN_FILTER_SIZE' static [-fpermissive]
+..\src\/cartoon.h:20:30: error: ISO C++ forbids initialization of member 'EDGES_THRESHOLD' [-fpermissive]
+..\src\/cartoon.h:20:30: error: making 'EDGES_THRESHOLD' static [-fpermissive]
+Info: Nothing to build for test
+20:20:13 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+20:20:30 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+20:20:51 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+20:21:07 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+20:21:59 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+20:23:39 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+20:47:43 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+20:49:25 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+Info: Nothing to build for Cartoonifier_desktop
+Info: Nothing to build for Cartoonifier_desktop
+20:50:52 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+20:51:13 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+20:52:03 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+20:52:19 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+20:52:59 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+20:53:57 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+21:02:49 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+21:03:12 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+21:03:45 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+21:05:28 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+21:06:22 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+21:09:59 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+21:10:48 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+18:26:47 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+In file included from ..\src\main_desktop.cpp:11:0:
+..\src\/cartoon.h:59:3: error: stray '\226' in program
+..\src\/cartoon.h:62:3: error: stray '\226' in program
+..\src\/cartoon.h:68:3: error: stray '\226' in program
+..\src\/cartoon.h: In static member function 'static void Cartoon::drawFace(cv::Size)':
+..\src\/cartoon.h:59:30: error: 'sw' was not declared in this scope
+..\src\/cartoon.h:59:43: error: 'sh' was not declared in this scope
+..\src\/cartoon.h:57:7: warning: unused variable 'eyeYshift' [-Wunused-variable]
+Info: Nothing to build for test
+18:28:26 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+In file included from ..\src\main_desktop.cpp:11:0:
+..\src\/cartoon.h:59:3: error: stray '\226' in program
+..\src\/cartoon.h:62:3: error: stray '\226' in program
+..\src\/cartoon.h:68:3: error: stray '\226' in program
+..\src\/cartoon.h: In static member function 'static void Cartoon::drawFace(cv::Size)':
+..\src\/cartoon.h:59:29: error: expected primary-expression before '(' token
+..\src\/cartoon.h:59:50: error: expected ')' before 'eyeY'
+..\src\/cartoon.h:62:29: error: expected primary-expression before '(' token
+..\src\/cartoon.h:62:57: error: expected ')' before 'eyeYshift'
+..\src\/cartoon.h:68:29: error: expected primary-expression before '(' token
+..\src\/cartoon.h:68:57: error: expected ')' before 'eyeYshift'
+..\src\/cartoon.h:57:7: warning: unused variable 'eyeYshift' [-Wunused-variable]
+Info: Nothing to build for test
+18:53:57 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+In file included from ..\src\main_desktop.cpp:11:0:
+..\src\/cartoon.h: In static member function 'static void Cartoon::drawFace(cv::Size)':
+..\src\/cartoon.h:68:56: error: 'eyeYShift' was not declared in this scope
+..\src\/cartoon.h:57:7: warning: unused variable 'eyeYshift' [-Wunused-variable]
+Info: Nothing to build for test
+18:54:46 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+19:23:36 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+In file included from ..\src\main_desktop.cpp:11:0:
+..\src\/cartoon.h: In static member function 'static void Cartoon::drawFace(cv::Mat&)':
+..\src\/cartoon.h:84:17: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+19:24:15 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+Info: Nothing to build for Cartoonifier_desktop
+19:44:12 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for Cartoonifier_desktop
+Info: Nothing to build for Cartoonifier_desktop
+12:17:31 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+Info: Nothing to build for Cartoonifier_desktop
+12:20:29 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+..\src\main_desktop.cpp: In function 'int main(int, char**)':
+..\src\main_desktop.cpp:23:2: error: expected ';' before 'if'
+Info: Nothing to build for test
+12:20:43 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+12:21:24 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+..\src\main_desktop.cpp: In function 'int main(int, char**)':
+..\src\main_desktop.cpp:38:4: error: break statement not within loop or switch
+..\src\main_desktop.cpp:59:4: error: break statement not within loop or switch
+Info: Nothing to build for test
+12:21:46 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+12:22:41 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for test
+23:17:12 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+In file included from ..\src\main_desktop.cpp:11:0:
+..\src\/cartoon.h: In static member function 'static void Cartoon::fillColor(cv::Mat&)':
+..\src\/cartoon.h:146:63: error: invalid initialization of reference of type 'cv::InputArray {aka const cv::_InputArray&}' from expression of type 'CvScalar'
+C:\Dropbox\devtools\opencv\build\include/opencv2/core/core.hpp:2132:19: error: in passing argument 2 of 'void cv::add(cv::InputArray, cv::InputArray, cv::OutputArray, cv::InputArray, int)'
+Info: Nothing to build for test
+23:23:09 **** Incremental Build of configuration Debug for project Cartoonifier_desktop ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Dropbox\\devtools\\opencv\\build\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main_desktop.o" "..\\src\\main_desktop.cpp" 
+In file included from ..\src\main_desktop.cpp:11:0:
+..\src\/cartoon.h: In static member function 'static void Cartoon::fillColor(cv::Mat&)':
+..\src\/cartoon.h:143:7: warning: unused variable 'Red' [-Wunused-variable]
+..\src\/cartoon.h:144:7: warning: unused variable 'Green' [-Wunused-variable]
+..\src\/cartoon.h:145:7: warning: unused variable 'Blue' [-Wunused-variable]
+g++ "-LC:\\Dropbox\\devtools\\opencv\\build\\x86\\mingw\\lib" -o Cartoonifier_desktop.exe "src\\main_desktop.o" -lopencv_core246 -lopencv_highgui246 -lopencv_imgproc246 
+Info: Nothing to build for Cartoonifier_desktop
+Info: Nothing to build for test
+18:42:41 **** Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"\\ndk-build.cmd\"" 
+Cannot run program ""\ndk-build.cmd"": Launching failed
+
+Error: Program ""\ndk-build.cmd"" not found in PATH
+PATH=[C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/lib/i386;C:\Program Files (x86)\PC Connectivity Solution\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\RA2HP\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\MATLAB\MATLAB Compiler Runtime\v713\runtime\win32;C:\Program Files (x86)\Apache Software Foundation\Tomcat 6.0\bin;C:\Copy\devtools\opencv\build\x86\vc10\bin;C:\Copy\devtools\opencv\build\x86\mingw\bin;C:\Copy\devtools\CMake2.8\bin;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Git\cmd;C:\Python27;C:\Program Files (x86)\Java\jdk1.7.0_25\bin;C:\Copy\devtools\eclipse_x64;C:\Copy\devtools\process monitor;C:\Copy\devtools\processing-2.0b7;C:\Copy\devtools\samiam;C:\Copy\devtools\sqlite-shell-win32-x86-3071700;C:\Copy\devtools;C:\Dropbox\Downloads\Softs\PortableSofts\uTorrent Portable;C:\Dropbox\Downloads\Softs\PortableSofts\JkDefragPortable;;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin;C:\Program Files\nodejs;C:\Copy\devtools\MinGW\bin;C:\Copy\devtools\android-ndk-r9; ;C:\Windows\system32;]
+18:43:03 **** Auto Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"\\ndk-build.cmd\"" 
+Cannot run program ""\ndk-build.cmd"": Launching failed
+
+Error: Program ""\ndk-build.cmd"" not found in PATH
+PATH=[C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/lib/i386;C:\Program Files (x86)\PC Connectivity Solution\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\RA2HP\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\MATLAB\MATLAB Compiler Runtime\v713\runtime\win32;C:\Program Files (x86)\Apache Software Foundation\Tomcat 6.0\bin;C:\Copy\devtools\opencv\build\x86\vc10\bin;C:\Copy\devtools\opencv\build\x86\mingw\bin;C:\Copy\devtools\CMake2.8\bin;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Git\cmd;C:\Python27;C:\Program Files (x86)\Java\jdk1.7.0_25\bin;C:\Copy\devtools\eclipse_x64;C:\Copy\devtools\process monitor;C:\Copy\devtools\processing-2.0b7;C:\Copy\devtools\samiam;C:\Copy\devtools\sqlite-shell-win32-x86-3071700;C:\Copy\devtools;C:\Dropbox\Downloads\Softs\PortableSofts\uTorrent Portable;C:\Dropbox\Downloads\Softs\PortableSofts\JkDefragPortable;;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin;C:\Program Files\nodejs;C:\Copy\devtools\MinGW\bin;C:\Copy\devtools\android-ndk-r9; ;C:\Windows\system32;]
+18:43:10 **** Auto Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"\\ndk-build.cmd\"" 
+Cannot run program ""\ndk-build.cmd"": Launching failed
+
+Error: Program ""\ndk-build.cmd"" not found in PATH
+PATH=[C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/lib/i386;C:\Program Files (x86)\PC Connectivity Solution\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\RA2HP\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\MATLAB\MATLAB Compiler Runtime\v713\runtime\win32;C:\Program Files (x86)\Apache Software Foundation\Tomcat 6.0\bin;C:\Copy\devtools\opencv\build\x86\vc10\bin;C:\Copy\devtools\opencv\build\x86\mingw\bin;C:\Copy\devtools\CMake2.8\bin;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Git\cmd;C:\Python27;C:\Program Files (x86)\Java\jdk1.7.0_25\bin;C:\Copy\devtools\eclipse_x64;C:\Copy\devtools\process monitor;C:\Copy\devtools\processing-2.0b7;C:\Copy\devtools\samiam;C:\Copy\devtools\sqlite-shell-win32-x86-3071700;C:\Copy\devtools;C:\Dropbox\Downloads\Softs\PortableSofts\uTorrent Portable;C:\Dropbox\Downloads\Softs\PortableSofts\JkDefragPortable;;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin;C:\Program Files\nodejs;C:\Copy\devtools\MinGW\bin;C:\Copy\devtools\android-ndk-r9; ;C:\Windows\system32;]
+18:43:13 **** Auto Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"\\ndk-build.cmd\"" 
+Cannot run program ""\ndk-build.cmd"": Launching failed
+
+Error: Program ""\ndk-build.cmd"" not found in PATH
+PATH=[C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/lib/i386;C:\Program Files (x86)\PC Connectivity Solution\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\RA2HP\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\MATLAB\MATLAB Compiler Runtime\v713\runtime\win32;C:\Program Files (x86)\Apache Software Foundation\Tomcat 6.0\bin;C:\Copy\devtools\opencv\build\x86\vc10\bin;C:\Copy\devtools\opencv\build\x86\mingw\bin;C:\Copy\devtools\CMake2.8\bin;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Git\cmd;C:\Python27;C:\Program Files (x86)\Java\jdk1.7.0_25\bin;C:\Copy\devtools\eclipse_x64;C:\Copy\devtools\process monitor;C:\Copy\devtools\processing-2.0b7;C:\Copy\devtools\samiam;C:\Copy\devtools\sqlite-shell-win32-x86-3071700;C:\Copy\devtools;C:\Dropbox\Downloads\Softs\PortableSofts\uTorrent Portable;C:\Dropbox\Downloads\Softs\PortableSofts\JkDefragPortable;;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin;C:\Program Files\nodejs;C:\Copy\devtools\MinGW\bin;C:\Copy\devtools\android-ndk-r9; ;C:\Windows\system32;]
+18:44:08 **** Auto Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"\\ndk-build.cmd\"" 
+Cannot run program ""\ndk-build.cmd"": Launching failed
+
+Error: Program ""\ndk-build.cmd"" not found in PATH
+PATH=[C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/lib/i386;C:\Program Files (x86)\PC Connectivity Solution\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\RA2HP\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\MATLAB\MATLAB Compiler Runtime\v713\runtime\win32;C:\Program Files (x86)\Apache Software Foundation\Tomcat 6.0\bin;C:\Copy\devtools\opencv\build\x86\vc10\bin;C:\Copy\devtools\opencv\build\x86\mingw\bin;C:\Copy\devtools\CMake2.8\bin;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Git\cmd;C:\Python27;C:\Program Files (x86)\Java\jdk1.7.0_25\bin;C:\Copy\devtools\eclipse_x64;C:\Copy\devtools\process monitor;C:\Copy\devtools\processing-2.0b7;C:\Copy\devtools\samiam;C:\Copy\devtools\sqlite-shell-win32-x86-3071700;C:\Copy\devtools;C:\Dropbox\Downloads\Softs\PortableSofts\uTorrent Portable;C:\Dropbox\Downloads\Softs\PortableSofts\JkDefragPortable;;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin;C:\Program Files\nodejs;C:\Copy\devtools\MinGW\bin;C:\Copy\devtools\android-ndk-r9; ;C:\Windows\system32;]
+18:46:16 **** Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"\\ndk-build.cmd\"" 
+Cannot run program ""\ndk-build.cmd"": Launching failed
+
+Error: Program ""\ndk-build.cmd"" not found in PATH
+PATH=[C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/lib/i386;C:\Program Files (x86)\PC Connectivity Solution\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\RA2HP\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\MATLAB\MATLAB Compiler Runtime\v713\runtime\win32;C:\Program Files (x86)\Apache Software Foundation\Tomcat 6.0\bin;C:\Copy\devtools\opencv\build\x86\vc10\bin;C:\Copy\devtools\opencv\build\x86\mingw\bin;C:\Copy\devtools\CMake2.8\bin;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Git\cmd;C:\Python27;C:\Program Files (x86)\Java\jdk1.7.0_25\bin;C:\Copy\devtools\eclipse_x86;C:\Copy\devtools\process monitor;C:\Copy\devtools\processing-2.0b7;C:\Copy\devtools\samiam;C:\Copy\devtools\sqlite-shell-win32-x86-3071700;C:\Copy\devtools;C:\Dropbox\Downloads\Softs\PortableSofts\uTorrent Portable;C:\Dropbox\Downloads\Softs\PortableSofts\JkDefragPortable;;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin;C:\Program Files\nodejs;C:\Copy\devtools\MinGW\bin;C:\Copy\devtools\android-ndk-r9;C:\Copy\devtools\eclipse_x86;]
+18:46:50 **** Auto Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"\\ndk-build.cmd\"" 
+Cannot run program ""\ndk-build.cmd"": Launching failed
+
+Error: Program ""\ndk-build.cmd"" not found in PATH
+PATH=[C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/lib/i386;C:\Program Files (x86)\PC Connectivity Solution\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\RA2HP\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\MATLAB\MATLAB Compiler Runtime\v713\runtime\win32;C:\Program Files (x86)\Apache Software Foundation\Tomcat 6.0\bin;C:\Copy\devtools\opencv\build\x86\vc10\bin;C:\Copy\devtools\opencv\build\x86\mingw\bin;C:\Copy\devtools\CMake2.8\bin;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Git\cmd;C:\Python27;C:\Program Files (x86)\Java\jdk1.7.0_25\bin;C:\Copy\devtools\eclipse_x86;C:\Copy\devtools\process monitor;C:\Copy\devtools\processing-2.0b7;C:\Copy\devtools\samiam;C:\Copy\devtools\sqlite-shell-win32-x86-3071700;C:\Copy\devtools;C:\Dropbox\Downloads\Softs\PortableSofts\uTorrent Portable;C:\Dropbox\Downloads\Softs\PortableSofts\JkDefragPortable;;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin;C:\Program Files\nodejs;C:\Copy\devtools\MinGW\bin;C:\Copy\devtools\android-ndk-r9;C:\Copy\devtools\eclipse_x86;]
+18:46:57 **** Auto Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"\\ndk-build.cmd\"" 
+Cannot run program ""\ndk-build.cmd"": Launching failed
+
+Error: Program ""\ndk-build.cmd"" not found in PATH
+PATH=[C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/lib/i386;C:\Program Files (x86)\PC Connectivity Solution\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\RA2HP\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\MATLAB\MATLAB Compiler Runtime\v713\runtime\win32;C:\Program Files (x86)\Apache Software Foundation\Tomcat 6.0\bin;C:\Copy\devtools\opencv\build\x86\vc10\bin;C:\Copy\devtools\opencv\build\x86\mingw\bin;C:\Copy\devtools\CMake2.8\bin;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Git\cmd;C:\Python27;C:\Program Files (x86)\Java\jdk1.7.0_25\bin;C:\Copy\devtools\eclipse_x86;C:\Copy\devtools\process monitor;C:\Copy\devtools\processing-2.0b7;C:\Copy\devtools\samiam;C:\Copy\devtools\sqlite-shell-win32-x86-3071700;C:\Copy\devtools;C:\Dropbox\Downloads\Softs\PortableSofts\uTorrent Portable;C:\Dropbox\Downloads\Softs\PortableSofts\JkDefragPortable;;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin;C:\Program Files\nodejs;C:\Copy\devtools\MinGW\bin;C:\Copy\devtools\android-ndk-r9;C:\Copy\devtools\eclipse_x86;]
+18:50:52 **** Auto Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"\\ndk-build.cmd\"" 
+Cannot run program ""\ndk-build.cmd"": Launching failed
+
+Error: Program ""\ndk-build.cmd"" not found in PATH
+PATH=[C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/lib/i386;C:\Program Files (x86)\PC Connectivity Solution\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\RA2HP\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\MATLAB\MATLAB Compiler Runtime\v713\runtime\win32;C:\Program Files (x86)\Apache Software Foundation\Tomcat 6.0\bin;C:\Copy\devtools\opencv\build\x86\vc10\bin;C:\Copy\devtools\opencv\build\x86\mingw\bin;C:\Copy\devtools\CMake2.8\bin;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Git\cmd;C:\Python27;C:\Program Files (x86)\Java\jdk1.7.0_25\bin;C:\Copy\devtools\eclipse_x86;C:\Copy\devtools\process monitor;C:\Copy\devtools\processing-2.0b7;C:\Copy\devtools\samiam;C:\Copy\devtools\sqlite-shell-win32-x86-3071700;C:\Copy\devtools;C:\Dropbox\Downloads\Softs\PortableSofts\uTorrent Portable;C:\Dropbox\Downloads\Softs\PortableSofts\JkDefragPortable;;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin;C:\Program Files\nodejs;C:\Copy\devtools\MinGW\bin;C:\Copy\devtools\android-ndk-r9;C:\Copy\devtools\eclipse_x86;]
+18:50:53 **** Auto Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"\\ndk-build.cmd\"" 
+Cannot run program ""\ndk-build.cmd"": Launching failed
+
+Error: Program ""\ndk-build.cmd"" not found in PATH
+PATH=[C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/lib/i386;C:\Program Files (x86)\PC Connectivity Solution\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\RA2HP\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\MATLAB\MATLAB Compiler Runtime\v713\runtime\win32;C:\Program Files (x86)\Apache Software Foundation\Tomcat 6.0\bin;C:\Copy\devtools\opencv\build\x86\vc10\bin;C:\Copy\devtools\opencv\build\x86\mingw\bin;C:\Copy\devtools\CMake2.8\bin;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Git\cmd;C:\Python27;C:\Program Files (x86)\Java\jdk1.7.0_25\bin;C:\Copy\devtools\eclipse_x86;C:\Copy\devtools\process monitor;C:\Copy\devtools\processing-2.0b7;C:\Copy\devtools\samiam;C:\Copy\devtools\sqlite-shell-win32-x86-3071700;C:\Copy\devtools;C:\Dropbox\Downloads\Softs\PortableSofts\uTorrent Portable;C:\Dropbox\Downloads\Softs\PortableSofts\JkDefragPortable;;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin;C:\Program Files\nodejs;C:\Copy\devtools\MinGW\bin;C:\Copy\devtools\android-ndk-r9;C:\Copy\devtools\eclipse_x86;]
+18:51:06 **** Auto Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"\\ndk-build.cmd\"" 
+Cannot run program ""\ndk-build.cmd"": Launching failed
+
+Error: Program ""\ndk-build.cmd"" not found in PATH
+PATH=[C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/lib/i386;C:\Program Files (x86)\PC Connectivity Solution\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\RA2HP\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\MATLAB\MATLAB Compiler Runtime\v713\runtime\win32;C:\Program Files (x86)\Apache Software Foundation\Tomcat 6.0\bin;C:\Copy\devtools\opencv\build\x86\vc10\bin;C:\Copy\devtools\opencv\build\x86\mingw\bin;C:\Copy\devtools\CMake2.8\bin;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Git\cmd;C:\Python27;C:\Program Files (x86)\Java\jdk1.7.0_25\bin;C:\Copy\devtools\eclipse_x86;C:\Copy\devtools\process monitor;C:\Copy\devtools\processing-2.0b7;C:\Copy\devtools\samiam;C:\Copy\devtools\sqlite-shell-win32-x86-3071700;C:\Copy\devtools;C:\Dropbox\Downloads\Softs\PortableSofts\uTorrent Portable;C:\Dropbox\Downloads\Softs\PortableSofts\JkDefragPortable;;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin;C:\Program Files\nodejs;C:\Copy\devtools\MinGW\bin;C:\Copy\devtools\android-ndk-r9;C:\Copy\devtools\eclipse_x86;]
+18:51:52 **** Auto Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"\\ndk-build.cmd\"" 
+Cannot run program ""\ndk-build.cmd"": Launching failed
+
+Error: Program ""\ndk-build.cmd"" not found in PATH
+PATH=[C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/lib/i386;C:\Program Files (x86)\PC Connectivity Solution\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\RA2HP\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\MATLAB\MATLAB Compiler Runtime\v713\runtime\win32;C:\Program Files (x86)\Apache Software Foundation\Tomcat 6.0\bin;C:\Copy\devtools\opencv\build\x86\vc10\bin;C:\Copy\devtools\opencv\build\x86\mingw\bin;C:\Copy\devtools\CMake2.8\bin;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Git\cmd;C:\Python27;C:\Program Files (x86)\Java\jdk1.7.0_25\bin;C:\Copy\devtools\eclipse_x86;C:\Copy\devtools\process monitor;C:\Copy\devtools\processing-2.0b7;C:\Copy\devtools\samiam;C:\Copy\devtools\sqlite-shell-win32-x86-3071700;C:\Copy\devtools;C:\Dropbox\Downloads\Softs\PortableSofts\uTorrent Portable;C:\Dropbox\Downloads\Softs\PortableSofts\JkDefragPortable;;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin;C:\Program Files\nodejs;C:\Copy\devtools\MinGW\bin;C:\Copy\devtools\android-ndk-r9;C:\Copy\devtools\eclipse_x86;]
+18:51:54 **** Auto Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"\\ndk-build.cmd\"" 
+Cannot run program ""\ndk-build.cmd"": Launching failed
+
+Error: Program ""\ndk-build.cmd"" not found in PATH
+PATH=[C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/lib/i386;C:\Program Files (x86)\PC Connectivity Solution\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\RA2HP\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\MATLAB\MATLAB Compiler Runtime\v713\runtime\win32;C:\Program Files (x86)\Apache Software Foundation\Tomcat 6.0\bin;C:\Copy\devtools\opencv\build\x86\vc10\bin;C:\Copy\devtools\opencv\build\x86\mingw\bin;C:\Copy\devtools\CMake2.8\bin;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Git\cmd;C:\Python27;C:\Program Files (x86)\Java\jdk1.7.0_25\bin;C:\Copy\devtools\eclipse_x86;C:\Copy\devtools\process monitor;C:\Copy\devtools\processing-2.0b7;C:\Copy\devtools\samiam;C:\Copy\devtools\sqlite-shell-win32-x86-3071700;C:\Copy\devtools;C:\Dropbox\Downloads\Softs\PortableSofts\uTorrent Portable;C:\Dropbox\Downloads\Softs\PortableSofts\JkDefragPortable;;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin;C:\Program Files\nodejs;C:\Copy\devtools\MinGW\bin;C:\Copy\devtools\android-ndk-r9;C:\Copy\devtools\eclipse_x86;]
+19:11:03 **** Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"\\ndk-build.cmd\"" 
+Cannot run program ""\ndk-build.cmd"": Launching failed
+
+Error: Program ""\ndk-build.cmd"" not found in PATH
+PATH=[C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/lib/i386;C:\Program Files (x86)\PC Connectivity Solution\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\RA2HP\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\MATLAB\MATLAB Compiler Runtime\v713\runtime\win32;C:\Program Files (x86)\Apache Software Foundation\Tomcat 6.0\bin;C:\Copy\devtools\opencv\build\x86\vc10\bin;C:\Copy\devtools\opencv\build\x86\mingw\bin;C:\Copy\devtools\CMake2.8\bin;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Git\cmd;C:\Python27;C:\Program Files (x86)\Java\jdk1.7.0_25\bin;C:\Copy\devtools\eclipse_x86;C:\Copy\devtools\process monitor;C:\Copy\devtools\processing-2.0b7;C:\Copy\devtools\samiam;C:\Copy\devtools\sqlite-shell-win32-x86-3071700;C:\Copy\devtools;C:\Dropbox\Downloads\Softs\PortableSofts\uTorrent Portable;C:\Dropbox\Downloads\Softs\PortableSofts\JkDefragPortable;;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin;C:\Program Files\nodejs;C:\Copy\devtools\MinGW\bin;C:\Copy\devtools\android-ndk-r9;C:\Copy\devtools\eclipse_x86;]
+19:12:55 **** Auto Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"\\ndk-build.cmd\"" 
+Cannot run program ""\ndk-build.cmd"": Launching failed
+
+Error: Program ""\ndk-build.cmd"" not found in PATH
+PATH=[C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/lib/i386;C:\Program Files (x86)\PC Connectivity Solution\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\RA2HP\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\MATLAB\MATLAB Compiler Runtime\v713\runtime\win32;C:\Program Files (x86)\Apache Software Foundation\Tomcat 6.0\bin;C:\Copy\devtools\opencv\build\x86\vc10\bin;C:\Copy\devtools\opencv\build\x86\mingw\bin;C:\Copy\devtools\CMake2.8\bin;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Git\cmd;C:\Python27;C:\Program Files (x86)\Java\jdk1.7.0_25\bin;C:\Copy\devtools\eclipse_x86;C:\Copy\devtools\process monitor;C:\Copy\devtools\processing-2.0b7;C:\Copy\devtools\samiam;C:\Copy\devtools\sqlite-shell-win32-x86-3071700;C:\Copy\devtools;C:\Dropbox\Downloads\Softs\PortableSofts\uTorrent Portable;C:\Dropbox\Downloads\Softs\PortableSofts\JkDefragPortable;;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin;C:\Program Files\nodejs;C:\Copy\devtools\MinGW\bin;C:\Copy\devtools\android-ndk-r9;C:\Copy\devtools\eclipse_x86;]
+19:13:00 **** Auto Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"\\ndk-build.cmd\"" 
+Cannot run program ""\ndk-build.cmd"": Launching failed
+
+Error: Program ""\ndk-build.cmd"" not found in PATH
+PATH=[C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/lib/i386;C:\Program Files (x86)\PC Connectivity Solution\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\RA2HP\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\MATLAB\MATLAB Compiler Runtime\v713\runtime\win32;C:\Program Files (x86)\Apache Software Foundation\Tomcat 6.0\bin;C:\Copy\devtools\opencv\build\x86\vc10\bin;C:\Copy\devtools\opencv\build\x86\mingw\bin;C:\Copy\devtools\CMake2.8\bin;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Git\cmd;C:\Python27;C:\Program Files (x86)\Java\jdk1.7.0_25\bin;C:\Copy\devtools\eclipse_x86;C:\Copy\devtools\process monitor;C:\Copy\devtools\processing-2.0b7;C:\Copy\devtools\samiam;C:\Copy\devtools\sqlite-shell-win32-x86-3071700;C:\Copy\devtools;C:\Dropbox\Downloads\Softs\PortableSofts\uTorrent Portable;C:\Dropbox\Downloads\Softs\PortableSofts\JkDefragPortable;;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin;C:\Program Files\nodejs;C:\Copy\devtools\MinGW\bin;C:\Copy\devtools\android-ndk-r9;C:\Copy\devtools\eclipse_x86;]
+19:13:01 **** Auto Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"\\ndk-build.cmd\"" 
+Cannot run program ""\ndk-build.cmd"": Launching failed
+
+Error: Program ""\ndk-build.cmd"" not found in PATH
+PATH=[C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/lib/i386;C:\Program Files (x86)\PC Connectivity Solution\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\RA2HP\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\MATLAB\MATLAB Compiler Runtime\v713\runtime\win32;C:\Program Files (x86)\Apache Software Foundation\Tomcat 6.0\bin;C:\Copy\devtools\opencv\build\x86\vc10\bin;C:\Copy\devtools\opencv\build\x86\mingw\bin;C:\Copy\devtools\CMake2.8\bin;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Git\cmd;C:\Python27;C:\Program Files (x86)\Java\jdk1.7.0_25\bin;C:\Copy\devtools\eclipse_x86;C:\Copy\devtools\process monitor;C:\Copy\devtools\processing-2.0b7;C:\Copy\devtools\samiam;C:\Copy\devtools\sqlite-shell-win32-x86-3071700;C:\Copy\devtools;C:\Dropbox\Downloads\Softs\PortableSofts\uTorrent Portable;C:\Dropbox\Downloads\Softs\PortableSofts\JkDefragPortable;;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin;C:\Program Files\nodejs;C:\Copy\devtools\MinGW\bin;C:\Copy\devtools\android-ndk-r9;C:\Copy\devtools\eclipse_x86;]
+19:26:30 **** Auto Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"\\ndk-build.cmd\"" 
+Cannot run program ""\ndk-build.cmd"": Launching failed
+
+Error: Program ""\ndk-build.cmd"" not found in PATH
+PATH=[C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/lib/i386;C:\Program Files (x86)\PC Connectivity Solution\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\RA2HP\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\MATLAB\MATLAB Compiler Runtime\v713\runtime\win32;C:\Program Files (x86)\Apache Software Foundation\Tomcat 6.0\bin;C:\Copy\devtools\opencv\build\x86\vc10\bin;C:\Copy\devtools\opencv\build\x86\mingw\bin;C:\Copy\devtools\CMake2.8\bin;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Git\cmd;C:\Python27;C:\Program Files (x86)\Java\jdk1.7.0_25\bin;C:\Copy\devtools\eclipse_x86;C:\Copy\devtools\process monitor;C:\Copy\devtools\processing-2.0b7;C:\Copy\devtools\samiam;C:\Copy\devtools\sqlite-shell-win32-x86-3071700;C:\Copy\devtools;C:\Dropbox\Downloads\Softs\PortableSofts\uTorrent Portable;C:\Dropbox\Downloads\Softs\PortableSofts\JkDefragPortable;;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin;C:\Program Files\nodejs;C:\Copy\devtools\MinGW\bin;C:\Copy\devtools\android-ndk-r9;C:\Copy\devtools\eclipse_x86;]
+19:29:14 **** Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"\\ndk-build.cmd\"" 
+Cannot run program ""\ndk-build.cmd"": Launching failed
+
+Error: Program ""\ndk-build.cmd"" not found in PATH
+PATH=[C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/lib/i386;C:\Program Files (x86)\PC Connectivity Solution\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\RA2HP\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\MATLAB\MATLAB Compiler Runtime\v713\runtime\win32;C:\Program Files (x86)\Apache Software Foundation\Tomcat 6.0\bin;C:\Copy\devtools\opencv\build\x86\vc10\bin;C:\Copy\devtools\opencv\build\x86\mingw\bin;C:\Copy\devtools\CMake2.8\bin;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Git\cmd;C:\Python27;C:\Program Files (x86)\Java\jdk1.7.0_25\bin;C:\Copy\devtools\eclipse_x86;C:\Copy\devtools\process monitor;C:\Copy\devtools\processing-2.0b7;C:\Copy\devtools\samiam;C:\Copy\devtools\sqlite-shell-win32-x86-3071700;C:\Copy\devtools;C:\Dropbox\Downloads\Softs\PortableSofts\uTorrent Portable;C:\Dropbox\Downloads\Softs\PortableSofts\JkDefragPortable;;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin;C:\Program Files\nodejs;C:\Copy\devtools\MinGW\bin;C:\Copy\devtools\android-ndk-r9;C:\Copy\devtools\eclipse_x86;]
+19:29:34 **** Auto Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"\\ndk-build.cmd\"" 
+Cannot run program ""\ndk-build.cmd"": Launching failed
+
+Error: Program ""\ndk-build.cmd"" not found in PATH
+PATH=[C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/lib/i386;C:\Program Files (x86)\PC Connectivity Solution\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\RA2HP\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\MATLAB\MATLAB Compiler Runtime\v713\runtime\win32;C:\Program Files (x86)\Apache Software Foundation\Tomcat 6.0\bin;C:\Copy\devtools\opencv\build\x86\vc10\bin;C:\Copy\devtools\opencv\build\x86\mingw\bin;C:\Copy\devtools\CMake2.8\bin;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Git\cmd;C:\Python27;C:\Program Files (x86)\Java\jdk1.7.0_25\bin;C:\Copy\devtools\eclipse_x86;C:\Copy\devtools\process monitor;C:\Copy\devtools\processing-2.0b7;C:\Copy\devtools\samiam;C:\Copy\devtools\sqlite-shell-win32-x86-3071700;C:\Copy\devtools;C:\Dropbox\Downloads\Softs\PortableSofts\uTorrent Portable;C:\Dropbox\Downloads\Softs\PortableSofts\JkDefragPortable;;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin;C:\Program Files\nodejs;C:\Copy\devtools\MinGW\bin;C:\Copy\devtools\android-ndk-r9;C:\Copy\devtools\eclipse_x86;]
+19:31:04 **** Auto Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"\\ndk-build.cmd\"" 
+Cannot run program ""\ndk-build.cmd"": Launching failed
+
+Error: Program ""\ndk-build.cmd"" not found in PATH
+PATH=[C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/lib/i386;C:\Program Files (x86)\PC Connectivity Solution\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\RA2HP\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\MATLAB\MATLAB Compiler Runtime\v713\runtime\win32;C:\Program Files (x86)\Apache Software Foundation\Tomcat 6.0\bin;C:\Copy\devtools\opencv\build\x86\vc10\bin;C:\Copy\devtools\opencv\build\x86\mingw\bin;C:\Copy\devtools\CMake2.8\bin;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Git\cmd;C:\Python27;C:\Program Files (x86)\Java\jdk1.7.0_25\bin;C:\Copy\devtools\eclipse_x86;C:\Copy\devtools\process monitor;C:\Copy\devtools\processing-2.0b7;C:\Copy\devtools\samiam;C:\Copy\devtools\sqlite-shell-win32-x86-3071700;C:\Copy\devtools;C:\Dropbox\Downloads\Softs\PortableSofts\uTorrent Portable;C:\Dropbox\Downloads\Softs\PortableSofts\JkDefragPortable;;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin;C:\Program Files\nodejs;C:\Copy\devtools\MinGW\bin;C:\Copy\devtools\android-ndk-r9;C:\Copy\devtools\eclipse_x86;]
+19:33:01 **** Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"\\ndk-build.cmd\"" 
+Cannot run program ""\ndk-build.cmd"": Launching failed
+
+Error: Program ""\ndk-build.cmd"" not found in PATH
+PATH=[C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/lib/i386;C:\Program Files (x86)\PC Connectivity Solution\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\RA2HP\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\MATLAB\MATLAB Compiler Runtime\v713\runtime\win32;C:\Program Files (x86)\Apache Software Foundation\Tomcat 6.0\bin;C:\Copy\devtools\opencv\build\x86\vc10\bin;C:\Copy\devtools\opencv\build\x86\mingw\bin;C:\Copy\devtools\CMake2.8\bin;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Git\cmd;C:\Python27;C:\Program Files (x86)\Java\jdk1.7.0_25\bin;C:\Copy\devtools\eclipse_x86;C:\Copy\devtools\process monitor;C:\Copy\devtools\processing-2.0b7;C:\Copy\devtools\samiam;C:\Copy\devtools\sqlite-shell-win32-x86-3071700;C:\Copy\devtools;C:\Dropbox\Downloads\Softs\PortableSofts\uTorrent Portable;C:\Dropbox\Downloads\Softs\PortableSofts\JkDefragPortable;;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin;C:\Program Files\nodejs;C:\Copy\devtools\MinGW\bin;C:\Copy\devtools\android-ndk-r9;C:\Copy\devtools\eclipse_x86;]
+19:33:19 **** Auto Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"\\ndk-build.cmd\"" 
+Cannot run program ""\ndk-build.cmd"": Launching failed
+
+Error: Program ""\ndk-build.cmd"" not found in PATH
+PATH=[C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/lib/i386;C:\Program Files (x86)\PC Connectivity Solution\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\RA2HP\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\MATLAB\MATLAB Compiler Runtime\v713\runtime\win32;C:\Program Files (x86)\Apache Software Foundation\Tomcat 6.0\bin;C:\Copy\devtools\opencv\build\x86\vc10\bin;C:\Copy\devtools\opencv\build\x86\mingw\bin;C:\Copy\devtools\CMake2.8\bin;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Git\cmd;C:\Python27;C:\Program Files (x86)\Java\jdk1.7.0_25\bin;C:\Copy\devtools\eclipse_x86;C:\Copy\devtools\process monitor;C:\Copy\devtools\processing-2.0b7;C:\Copy\devtools\samiam;C:\Copy\devtools\sqlite-shell-win32-x86-3071700;C:\Copy\devtools;C:\Dropbox\Downloads\Softs\PortableSofts\uTorrent Portable;C:\Dropbox\Downloads\Softs\PortableSofts\JkDefragPortable;;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin;C:\Program Files\nodejs;C:\Copy\devtools\MinGW\bin;C:\Copy\devtools\android-ndk-r9;C:\Copy\devtools\eclipse_x86;]
+19:34:01 **** Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"\\ndk-build.cmd\"" 
+Cannot run program ""\ndk-build.cmd"": Launching failed
+
+Error: Program ""\ndk-build.cmd"" not found in PATH
+PATH=[C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/lib/i386;C:\Program Files (x86)\PC Connectivity Solution\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\RA2HP\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\MATLAB\MATLAB Compiler Runtime\v713\runtime\win32;C:\Program Files (x86)\Apache Software Foundation\Tomcat 6.0\bin;C:\Copy\devtools\opencv\build\x86\vc10\bin;C:\Copy\devtools\opencv\build\x86\mingw\bin;C:\Copy\devtools\CMake2.8\bin;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Git\cmd;C:\Python27;C:\Program Files (x86)\Java\jdk1.7.0_25\bin;C:\Copy\devtools\eclipse_x86;C:\Copy\devtools\process monitor;C:\Copy\devtools\processing-2.0b7;C:\Copy\devtools\samiam;C:\Copy\devtools\sqlite-shell-win32-x86-3071700;C:\Copy\devtools;C:\Dropbox\Downloads\Softs\PortableSofts\uTorrent Portable;C:\Dropbox\Downloads\Softs\PortableSofts\JkDefragPortable;;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin;C:\Program Files\nodejs;C:\Copy\devtools\MinGW\bin;C:\Copy\devtools\android-ndk-r9;C:\Copy\devtools\eclipse_x86;]
+19:35:11 **** Auto Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"\\ndk-build.cmd\"" 
+Cannot run program ""\ndk-build.cmd"": Launching failed
+
+Error: Program ""\ndk-build.cmd"" not found in PATH
+PATH=[C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.7.0_25/bin/../jre/lib/i386;C:\Program Files (x86)\PC Connectivity Solution\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Program Files\RA2HP\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\MATLAB\MATLAB Compiler Runtime\v713\runtime\win32;C:\Program Files (x86)\Apache Software Foundation\Tomcat 6.0\bin;C:\Copy\devtools\opencv\build\x86\vc10\bin;C:\Copy\devtools\opencv\build\x86\mingw\bin;C:\Copy\devtools\CMake2.8\bin;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Git\cmd;C:\Python27;C:\Program Files (x86)\Java\jdk1.7.0_25\bin;C:\Copy\devtools\eclipse_x86;C:\Copy\devtools\process monitor;C:\Copy\devtools\processing-2.0b7;C:\Copy\devtools\samiam;C:\Copy\devtools\sqlite-shell-win32-x86-3071700;C:\Copy\devtools;C:\Dropbox\Downloads\Softs\PortableSofts\uTorrent Portable;C:\Dropbox\Downloads\Softs\PortableSofts\JkDefragPortable;;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin;C:\Program Files\nodejs;C:\Copy\devtools\MinGW\bin;C:\Copy\devtools\android-ndk-r9;C:\Copy\devtools\eclipse_x86;]
+19:35:44 **** Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"C:\\Copy\\devtools\\android-ndk-r9\\ndk-build.cmd\"" 
+Android NDK: WARNING:jni/Android.mk:native_activity: non-system libraries in linker flags: -lopencv_java    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi-v7a/gdbserver
+Gdbsetup       : libs/armeabi-v7a/gdb.setup
+Install        : libnative_activity.so => libs/armeabi-v7a/libnative_activity.so
+19:36:36 **** Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"C:\\Copy\\devtools\\android-ndk-r9\\ndk-build.cmd\"" 
+Android NDK: WARNING:jni/Android.mk:native_activity: non-system libraries in linker flags: -lopencv_java    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi-v7a/gdbserver
+Gdbsetup       : libs/armeabi-v7a/gdb.setup
+Install        : libnative_activity.so => libs/armeabi-v7a/libnative_activity.so
+19:40:45 **** Auto Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"C:\\Copy\\devtools\\android-ndk-r9\\ndk-build.cmd\"" 
+Android NDK: WARNING:jni/Android.mk:native_activity: non-system libraries in linker flags: -lopencv_java    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi-v7a/gdbserver
+Gdbsetup       : libs/armeabi-v7a/gdb.setup
+Install        : libnative_activity.so => libs/armeabi-v7a/libnative_activity.so
+19:42:41 **** Auto Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"C:\\Copy\\devtools\\android-ndk-r9\\ndk-build.cmd\"" 
+Android NDK: WARNING:jni/Android.mk:native_activity: non-system libraries in linker flags: -lopencv_java    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi-v7a/gdbserver
+Gdbsetup       : libs/armeabi-v7a/gdb.setup
+Install        : libnative_activity.so => libs/armeabi-v7a/libnative_activity.so
+19:42:57 **** Auto Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"C:\\Copy\\devtools\\android-ndk-r9\\ndk-build.cmd\"" 
+Android NDK: WARNING:jni/Android.mk:native_activity: non-system libraries in linker flags: -lopencv_java    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi-v7a/gdbserver
+Gdbsetup       : libs/armeabi-v7a/gdb.setup
+Install        : libnative_activity.so => libs/armeabi-v7a/libnative_activity.so
+11:37:02 **** Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"C:\\Copy\\devtools\\android-ndk-r9\\ndk-build.cmd\"" 
+Android NDK: WARNING:jni/Android.mk:native_activity: non-system libraries in linker flags: -lopencv_java    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi-v7a/gdbserver
+Gdbsetup       : libs/armeabi-v7a/gdb.setup
+Install        : libnative_activity.so => libs/armeabi-v7a/libnative_activity.so
+11:39:30 **** Auto Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"C:\\Copy\\devtools\\android-ndk-r9\\ndk-build.cmd\"" 
+Android NDK: WARNING:jni/Android.mk:native_activity: non-system libraries in linker flags: -lopencv_java    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi-v7a/gdbserver
+Gdbsetup       : libs/armeabi-v7a/gdb.setup
+Install        : libnative_activity.so => libs/armeabi-v7a/libnative_activity.so
+11:41:59 **** Auto Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"C:\\Copy\\devtools\\android-ndk-r9\\ndk-build.cmd\"" 
+Android NDK: WARNING:jni/Android.mk:native_activity: non-system libraries in linker flags: -lopencv_java    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi-v7a/gdbserver
+Gdbsetup       : libs/armeabi-v7a/gdb.setup
+Install        : libnative_activity.so => libs/armeabi-v7a/libnative_activity.so

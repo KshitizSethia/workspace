@@ -1,0 +1,6 @@
+18:32:48 **** Auto Build of configuration Default for project OpenCV Sample - face-detection ****
+"\\ndk-build.cmd" 
+Cannot run program "\ndk-build.cmd": Launching failed
+
+18:32:48 Build Finished (took 495ms)
+

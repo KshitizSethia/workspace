@@ -1,0 +1,26 @@
+-- VERSION_4
+-- START DISKCACHE
+C:\Users\Kshitiz\Documents\Cloud\Copy\workspace\SMM\.metadata\.plugins\org.eclipse.core.resources\.projects\as4\com.python.pydev.analysis\v2_indexcache
+GradientDescent|1415307488253|C:\Users\Kshitiz\Documents\Cloud\Copy\workspace\SMM\as4\GradientDescent.py
+-- END DISKCACHE
+-- START DICTIONARY
+1
+1=GradientDescent
+-- END DICTIONARY
+-- START TREE 1
+11
+cal|1|calculate!10@
+com|1|comparer!11@
+fx1|1|fx1!11@
+fx2|1|fx2!11@
+lim|1|limits!11@
+mov|2|move_back!10@move_ahead!10@
+pre|1|precision!11@
+rat|2|ratio_complement!11@ratio!11@
+tem|1|temp!11@
+x1|1|x1!11@
+x2|1|x2!11@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

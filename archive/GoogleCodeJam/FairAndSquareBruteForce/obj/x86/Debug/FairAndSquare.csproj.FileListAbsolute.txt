@@ -1,0 +1,4 @@
+C:\Dropbox\workspace\GoogleCodeJam\FairAndSquare\bin\Debug\FairAndSquare.exe
+C:\Dropbox\workspace\GoogleCodeJam\FairAndSquare\bin\Debug\FairAndSquare.pdb
+C:\Dropbox\workspace\GoogleCodeJam\FairAndSquare\obj\x86\Debug\FairAndSquare.exe
+C:\Dropbox\workspace\GoogleCodeJam\FairAndSquare\obj\x86\Debug\FairAndSquare.pdb

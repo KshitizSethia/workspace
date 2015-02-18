@@ -1,0 +1,6 @@
+INDEX VERSION 1.126+C:\Copy\workspace\OpenCV\MasteringOpenCV\.metadata\.plugins\org.eclipse.jdt.core
+1031969898.index
+3851232909.index
+22171626.index
+177340606.index
+797160259.index

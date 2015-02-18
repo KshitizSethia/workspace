@@ -1,0 +1,9 @@
+C:\Dropbox\workspace\Algo2\KruskalUnionFind\Test.KruskalUnionFind\bin\Debug\Test.KruskalUnionFind.dll
+C:\Dropbox\workspace\Algo2\KruskalUnionFind\Test.KruskalUnionFind\bin\Debug\Test.KruskalUnionFind.pdb
+C:\Dropbox\workspace\Algo2\KruskalUnionFind\Test.KruskalUnionFind\bin\Debug\AlgoHelperLib.dll
+C:\Dropbox\workspace\Algo2\KruskalUnionFind\Test.KruskalUnionFind\bin\Debug\KruskalUnionFind.dll
+C:\Dropbox\workspace\Algo2\KruskalUnionFind\Test.KruskalUnionFind\bin\Debug\AlgoHelperLib.pdb
+C:\Dropbox\workspace\Algo2\KruskalUnionFind\Test.KruskalUnionFind\bin\Debug\KruskalUnionFind.pdb
+C:\Dropbox\workspace\Algo2\KruskalUnionFind\Test.KruskalUnionFind\obj\Debug\Test.KruskalUnionFind.csprojResolveAssemblyReference.cache
+C:\Dropbox\workspace\Algo2\KruskalUnionFind\Test.KruskalUnionFind\obj\Debug\Test.KruskalUnionFind.dll
+C:\Dropbox\workspace\Algo2\KruskalUnionFind\Test.KruskalUnionFind\obj\Debug\Test.KruskalUnionFind.pdb

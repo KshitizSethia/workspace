@@ -1,0 +1,86 @@
+V "GNAT Lib v4.8"
+M P W=b
+P SS ZX
+
+RN
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV SPARK
+
+U objmain%b		objmain.adb		703fcf64 NE OO SU
+Z ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+Z ada.text_io%s		a-textio.adb		a-textio.ali
+Z ada.text_io.integer_aux%s  a-tiinau.adb	a-tiinau.ali
+W ada.text_io.integer_io%s
+W child%s		child.adb		child.ali
+W object%s		object.adb		object.ali
+W text_io%s		text_io.ads		text_io.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20120716125141 10fcae55
+D a-finali.ads		20111121113555 52ecdc1b
+D a-ioexce.ads		20091130110856 8b9de6cd
+D a-stream.ads		20090409150019 2ca4ee37
+D a-tags.ads		20111212115430 6c0509d0
+D a-textio.ads		20130104124955 386df5d4
+D a-tiinau.ads		20090409150019 8114c8e4
+D a-tiinio.ads		20090409150019 aa04e5d6
+D a-tiinio.adb		20091130162119 df9cd7af
+D a-unccon.ads		20070406091342 f9eb8f06
+D child.ads		20140905122902 8fc03345
+D interfac.ads		20110906094621 129923ea
+D i-cstrea.ads		20130102105938 3286f6aa
+D object.ads		20140905122902 be41e9fc
+D objmain.adb		20140905122902 04683314
+D system.ads		20140815161547 56c86b23
+D s-crtl.ads		20130102105938 1ea48bce
+D s-exctab.ads		20090417131547 66e51330
+D s-ficobl.ads		20120709130952 55a71d43
+D s-finmas.ads		20111024091915 b95bb341
+D s-finroo.ads		20120426095924 4ff27390
+D s-parame.ads		20110830140625 b6e20cc0
+D s-pooglo.ads		20110804083314 542f33d0
+D s-secsta.ads		20110830140625 eea35a36
+D s-soflin.ads		20120515094619 24c8153c
+D s-stache.ads		20090417130712 596fc1b4
+D s-stalib.ads		20130104124955 f78bcf95
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-stopoo.ads		20111013103733 7b8fbeee
+D s-stratt.ads		20100909123135 aedef97e
+D s-traent.ads		20090417130712 5221ee41
+D s-unstyp.ads		20090409150019 6ae15c76
+D s-wchcon.ads		20090417130712 bfeb2e3d
+D text_io.ads		20070406091342 45d626c9
+X 7 a-textio.ads
+166U14*New_Line 16|26s20 28s20 29s30 32s21 34s21
+242U14*Put 16|29s4
+X 9 a-tiinio.ads
+45k21*Integer_IO 84e27 16|12r26
+X 12 child.ads
+5K9*Child 15e10 16|8w6 9r5
+7R9*B<15|4R9> 10e17 16|16r10
+12U14*SetY 16|31s4
+14U14*PutFields<15|10p14> 16|32s4 34s4
+X 15 object.ads
+2K9*Object 11e11 16|5w6 6r5
+4R9*A 7e17 16|15r9 18r33
+8U14*SetX 16|20R7 25s4 30s4
+10U14*PutFields 16|21R7 26s4 28s4
+X 16 objmain.adb
+11U11*ObjMain 11b11 36l5 36t12
+12K12 Int_Io[9|45] 13r8
+15r4 Obj{15|4R9} 25m9 26r14 27m8 27r8 28r14
+16r4 Obj2{12|7R9} 30m9 31m9 32r14 33m8 33r8 34r14
+18U14 Foo 18b14 18=18 22t7 27s4 33s4
+18c18 AnyObj<15|4R9> 20m12 21r17
+X 36 text_io.ads
+24K9*Text_IO=24:29 16|2w6 3r5
+

@@ -1,0 +1,82 @@
+/*
+ * cartoon.h
+ *
+ *  Created on: Jul 23, 2013
+ *      Author: sethiak
+ */
+
+#ifndef CARTOON_H_
+#define CARTOON_H_
+
+#include "opencv2/opencv.hpp"
+using namespace cv;
+
+class Cartoon
+{
+
+public:
+	static void cartoonifyImage(Mat& srcColor, Mat& destination)
+	{
+
+		Mat mask;
+		extractEdgeMask(srcColor, mask, 7, 5, 80, true);
+
+		Mat filtered;
+		repeatBilateralFilter(srcColor, filtered, 7);
+
+		// put mask on top of bigImg
+		//destination = Mat(bigImg);
+		filtered.copyTo(destination, mask);
+	}
+
+private:
+	static inline void extractEdgeMask(Mat&srcColor, Mat& mask,
+			int medianBlurFilterSize,
+			int laplacianFilterSize,
+			int edgeThreshold,
+			bool evilMode = false)
+	{
+		Mat gray(srcColor.size(), CV_8U);
+		cvtColor(srcColor, gray, CV_BGR2GRAY);
+		medianBlur(gray, gray, medianBlurFilterSize);
+
+		Mat edges, edges2;
+		if(evilMode)
+		{
+			Scharr(gray, edges, CV_8U, 1, 0);
+			Scharr(gray, edges2, CV_8U, 1, 0, -1);
+			edges+=edges2;
+		}
+		else
+		{
+			Laplacian(gray, edges, CV_8U, laplacianFilterSize);
+		}
+
+		threshold(edges, mask, (evilMode? edgeThreshold/4 : edgeThreshold), 255, THRESH_BINARY_INV);
+	}
+
+	static inline void repeatBilateralFilter(Mat& srcColor, Mat& dst, int repetitions)
+	{
+		// convert image to smaller size
+		Mat smallSrcColor(srcColor.size().height/2, srcColor.size().width/2, CV_8UC3);
+		resize(srcColor, smallSrcColor, smallSrcColor.size(), 0, 0, INTER_LINEAR);
+
+		//apply filter
+		Mat temp(smallSrcColor.size(), CV_8UC3);
+		int kSize = 9;
+		double sigmaColor = 9;
+		double sigmaSpace = 7;
+
+		for(int i=0; i<repetitions; i++)
+		{
+			bilateralFilter(smallSrcColor, temp, kSize, sigmaColor, sigmaSpace);
+			bilateralFilter(temp, smallSrcColor, kSize, sigmaColor, sigmaSpace);
+		}
+
+		// bring back image to original size
+		resize(smallSrcColor, dst, srcColor.size(), 0,0, INTER_LINEAR);
+	}
+
+};
+
+#endif /* CARTOON_H_ */

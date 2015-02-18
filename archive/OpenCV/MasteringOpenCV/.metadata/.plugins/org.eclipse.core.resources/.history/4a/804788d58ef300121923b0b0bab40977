@@ -1,0 +1,45 @@
+//============================================================================
+// Name        : Cartoonifier_desktop.cpp
+// Author      : Mastering OpenCV
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include "opencv2/opencv.hpp"
+
+using namespace std;
+using namespace cv;
+
+int main(int argc, char** argv) {
+
+	// Get access to the camera.
+	VideoCapture video;
+	video.open("C:\\Dropbox\\workspace\\OpenCV\\Eclipse\\Cartoonifier_desktop\\src\\sample.mp4");
+
+	if (!video.isOpened()) {
+	std::cerr << "ERROR: Could not access the camera or video!" <<
+	std::endl;
+	exit(1);
+	}
+
+	// Try to set the camera resolution.
+	video.set(CV_CAP_PROP_FRAME_WIDTH , 640);
+	video.set(CV_CAP_PROP_FRAME_HEIGHT , 480);
+
+	while(true)
+	{
+		Mat videoFrame;
+		video >> videoFrame;
+		if(videoFrame.empty())
+			break;
+
+		Mat frameToDisplay(videoFrame.size(), CV_8UC3);
+
+		cartoonifyImage(videoFrame, frameToDisplay);
+	}
+
+	//cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	//return 0;
+}

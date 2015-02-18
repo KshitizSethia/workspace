@@ -1,0 +1,90 @@
+package code;
+
+import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
+
+public class Knapsack 
+{
+
+	int knapsackSize;
+	int numItems;
+	long items[][];
+	long optimalKnapsackCache[][];
+	
+	public Knapsack(String filePath) throws IOException
+	{
+		List<String> lines = Files.readAllLines(Paths.get(filePath),
+                Charset.defaultCharset());
+		
+		String firstLine = lines.get(0);
+		String values[] = firstLine.split(" ");
+		
+		knapsackSize = Integer.parseInt(values[0]);
+		numItems = Integer.parseInt(values[1]);
+		
+		items = new long[numItems][2];
+		
+		for(int index = 0; index<numItems;index++)
+		{
+			values = lines.get(index+1).split(" ");
+			
+			items[index][0] = Long.parseLong(values[0]);
+			items[index][1] = Long.parseLong(values[1]);
+		}
+	}
+
+	public long calculateMaxValueOfKnapsack()
+	{
+		//optimalKnapsackCache = new long[numItems+1][knapsackSize+1];
+		//
+		//for(int index = 0;index<knapsackSize;index++)
+		//	optimalKnapsackCache[0][index] = 0;
+		//
+		//for(int i=1; i<=numItems;i++)
+		//{
+		//	for(int x = 0; x<=knapsackSize; x++)
+		//	{
+		//		long a = optimalKnapsackCache[i-1][x];
+		//		
+		//		int value = (int) (x-items[i-1][1]);
+		//		long b = value<0?0:optimalKnapsackCache[i-1][value] + items[i-1][0];
+		//		
+		//		optimalKnapsackCache[i][x] = (a>b)?a:b;
+		//	}
+		//}
+		//
+		//return optimalKnapsackCache[numItems][knapsackSize];
+		
+		long optimizedKnapsackCache[][] = new long[2][knapsackSize+1];
+		
+		for(int index = 0;index<knapsackSize;index++)
+			optimalKnapsackCache[0][index] = 0;
+		
+		int previousRow = 0;
+		int currentRow = 1;
+		for(int i=1;i<=numItems;i++)
+		{
+			for(int x=0; x<=knapsackSize; x++)
+			{
+				long a = optimizedKnapsackCache[previousRow][x];
+				
+				int value = (int) (x-items[i-1][1]);
+				long b = value<0?0:optimizedKnapsackCache[previousRow][value] +items[i-1][0];
+				
+				optimizedKnapsackCache[currentRow][x] = (a>b)?a:b;
+			}
+			//swap previous and current rows
+			previousRow = previousRow==0?1:0;
+			currentRow = currentRow==0?1:0;
+		}
+		
+		//undo last unnecessary swap of rows.
+		previousRow = previousRow==0?1:0;
+		currentRow = currentRow==0?1:0;
+	
+		return optimizedKnapsackCache[currentRow][knapsackSize];
+	}
+}

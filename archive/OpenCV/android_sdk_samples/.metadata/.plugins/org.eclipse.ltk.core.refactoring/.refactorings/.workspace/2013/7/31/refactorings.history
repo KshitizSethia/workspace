@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 9 resources" deleteContents="false" description="Delete 9 resources" element1="/OpenCV Library - 2.4.6" element2="/OpenCV Sample - 15 puzzle" element3="/OpenCV Sample - color-blob-detection" element4="/OpenCV Sample - face-detection" element5="/OpenCV Sample - image-manipulations" element6="/OpenCV Sample - native-activity" element7="/OpenCV Tutorial 1 - Camera Preview" element8="/OpenCV Tutorial 2 - Mixed Processing" element9="/OpenCV Tutorial 3 - Camera Control" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="9" stamp="1375275584593"/>
+</session>

@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+markOccurrences=false
+sourceHoverBackgroundColor=255,255,225
+spelling_locale_initialized=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true
+wizard.preferred.toolchains=cdt.managedbuild.toolchain.gnu.cygwin.exe.debug

@@ -1,0 +1,14 @@
+INSTUPq2
+C:\Users\Kshitiz\Documents\Cloud\Copy\workspace\SMM\as9\q2.py
+INFOS:&&3|1|2|0&&3|3|2|0&&3|4|2|0&&3|5|2|0&&3|6|2|0&&3|7|2|0&&3|8|2|0&&3|9|2|0&&3|10|2|0&&3|11|2|0
+total=6
+expected_freq=11
+observed_prob_male_child=8
+my_binomial=9
+total_families=3
+q2=2
+observed_mean=7
+max_children=1
+observed_freq=5
+observed_val=4
+squared_error=10

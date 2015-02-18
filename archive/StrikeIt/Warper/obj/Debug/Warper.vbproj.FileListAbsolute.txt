@@ -1,0 +1,8 @@
+C:\Dropbox\workspace\StrikeIt\Warper\bin\Debug\Warper.dll
+C:\Dropbox\workspace\StrikeIt\Warper\bin\Debug\Warper.pdb
+C:\Dropbox\workspace\StrikeIt\Warper\bin\Debug\Warper.xml
+C:\Dropbox\workspace\StrikeIt\Warper\obj\Debug\Warper.Resources.resources
+C:\Dropbox\workspace\StrikeIt\Warper\obj\Debug\Warper.vbproj.GenerateResource.Cache
+C:\Dropbox\workspace\StrikeIt\Warper\obj\Debug\Warper.dll
+C:\Dropbox\workspace\StrikeIt\Warper\obj\Debug\Warper.xml
+C:\Dropbox\workspace\StrikeIt\Warper\obj\Debug\Warper.pdb

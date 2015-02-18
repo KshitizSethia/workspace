@@ -1,0 +1,28 @@
+﻿Build started 3/9/2013 11:08:03 AM.
+     1>Project "C:\Dropbox\workspace\OpenCV\OpenCVTest\OpenCVTest\OpenCVTest.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\Blurs.lastbuildstate".
+       InitializeBuildStatus:
+         Touching "Debug\Blurs.unsuccessfulbuild".
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Dropbox\devtools\opencv\build\include\opencv /IC:\Dropbox\devtools\opencv\build\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\Blurs.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Dropbox\devtools\opencv\build\include\opencv /IC:\Dropbox\devtools\opencv\build\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Blurs.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt OpenCVTest.cpp
+         OpenCVTest.cpp
+     1>c:\dropbox\devtools\opencv\build\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Dropbox\workspace\OpenCV\OpenCVTest\Debug\Blurs.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\Dropbox\devtools\opencv\build\x86\vc10\lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib opencv_core244d.lib opencv_imgproc244d.lib opencv_highgui244d.lib opencv_ml244d.lib opencv_video244d.lib opencv_features2d244d.lib opencv_calib3d244d.lib opencv_contrib244d.lib opencv_legacy244d.lib opencv_flann244d.lib /MANIFEST /ManifestFile:"Debug\Blurs.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Dropbox\workspace\OpenCV\OpenCVTest\Debug\Blurs.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Dropbox\workspace\OpenCV\OpenCVTest\Debug\Blurs.lib" /MACHINE:X86 Debug\OpenCVTest.obj
+         Debug\stdafx.obj
+     1>OpenCVTest.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+         OpenCVTest.vcxproj -> C:\Dropbox\workspace\OpenCV\OpenCVTest\Debug\Blurs.exe
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Dropbox\workspace\OpenCV\OpenCVTest\Debug\Blurs.exe;#1" /manifest Debug\Blurs.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\Blurs.unsuccessfulbuild".
+         Touching "Debug\Blurs.lastbuildstate".
+     1>Done Building Project "C:\Dropbox\workspace\OpenCV\OpenCVTest\OpenCVTest\OpenCVTest.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:07.43

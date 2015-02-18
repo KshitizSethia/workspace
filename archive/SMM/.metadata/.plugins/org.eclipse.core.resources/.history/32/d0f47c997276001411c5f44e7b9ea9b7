@@ -1,0 +1,7 @@
+max_children = 12
+observed_val = range(0,max_children)
+observed_freq = [7,45,181,478,829,1112,1343,1033,670,286,104,24,3]
+
+total = 0
+for index in range(0,max_children):
+    total+= 

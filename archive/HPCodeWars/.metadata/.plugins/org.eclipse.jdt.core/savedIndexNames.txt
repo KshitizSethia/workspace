@@ -1,0 +1,3 @@
+INDEX VERSION 1.126+C:\Dropbox\workspace\HPCodeWars\.metadata\.plugins\org.eclipse.jdt.core
+672950537.index
+3024618665.index

@@ -1,0 +1,143 @@
+/*
+ * cartoon.h
+ *
+ *  Created on: Jul 23, 2013
+ *      Author: sethiak
+ */
+
+#ifndef CARTOON_H_
+#define CARTOON_H_
+
+#include "opencv2/opencv.hpp"
+using namespace cv;
+
+class Cartoon
+{
+
+public:
+	static void cartoonifyImage(Mat& srcColor, Mat& destination)
+	{
+
+		Mat mask;
+		//extractEdgeMask(srcColor, mask, 7, 5, 80, true, 2); //for evil mode
+		extractEdgeMask(srcColor, mask, 7, 5, 80);
+
+		Mat filtered;
+		repeatBilateralFilter(srcColor, filtered, 7);
+
+		// put mask on top of bigImg
+		//destination = Mat(bigImg);
+		filtered.copyTo(destination, mask);
+	}
+
+	static void drawFace(Mat& src)
+	{
+		Size srcSize = src.size();
+
+		// Draw the color face onto a black background.
+		Mat faceOutline = Mat::zeros(srcSize, CV_8UC3);
+		Scalar color = CV_RGB(255,255,0); // Yellow.
+		int thickness = 4;
+		// Use 70% of the screen height as the face height.
+		int sw = srcSize.width;
+		int sh = srcSize.height;
+		int faceH = sh/2 * 70/100; // "faceH" is the radius of the ellipse.
+		// Scale the width to be the same shape for any screen width.
+		int faceW = faceH * 72/100;
+		// Draw the face outline.
+		ellipse(faceOutline, Point(sw/2, sh/2), Size(faceW, faceH),
+		0, 0, 360, color, thickness, CV_AA);
+
+		// Draw the eye outlines, as 2 arcs per eye.
+		int eyeW = faceW * 23/100;
+		int eyeH = faceH * 11/100;
+		int eyeX = faceW * 48/100;
+		int eyeY = faceH * 13/100;
+		Size eyeSize = Size(eyeW, eyeH);
+		// Set the angle and shift for the eye half ellipses.
+		int eyeA = 15; // angle in degrees.
+		int eyeYshift = 11;
+		// Draw the top of the right eye.
+		ellipse(faceOutline, Point(sw/2 - eyeX, sh/2 - eyeY),
+				eyeSize, 0, 180+eyeA, 360-eyeA, color, thickness, CV_AA);
+		// Draw the bottom of the right eye.
+		ellipse(faceOutline, Point(sw/2 - eyeX, sh/2 - eyeY),
+				eyeSize, 0, 0+eyeA, 180-eyeA, color, thickness, CV_AA);
+		// Draw the top of the left eye.
+		ellipse(faceOutline, Point(sw/2 + eyeX, sh/2 - eyeY),
+				eyeSize, 0, 180+eyeA, 360-eyeA, color, thickness, CV_AA);
+		// Draw the bottom of the left eye.
+		ellipse(faceOutline, Point(sw/2 +eyeX, sh/2 - eyeY - eyeYshift),
+				eyeSize, 0, 0+eyeA, 180-eyeA, color, thickness, CV_AA);
+
+		// Draw the bottom lip of the mouth.
+		int mouthY = faceH * 48/100;
+		int mouthW = faceW * 45/100;
+		int mouthH = faceH * 6/100;
+		ellipse(faceOutline, Point(sw/2, sh/2 + mouthY), Size(mouthW,
+		mouthH), 0, 0, 180, color, thickness, CV_AA);
+
+		// Draw anti-aliased text.
+		int fontFace = FONT_HERSHEY_COMPLEX;
+		float fontScale = 1.0f;
+		int fontThickness = 2;
+		char *szMsg = "Put your face here";
+		putText(faceOutline, szMsg, Point(sw * 23/100, sh * 10/100),
+		fontFace, fontScale, color, fontThickness, CV_AA);
+
+		addWeighted(src, 1.0, faceOutline, 0.7, 0, src, CV_8UC3);
+	}
+
+private:
+	static inline void extractEdgeMask(Mat&srcColor,
+			Mat& mask,
+			int medianBlurFilterSize,
+			int laplacianFilterSize,
+			int edgeThreshold,
+			bool evilMode = false,
+			int thresholdDivisorForEvilMode=1)
+	{
+		Mat gray(srcColor.size(), CV_8U);
+		cvtColor(srcColor, gray, CV_BGR2GRAY);
+
+		Mat edges, edges2;
+		if(evilMode)
+		{
+			Scharr(gray, edges, CV_8U, 1, 0);
+			Scharr(gray, edges2, CV_8U, 1, 0, -1);
+			edges+=edges2;
+		}
+		else
+		{
+			medianBlur(gray, gray, medianBlurFilterSize);
+			Laplacian(gray, edges, CV_8U, laplacianFilterSize);
+		}
+
+		threshold(edges, mask, edgeThreshold/thresholdDivisorForEvilMode, 255, THRESH_BINARY_INV);
+	}
+
+	static inline void repeatBilateralFilter(Mat& srcColor, Mat& dst, int repetitions)
+	{
+		// convert image to smaller size
+		Mat smallSrcColor(srcColor.size().height/2, srcColor.size().width/2, CV_8UC3);
+		resize(srcColor, smallSrcColor, smallSrcColor.size(), 0, 0, INTER_LINEAR);
+
+		//apply filter
+		Mat temp(smallSrcColor.size(), CV_8UC3);
+		int kSize = 9;
+		double sigmaColor = 9;
+		double sigmaSpace = 7;
+
+		for(int i=0; i<repetitions; i++)
+		{
+			bilateralFilter(smallSrcColor, temp, kSize, sigmaColor, sigmaSpace);
+			bilateralFilter(temp, smallSrcColor, kSize, sigmaColor, sigmaSpace);
+		}
+
+		// bring back image to original size
+		resize(smallSrcColor, dst, srcColor.size(), 0,0, INTER_LINEAR);
+	}
+
+};
+
+#endif /* CARTOON_H_ */

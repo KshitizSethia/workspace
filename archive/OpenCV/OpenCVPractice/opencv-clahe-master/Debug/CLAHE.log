@@ -1,0 +1,16 @@
+﻿Build started 3/13/2013 8:25:54 PM.
+     1>Project "C:\Dropbox\workspace\OpenCV\OpenCVPractice\opencv-clahe-master\CLAHE.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\CLAHE.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W2 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt adapthistequal.cpp clahe.cpp
+         clahe.cpp
+     1>c:\dropbox\workspace\opencv\opencvpractice\opencv-clahe-master\clahe.cpp(16): fatal error C1083: Cannot open include file: 'cv.h': No such file or directory
+         adapthistequal.cpp
+     1>c:\dropbox\workspace\opencv\opencvpractice\opencv-clahe-master\adapthistequal.cpp(9): fatal error C1083: Cannot open include file: 'cv.h': No such file or directory
+         Generating Code...
+     1>Done Building Project "C:\Dropbox\workspace\OpenCV\OpenCVPractice\opencv-clahe-master\CLAHE.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.17

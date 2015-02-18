@@ -1,0 +1,17 @@
+package test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import code.Knapsack;
+
+public class KnapsackTest {
+
+	@Test
+	public void test() {
+		Knapsack knapsack = new Knapsack("C:\\Dropbox\\workspace\\Algo2\\Knapsack\\test2.txt");
+		
+	}
+
+}

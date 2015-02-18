@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="353" key="DIALOG_WIDTH"/>
+		<item value="185" key="DIALOG_Y_ORIGIN"/>
+		<item value="559" key="DIALOG_HEIGHT"/>
+		<item value="1574" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="printf(&quot;%03d: %04d&quot;" key="selection"/>
+		<list key="findhistory">
+			<item value="printf(&quot;%03d: %d&quot;"/>
+			<item value="printf(&quot;%03d:"/>
+			<item value="rule 11"/>
+			<item value="11"/>
+			<item value="GetSyntaxErrorDetails"/>
+			<item value="c_str"/>
+			<item value="definedSymbolUsed"/>
+			<item value="module.use"/>
+		</list>
+		<list key="replacehistory">
+			<item value="printf(&quot;%03d: %04d&quot;"/>
+			<item value="use"/>
+			<item value="instructionData"/>
+			<item value=""/>
+			<item value="parseState.inputStream"/>
+			<item value="GetSyntaxErrorDetails()"/>
+		</list>
+	</section>
+</section>

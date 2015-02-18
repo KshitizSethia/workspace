@@ -1,0 +1,5 @@
+C:\Dropbox\workspace\GoogleCodeJam\Names\bin\Release\Names.exe.config
+C:\Dropbox\workspace\GoogleCodeJam\Names\bin\Release\Names.exe
+C:\Dropbox\workspace\GoogleCodeJam\Names\bin\Release\Names.pdb
+C:\Dropbox\workspace\GoogleCodeJam\Names\obj\Release\Names.exe
+C:\Dropbox\workspace\GoogleCodeJam\Names\obj\Release\Names.pdb

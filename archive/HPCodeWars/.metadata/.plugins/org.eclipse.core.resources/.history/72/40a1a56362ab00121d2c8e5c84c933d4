@@ -1,0 +1,23 @@
+package bg;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.HashSet;
+import java.util.Set;
+
+public class BloodGroup {
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader fileReader = new BufferedReader(new FileReader(args[0]));
+		BufferedWriter fileWriter = new BufferedWriter(new FileWriter(args[1]));
+
+		int numTestCases = Integer.parseInt(fileReader.readLine());
+
+		fileReader.close();
+		fileWriter.flush();
+		fileWriter.close();
+	}
+}

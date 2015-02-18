@@ -1,0 +1,82 @@
+/*
+ * Helpers.h
+ *
+ *  Created on: Feb 8, 2015
+ *      Author: Kshitiz
+ */
+#ifndef HELPERS_H_
+#define HELPERS_H_
+
+#include <map>
+#include <array>
+#include <vector>
+#include <string>
+#include <exception>
+#include <sstream>
+
+using namespace std;
+
+class Instruction {
+public:
+	char type;
+	int data;
+	Instruction(char type, int data)
+		{ this->type = type; this->data = data; }
+};
+
+class Module {
+public:
+	unsigned offset;
+	//map<string, int> symbolTable;
+	vector<string> useList;
+	vector<Instruction> instructions;
+};
+
+enum ExceptionType{
+	NoMoreModulesToRead,
+	SyntaxError//Rule 1
+};
+
+class LinkerException: public exception
+{
+public:
+	ExceptionType type;
+	string description;
+	LinkerException(ExceptionType type)
+	{ this->type = type; }
+
+	LinkerException(ExceptionType type, string desc)
+	{
+		this->type = type;
+		this->description = desc;
+	}
+
+	~LinkerException() throw()
+	{}
+};
+
+class StringStore
+{public:
+	static const string DuplicateDef;
+	static const string SymbolNotDefined;
+	static const string DefinedSymbolNotUsed;
+	static const string SymbolOffsetOutsideModule;
+	static const string ExternalAddressOutOfUseList;
+	static const string SymbolNotUsed;
+	//static const string
+	//static const string
+	//static const string
+	//static const string
+};
+const string StringStore::DuplicateDef = "Error: This variable is multiple times defined; first value used";
+const string StringStore::SymbolNotDefined = "Error: %s is not defined; zero used";
+const string StringStore::DefinedSymbolNotUsed = "Warning: Module %d: %s was defined but never used";
+const string StringStore::SymbolOffsetOutsideModule = "Warning: Module %d: %s too big %d (max=%d) assume zero relative";
+const string StringStore::ExternalAddressOutOfUseList = "Error: External address exceeds length of uselist; treated as immediate";
+const string StringStore::SymbolNotUsed = "Warning: Module %d: %s appeared in the uselist but was not actually used";
+//const string StringStore::
+//const string StringStore::
+//const string StringStore::
+//const string StringStore::
+
+#endif /*HELPERS_H_*/

@@ -1,0 +1,63 @@
+-- VERSION_4
+-- START DISKCACHE
+C:\Users\Kshitiz\Documents\Cloud\Copy\workspace\FA\.metadata\.plugins\org.eclipse.core.resources\.projects\As1\com.python.pydev.analysis\v2_indexcache
+StackProcessing|1410288890000|C:\Users\Kshitiz\Documents\Cloud\Copy\workspace\FA\As1\StackProcessing.py
+ListProcessing|1410279637000|C:\Users\Kshitiz\Documents\Cloud\Copy\workspace\FA\As1\ListProcessing.py
+MinColoring|1410027966000|C:\Users\Kshitiz\Documents\Cloud\Copy\workspace\FA\As1\MinColoring.py
+TowersOfHanoi|1410293584000|C:\Users\Kshitiz\Documents\Cloud\Copy\workspace\FA\As1\TowersOfHanoi.py
+-- END DISKCACHE
+-- START DICTIONARY
+12
+8=SinglyLL.clear
+4=StackProcessing
+10=SinglyLL.popleft
+9=SinglyLL.reverse
+7=SinglyLLNode.__init__
+1=ListProcessing
+5=SinglyLL
+11=SinglyLL.appendleft
+3=MinColoring
+6=SinglyLLNode
+2=TowersOfHanoi
+12=SinglyLL.__init__
+-- END DICTIONARY
+-- START TREE 1
+22
+L|1|L!11@
+R|1|R!11@
+cir|2|circular_move!18@circular_toh!18@
+col|5|colored_toh!18@color_assignments!27@colored_toh_no_color_change!18@color_flipped_toh!18@color_every_vertex!26@
+cos|1|cost!35@
+dis|1|disordered_toh!18@
+do_|5|do_sum_following_2pass!10@do_recursive_sum_preceding!10@do_sum_preceding!10@do_recursive_sum_following!10@do_sum_following!10@
+eva|1|Eval!34@
+fli|1|flip_color!18@
+fou|1|four_towers_of_hanoi!18@
+get|1|get_loop_length!10@
+glo|1|global_stack!35@
+inc|1|increment_tower!18@
+is_|2|is_empty!34@is_it_there!18@
+isi|1|IsItAnOp!34@
+lis|1|list1!11@
+mov|3|move!18@move_to_small_tower!18@move_two_disks!18@
+sam|3|sample_stack!35@sample_towers!19@sample_graph!27@
+sin|2|SinglyLL!9@SinglyLLNode!9@
+sol|1|Solve!34@
+toh|1|toh!18@
+use|1|use_color_max_times!26@
+-- END TREE
+-- START TREE 2
+12
+__i|2|__init__!5&10@__init__!6&10@
+__r|2|__repr__!5&10@__repr__!6&10@
+__s|2|__str__!5&10@__str__!6&10@
+app|1|appendleft!5&10@
+cle|1|clear!5&10@
+dat|1|data!7&11@
+fir|5|first_node!8&11@first_node!9&11@first_node!10&11@first_node!11&11@first_node!12&11@
+las|4|last_node!8&11@last_node!9&11@last_node!11&11@last_node!12&11@
+nex|1|next!7&11@
+pop|1|popleft!5&10@
+rev|1|reverse!5&10@
+tra|1|transfer_left!5&10@
+-- END TREE

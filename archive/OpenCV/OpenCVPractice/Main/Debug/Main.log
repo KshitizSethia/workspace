@@ -1,0 +1,33 @@
+﻿Build started 3/14/2013 11:44:31 PM.
+     1>Project "C:\Dropbox\workspace\OpenCV\OpenCVPractice\Main\Main.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\Main.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Debug\Main.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Dropbox\devtools\opencv\build\include\opencv /IC:\Dropbox\devtools\opencv\build\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\Main.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Dropbox\devtools\opencv\build\include\opencv /IC:\Dropbox\devtools\opencv\build\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Main.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ColorMultiplier.cpp HistogramEqualizer.cpp Main.cpp
+         Main.cpp
+     1>c:\dropbox\workspace\opencv\opencvpractice\main\colormultiplier.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+         HistogramEqualizer.cpp
+         ColorMultiplier.cpp
+     1>c:\dropbox\workspace\opencv\opencvpractice\main\colormultiplier.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+         Generating Code...
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Dropbox\workspace\OpenCV\OpenCVPractice\Debug\Main.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\Dropbox\devtools\opencv\build\x86\vc10\lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib opencv_core244d.lib opencv_imgproc244d.lib opencv_highgui244d.lib opencv_ml244d.lib opencv_video244d.lib opencv_features2d244d.lib opencv_calib3d244d.lib opencv_contrib244d.lib opencv_legacy244d.lib opencv_flann244d.lib opencv_nonfree244d.lib /MANIFEST /ManifestFile:"Debug\Main.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Dropbox\workspace\OpenCV\OpenCVPractice\Debug\Main.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Dropbox\workspace\OpenCV\OpenCVPractice\Debug\Main.lib" /MACHINE:X86 Debug\ColorMultiplier.obj
+         Debug\HistogramEqualizer.obj
+         Debug\Main.obj
+         Debug\stdafx.obj
+     1>ColorMultiplier.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+         Main.vcxproj -> C:\Dropbox\workspace\OpenCV\OpenCVPractice\Debug\Main.exe
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Dropbox\workspace\OpenCV\OpenCVPractice\Debug\Main.exe;#1" /manifest Debug\Main.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\Main.unsuccessfulbuild".
+         Touching "Debug\Main.lastbuildstate".
+     1>Done Building Project "C:\Dropbox\workspace\OpenCV\OpenCVPractice\Main\Main.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.23

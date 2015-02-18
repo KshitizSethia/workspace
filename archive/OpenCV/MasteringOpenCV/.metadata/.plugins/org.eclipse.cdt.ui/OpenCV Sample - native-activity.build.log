@@ -1,0 +1,12 @@
+11:41:59 **** Auto Build of configuration Default for project OpenCV Sample - native-activity ****
+"\"C:\\Copy\\devtools\\android-ndk-r9\\ndk-build.cmd\"" 
+Android NDK: WARNING:jni/Android.mk:native_activity: non-system libraries in linker flags: -lopencv_java    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi-v7a/gdbserver
+Gdbsetup       : libs/armeabi-v7a/gdb.setup
+Install        : libnative_activity.so => libs/armeabi-v7a/libnative_activity.so
+
+11:42:03 Build Finished (took 3s.916ms)
+

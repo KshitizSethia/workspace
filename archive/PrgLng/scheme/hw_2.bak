@@ -1,0 +1,24 @@
+(define (handle-longest expressions env)
+	(cond 
+		( (null? expressions) '(0 '()) )
+		(else
+			(let 
+				(
+					(longest_expr_length_result 
+						(handle-longest (cdr expressions) env)
+					)
+					(this_expr_length_result 
+						(cons 
+							(length (eval (caar expressions)))
+							(eval (cadar expressions))
+						)
+					)
+				)
+				(if (> (car longest_expr_length_result) (car this_expr_length_result))
+					(longest_expr_length_result)
+					(this_expr_length_result)
+				)
+			)
+	   )
+	)
+ )

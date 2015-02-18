@@ -1,0 +1,38 @@
+package code;
+
+import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
+
+public class Knapsack 
+{
+
+	int knapsackSize;
+	int numItems;
+	int items[][];
+	
+	public Knapsack(String filePath) throws IOException
+	{
+		List<String> lines = Files.readAllLines(Paths.get(filePath),
+                Charset.defaultCharset());
+		
+		String firstLine = lines.get(0);
+		String values[] = firstLine.split(" ");
+		
+		knapsackSize = Integer.parseInt(values[0]);
+		numItems = Integer.parseInt(values[1]);
+		
+		items = new int[numItems][2];
+		
+		for(int index = 0; index<numItems;index++)
+		{
+			values = lines.get(index+1).split(" ");
+			
+			items[index][0] = Integer.parseInt(values[0]);
+			items[index][1] = Integer.parseInt(values[1]);
+		}
+	}
+
+}

@@ -1,0 +1,15 @@
+18:03:33 **** Incremental Build of configuration Debug for project 11-14_2 ****
+make all 
+Building file: ../src/11-14_2.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/11-14_2.d" -MT"src/11-14_2.d" -o "src/11-14_2.o" "../src/11-14_2.cpp"
+Finished building: ../src/11-14_2.cpp
+ 
+Building target: 11-14_2.exe
+Invoking: Cygwin C++ Linker
+g++  -o "11-14_2.exe"  ./src/11-14_2.o   
+Finished building target: 11-14_2.exe
+ 
+
+18:03:34 Build Finished (took 669ms)
+

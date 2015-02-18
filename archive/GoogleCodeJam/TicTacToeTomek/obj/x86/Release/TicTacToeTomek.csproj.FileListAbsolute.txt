@@ -1,0 +1,4 @@
+C:\Dropbox\workspace\GoogleCodeJam\TicTacToeTomek\bin\Release\TicTacToeTomek.exe
+C:\Dropbox\workspace\GoogleCodeJam\TicTacToeTomek\bin\Release\TicTacToeTomek.pdb
+C:\Dropbox\workspace\GoogleCodeJam\TicTacToeTomek\obj\x86\Release\TicTacToeTomek.exe
+C:\Dropbox\workspace\GoogleCodeJam\TicTacToeTomek\obj\x86\Release\TicTacToeTomek.pdb

@@ -1,0 +1,4 @@
+C:\Dropbox\workspace\GoogleCodeJam\Bullseye\Lawnmower\bin\Release\Lawnmower.exe
+C:\Dropbox\workspace\GoogleCodeJam\Bullseye\Lawnmower\bin\Release\Lawnmower.pdb
+C:\Dropbox\workspace\GoogleCodeJam\Bullseye\Lawnmower\obj\x86\Release\Lawnmower.exe
+C:\Dropbox\workspace\GoogleCodeJam\Bullseye\Lawnmower\obj\x86\Release\Lawnmower.pdb

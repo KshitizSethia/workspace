@@ -1,0 +1,6 @@
+filename = "triangle.txt"
+backup;
+for line in reversed(open(filename).readlines()):
+    new_nums = line.split(" ")
+    for index in range(0, new_nums.length):
+        

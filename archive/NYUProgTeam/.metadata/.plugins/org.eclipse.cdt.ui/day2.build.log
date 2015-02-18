@@ -1,0 +1,7 @@
+17:54:31 **** Clean-only build of configuration Debug for project day2 ****
+make clean 
+rm -rf  ./src/day2.o  ./src/day2.d  day2.exe
+ 
+
+17:54:32 Build Finished (took 148ms)
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;As1/MinColoring&apos; to &apos;MinColoring.py&apos;" description="Rename resource &apos;MinColoring&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="MinColoring" name="MinColoring.py" stamp="1410012497284" updateReferences="true"/>
+</session>

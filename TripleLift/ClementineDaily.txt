@@ -1,0 +1,695 @@
+1f8c
+<!DOCTYPE html>
+<html lang="en-US" class="no-js" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Clementine Daily - today’s multi-faceted, modern woman.</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://clementinedaily.com/xmlrpc.php" />
+<script type="text/javascript" src="//use.typekit.net/pcr1hjt.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<link rel="stylesheet" href="http://clementinedaily.com/wp-content/themes/clementine/library/css/flexslider.css" type="text/css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://clementinedaily.com/wp-content/themes/clementine/library/js/jquery.flexslider.js"></script>
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('#regularFlex').flexslider({
+    animation: "slide",
+    slideshow: false,
+        itemMargin: 5,
+        minItems: 2,
+        smoothHeight: true,
+    });
+    $('#flexCarousel').flexslider({
+    itemWidth: 330,
+    animation: "slide",
+    animationLoop: true,
+        itemMargin: 5,
+        minItems: 2,
+    });
+  });
+
+</script>
+
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.7.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://clementinedaily.com" />
+<link rel="next" href="http://clementinedaily.com/page/2/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Clementine Daily - today’s multi-faceted, modern woman." />
+<meta property="og:url" content="http://clementinedaily.com" />
+<meta property="og:site_name" content="Clementine Daily" />
+<script type="application/ld+json">{ "@context": "http://schema.org", "@type": "WebSite", "url": "http://clementinedaily.com/", "potentialAction": { "@type": "SearchAction", "target": "http://clementinedaily.com/?s={search_term}", "query-input": "required name=search_term" } }</script>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="Clementine Daily &raquo; Feed" href="http://clementinedaily.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Clementine Daily &raquo; Comments Feed" href="http://clementinedaily.com/comments/feed/" />
+<link rel='stylesheet' id='colorbox-theme3-css'  href='http://clementinedaily.com/wp-content/plugins/jquery-colorbox/themes/theme3/colorbox.css?ver=4.6' type='text/css' media='screen' />
+<link rel='stylesheet' id='noteworthy_style-css'  href='http://clementinedaily.com/wp-content/themes/clementine/style.css?ver=4.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='subscribepopup-css'  href='http://clementinedaily.com/wp-content/plugins/subscribe-popup/css/subscribe-popup.css?ver=1.5' type='text/css' media='all' />
+<script type='text/javascript' src='http://clementinedaily.com/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
+<script type='text/javascript' src='http://clementinedaily.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var jQueryColorboxSettingsArray = {"jQueryColorboxVersion":"4.6","colorboxInline":"false","colorboxIframe":"false","colorboxGroupId":"","colorboxTitle":"","colorboxWidth":"false","colorboxHeight":"false","colorboxMaxWidth":"false","colorboxMaxHeight":"false","colorboxSlideshow":"false","colorboxSlideshowAuto":"false","colorboxScalePhotos":"false","colorboxPreloading":"false","colorboxOverlayClose":"false","colorboxLoop":"true","colorboxEscKey":"true","colorboxArrowKey":"true","colorboxScrolling":"true","colorboxOpacity":"0.85","colorboxTransition":"elastic","colorboxSpeed":"350","colorboxSlideshowSpeed":"2500","colorboxClose":"close","colorboxNext":"next","colorboxPrevious":"previous","colorboxSlideshowStart":"start slideshow","colorboxSlideshowStop":"stop slideshow","colorboxCurrent":"{current} of {total} images","colorboxXhrError":"This content failed to load.","colorboxImgError":"This image failed to load.","colorboxImageMaxWidth":"false","colorboxImageMaxHeight":"false","colorboxImageHeight":"false","colorboxImageWidth":"false","colorboxLinkHeight":"false","colorboxLinkWidth":"false","colorboxInitialHeight":"100","colorboxInitialWidth":"300","autoColorboxJavaScript":"","autoHideFlash":"","autoColorbox":"true","autoColorboxGalleries":"","addZoomOverlay":"","useGoogleJQuery":"","colorboxAddClassToLinks":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://clementinedaily.com/wp-content/plugins/jquery-colorbox/js/jquery.colorbox-min.js?ver=1.3.21'></script>
+<script type='text/javascript' src='http://clementinedaily.com/wp-content/plugins/jquery-colorbox/js/jquery-colorbox-wrapper-min.js?ver=4.6'></script>
+<script type='text/javascript' src='http://clementinedaily.com/wp-content/themes/clementine/library/js/modernizr-2.6.1.min.js?ver=2.6.1'></script>
+<script type='text/javascript' src='http://clementinedaily.com/wp-content/themes/clementine/library/js/jquery.nicescroll.js?ver=3.0.0'></script>
+<script type='text/javascript' src='http://clementinedaily.com/wp-content/themes/clementine/library/js/scripts.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://clementinedaily.com/wp-content/plugins/subscribe-popup/js/subscribe-popup.js?ver=1.5'></script>
+<script type='text/javascript' src='http://clementinedaily.com/wp-content/plugins/google-analyticator/external-tracking.min.js?ver=6.4.8'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://clementinedaily.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://clementinedaily.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.0.1" />
+
+
+<!-- Plugin: Open external links a new window. Plugin by Kristian Risager Larsen, http://kristianrisagerlarsen.dk . Download it at http://wordpress.org/extend/plugins/open-external-links-in-a-new-window/ -->
+<script type="text/javascript">//<![CDATA[
+	function external_links_in_new_windows_loop() {
+		if (!document.links) {
+			document.links = document.getElementsByTagName('a');
+		}
+		var change_link = false;
+		var force = '';
+		var ignore = '';
+
+		for (var t=0; t<document.links.length; t++) {
+			var all_links = document.links[t];
+			change_link = false;
+			
+			if(document.links[t].hasAttribute('onClick') == false) {
+				// forced if the address starts with http (or also https), but does not link to the current domain
+				if(all_links.href.search(/^http/) != -1 && all_links.href.search('clementinedaily.com') == -1) {
+					// alert('Changeda '+all_links.href);
+					change_link = true;
+				}
+					
+				if(force != '' && all_links.href.search(force) != -1) {
+					// forced
+					// alert('force '+all_links.href);
+					change_link = true;
+				}
+				
+				if(ignore != '' && all_links.href.search(ignore) != -1) {
+					// alert('ignore '+all_links.href);
+					// ignored
+					change_link = false;
+				}
+
+				if(change_link == true) {
+					// alert('Changed '+all_links.href);
+					document.links[t].setAttribute('onClick', 'javascript:window.open(\''+all_links.href+'\'); return false;');
+					document.links[t].removeAttribute('target');
+				}
+			}
+		}
+	}
+	
+	// Load
+	function external_links_in_new_windows_load(func)
+	{	
+		var oldonload = window.onload;
+		if (typeof window.onload != 'function'){
+			window.onload = func;
+		} else {
+			window.onload = function(){
+				oldonload();
+				func();
+			}
+		}
+	}
+
+	external_links_in_new_windows_load(external_links_in_new_windows_loop);
+	//]]></script>
+
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url('http://clementinedaily.com/wp-content/themes/clementine/library/images/bg.jpg'); background-repeat: repeat; background-position: top left; background-attachment: scroll; }
+</style>
+
+		<style type="text/css">
+			
+		</style>
+		<script type="text/javascript">
+			var subscrib
+4000
+epopup_cookie_value = "icprojects";
+			var subscribepopup_delay_value = 0;
+			var subscribepopup_start_delay_value = 1000*0;
+			var subscribepopup_once_per_visit = "on";
+			var subscribepopup_value_overlay_bg_color = "#000000";
+			var subscribepopup_value_overlay_opacity = "0.7";
+			var subscribepopup_value_popup_bg_color = "#ffffff";
+			var subscribepopup_value_popup_bg_url = "";
+			var subscribepopup_value_width = 680;
+			var subscribepopup_value_height = 525;
+			var subscribepopup_value_hide_close = "off";
+			var subscribepopup_value_disable_mobile = "on";
+			var subscribepopup_value_display_onload = "on";
+			var subscribepopup_action = "http://clementinedaily.com/wp-admin/admin-ajax.php";
+			subscribepopup_tmp = new Image();
+			subscribepopup_tmp.src="http://clementinedaily.com/wp-content/plugins/subscribe-popup/images/close.png";
+		</script><!-- Google Analytics Tracking by Google Analyticator 6.4.8: http://www.videousermanuals.com/google-analyticator/ -->
+<script type="text/javascript">
+    var analyticsFileTypes = [''];
+    var analyticsSnippet = 'enabled';
+    var analyticsEventTracking = 'enabled';
+</script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+  
+	_gaq.push(['_setAccount', 'UA-44678100-1']);
+    _gaq.push(['_addDevId', 'i9k95']); // Google Analyticator App ID with Google
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</head>
+
+<body class="home blog custom-background">
+
+<div id="wrapper">
+
+    <header id="branding" role="banner">
+      
+      <div id="inner-header" class="clearfix">
+    
+        <nav id="access" role="navigation">
+            <h1 class="assistive-text section-heading">Main menu</h1>
+            <div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+            <div class="menu"><ul id="menu-menu" class="menu"><li id="menu-item-546" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-546"><a href="http://clementinedaily.com/">HOME</a></li>
+<li id="menu-item-547" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-547"><a href="http://clementinedaily.com/about-2/">ABOUT</a></li>
+<li id="menu-item-614" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-614"><a href="http://clementinedaily.com/contact/">CONTACT</a></li>
+<li id="menu-item-549" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-549"><a href="http://clementinedaily.com/manifesto/">MANIFESTO</a></li>
+</ul></div>            
+        </nav><!-- #access -->
+        
+        <form role="search" method="get" id="searchform" action="http://clementinedaily.com/">
+    <div><label class="screen-reader-text" for="s">Search for:</label>
+        <input type="text" value="" name="s" id="s" placeholder="Search" />
+        <input type="submit" id="searchsubmit" value="Search" />
+    </div>
+</form>      </div>
+    </header><!-- #branding -->
+    <div class="logoContainer">
+      <a href="/"><img src="http://clementinedaily.com/wp-content/themes/clementine/library/images/clementine_logo.jpg" /></a>
+    </div>
+    <div class="categoryMenuContainer">
+      <nav role="navigation">
+        <div class="categoryMenu menu">
+          <ul>
+            	<li class="cat-item cat-item-1"><a href="http://clementinedaily.com/category/everyday-inspiration/" >Everyday Inspiration</a>
+<ul class='children'>
+	<li class="cat-item cat-item-21"><a href="http://clementinedaily.com/category/everyday-inspiration/quotes/" >Daily Quotes</a>
+</li>
+	<li class="cat-item cat-item-44"><a href="http://clementinedaily.com/category/everyday-inspiration/everyday-weekends/" >Everyday Weekends</a>
+</li>
+	<li class="cat-item cat-item-41"><a href="http://clementinedaily.com/category/everyday-inspiration/from-team-clementine/" >From Team Clementine</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="http://clementinedaily.com/category/everyday-inspiration/interviews/" >Inspired Interviews</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-10"><a href="http://clementinedaily.com/category/food-drink/" >Food &amp; Drink</a>
+<ul class='children'>
+	<li class="cat-item cat-item-26"><a href="http://clementinedaily.com/category/food-drink/entertaining/" >Low-Key Entertaining</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="http://clementinedaily.com/category/food-drink/recipes/" >Weekly Recipes</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-3"><a href="http://clementinedaily.com/category/home-living/" >Home &amp; Living</a>
+<ul class='children'>
+	<li class="cat-item cat-item-27"><a href="http://clementinedaily.com/category/home-living/decor/" >Home Decor</a>
+</li>
+	<li class="cat-item cat-item-28"><a href="http://clementinedaily.com/category/home-living/home-ec/" >Home Economics</a>
+</li>
+	<li class="cat-item cat-item-32"><a href="http://clementinedaily.com/category/home-living/home-tours/" >Home Tours</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-11"><a href="http://clementinedaily.com/category/self-wellness/" >Self &amp; Wellness</a>
+<ul class='children'>
+	<li class="cat-item cat-item-23"><a href="http://clementinedaily.com/category/self-wellness/body-soul/" >Body &amp; Soul</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="http://clementinedaily.com/category/self-wellness/advice/" >Life Advice</a>
+</li>
+	<li class="cat-item cat-item-43"><a href="http://clementinedaily.com/category/self-wellness/personal-growth/" >Personal Growth</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-9"><a href="http://clementinedaily.com/category/shopping-trends/" >Shopping &amp; Trends</a>
+<ul class='children'>
+	<li class="cat-item cat-item-25"><a href="http://clementinedaily.com/category/shopping-trends/gifts/" >Gift Ideas</a>
+</li>
+	<li class="cat-item cat-item-29"><a href="http://clementinedaily.com/category/shopping-trends/trends/" >Today&#039;s Trends</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://clementinedaily.com/category/style-beauty/" >Style &amp; Beauty</a>
+<ul class='children'>
+	<li class="cat-item cat-item-30"><a href="http://clementinedaily.com/category/style-beauty/beauty-products/" >Beauty Products</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="http://clementinedaily.com/category/style-beauty/beauty/" >Beauty Tricks</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="http://clementinedaily.com/category/style-beauty/style/" >Style Advice</a>
+</li>
+	<li class="cat-item cat-item-31"><a href="http://clementinedaily.com/category/style-beauty/style-finds/" >Style Finds</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-1344"><a href="http://clementinedaily.com/category/travel-culture/" >Travel &amp; Culture</a>
+</li>
+          </ul>
+          <div class="clear"></div>
+        </div>
+      </nav>
+      <div class="clear"></div>
+    </div>
+          <div class="slideshowContainer">
+        <section class="slider">
+          <div id="flexCarousel" class="flexslider carousel">
+            <ul class="slides">
+                          
+                <li>
+                                      <a href="http://clementinedaily.com/2015/02/favorite-females-sundance-film-festival/" rel="nofollow" title="Permanent Link to Our Favorite Females of the Sundance Film Festival"><img width="375" height="375" src="http://clementinedaily.com/wp-content/uploads/2015/02/Sundance6-375x375.jpg" class="attachment-thumbnail colorbox-11710  wp-post-image" alt="Sundance6" /></a>
+                    <div class="sliderTitle">
+                        <a href="http://clementinedaily.com/2015/02/favorite-females-sundance-film-festival/" title="Permalink to Our Favorite Females of the Sundance Film Festival" rel="bookmark">Our Favorite Females of the Sundance Film Festival</a>
+                    </div>
+                    <div class="itemCatSlider">
+                                              <span class="cat-links">
+                          <a href="http://clementinedaily.com/category/travel-culture/" rel="tag">Travel &amp; Culture</a>                        </span>
+                                          </div>
+                                  </li>
+
+              
+                <li>
+                                      <a href="http://clementinedaily.com/2015/02/8-things-note-18/" rel="nofollow" title="Permanent Link to 8 Things of Note"><img width="375" height="375" src="http://clementinedaily.com/wp-content/uploads/2015/01/unnamed-38-375x375.jpg" class="attachment-thumbnail colorbox-11683  wp-post-image" alt="Detroit Trip With Buick" /></a>
+                    <div class="sliderTitle">
+                        <a href="http://clementinedaily.com/2015/02/8-things-note-18/" title="Permalink to 8 Things of Note" rel="bookmark">8 Things of Note</a>
+                    </div>
+                    <div class="itemCatSlider">
+                                              <span class="cat-links">
+                          <a href="http://clementinedaily.com/category/everyday-inspiration/" rel="tag">Everyday Inspiration</a>                        </span>
+                                          </div>
+                                  </li>
+
+              
+                <li>
+                                      <a href="http://clementinedaily.com/2015/02/try-rosemary-truffle-marcona-almonds/" rel="nofollow" title="Permanent Link to Try This: Rosemary Truffle Marcona Almonds"><img width="375" height="375" src="http://clementinedaily.com/wp-content/uploads/2015/02/almonds-375x375.jpg" class="attachment-thumbnail colorbox-11640  wp-post-image" alt="almonds" /></a>
+                    <div class="sliderTitle">
+                        <a href="http://clementinedaily.com/2015/02/try-rosemary-truffle-marcona-almonds/" title="Permalink to Try This: Rosemary Truffle Marcona Almonds" rel="bookmark">Try This: Rosemary Truffle Marcona Almonds</a>
+                    </div>
+                    <div class="itemCatSlider">
+                                              <span class="cat-links">
+                          <a href="http://clementinedaily.com/category/food-drink/" rel="tag">Food &amp; Drink</a>                        </span>
+                                          </div>
+                                  </li>
+
+              
+                <li>
+                                      <a href="http://clementinedaily.com/2015/02/everyday-icon-skincare-guru/" rel="nofollow" title="Permanent Link to Everyday Icon: The Skincare Guru"><img width="375" height="375" src="http://clementinedaily.com/wp-content/uploads/2015/01/skinfix-375x375.jpg" class="attachment-thumbnail colorbox-11538  wp-post-image" alt="skinfix" /></a>
+                    <div class="sliderTitle">
+                        <a href="http://clementinedaily.com/2015/02/everyday-icon-skincare-guru/" title="Permalink to Everyday Icon: The Skincare Guru" rel="bookmark">Everyday Icon: The Skincare Guru</a>
+                    </div>
+                    <div class="itemCatSlider">
+                                              <span class="cat-links">
+                          <a href="http://clementinedaily.com/category/everyday-inspiration/interviews/" rel="tag">Inspired Interviews</a>                        </span>
+                                          </div>
+                                  </li>
+
+              
+                <li>
+                                      <a href="http://clementinedaily.com/2015/02/bucket-bag/" rel="nofollow" title="Permanent Link to Our Favorite Bag For Everything"><img width="375" height="375" src="http://clementinedaily.com/wp-content/uploads/2015/02/bucket.feature-375x375.jpg" class="attachment-thumbnail colorbox-11217  wp-post-image" alt="bucket.feature" /></a>
+                    <div class="sliderTitle">
+                        <a href="http://clementinedaily.com/2015/02/bucket-bag/" title="Permalink to Our Favorite Bag For Everything" rel="bookmark">Our Favorite Bag For Everything</a>
+                    </div>
+                    <div class="itemCatSlider">
+                                              <span class="cat-links">
+                          <a href="http://clementinedaily.com/category/style-beauty/style-finds/" rel="tag">Style Finds</a>                        </span>
+                                          </div>
+                                  </li>
+
+              
+                <li>
+                                      <a href="http://clementinedaily.com/2015/02/road-trip-detroit-mi/" rel="nofollow" title="Permanent Link to Road Trip: Detroit, MI"><img width="375" height="375" src="http://clementinedaily.com/wp-content/uploads/2015/01/unnamed-41-375x375.jpg" class="attachment-thumbnail colorbox-11253  wp-post-image" alt="Detroit Trip With Buick" /></a>
+                    <div class="sliderTitle">
+                        <a href="http://clementinedaily.com/2015/02/road-trip-detroit-mi/" title="Permalink to Road Trip: Detroit, MI" rel="bookmark">Road Trip: Detroit, MI</a>
+                    </div>
+                    <div class="itemCatSlider">
+                                              <span class="cat-links">
+                          <a href="http://clementinedaily.com/category/everyday-inspiration/" rel="tag">Everyday Inspiration</a>                        </span>
+                                          </div>
+                                  </li>
+
+              
+                <li>
+                                      <a href="http://clementinedaily.com/2015/01/8-things-note-17/" rel="nofollow" title="Permanent Link to 8 Things of Note"><img width="375" height="375" src="http://clementinedaily.com/wp-content/uploads/2015/01/8things-375x375.jpg" class="attachment-thumbnail colorbox-11556  wp-post-image" alt="8things" /></a>
+                    <div class="sliderTitle">
+                        <a href="http://clementinedaily.com/2015/01/8-things-note-17/" title="Permalink to 8 Things of Note" rel="bookmark">8 Things of Note</a>
+                    </div>
+                    <div class="itemCatSlider">
+                                              <span class="cat-links">
+                          <a href="http://clementinedaily.com/category/everyday-inspiration/" rel="tag">Everyday Inspiration</a>                        </span>
+                                          </div>
+                                  </li>
+
+              
+                <li>
+                                      <a href="http://clementinedaily.com/2015/01/everyday-icon-adventurer/" rel="nofollow" title="Permanent Link to Everyday Icon: The Adventurer"><img width="375" height="375" src="http://clementinedaily.com/wp-content/uploads/2015/01/CD_EverydayIcon_GinaBegin-375x375.jpg" class="attachment-thumbnail colorbox-11523  wp-post-image" alt="CD_EverydayIcon_GinaBegin" /></a>
+                    <div class="sliderTitle">
+                        <a href="http://clementinedaily.com/2015/01/everyday-icon-adventurer/" title="Permalink to Everyday Icon: The Adventurer" rel="bookmark">Everyday Icon: The Adventurer</a>
+                    </div>
+                    <div class="itemCatSlider">
+                                              <span class="cat-links">
+                          <a href="http://clementinedaily.com/category/everyday-inspiration/interviews/" rel="tag">Inspired Interviews</a>                        </span>
+                                          </div>
+                                  </li>
+
+              
+                <li>
+                                      <a href="http://clementinedaily.com/2015/01/start-now-simplifying-your-home/" rel="nofollow" title="Permanent Link to Start Now: Simplify Your Home (and Life)"><img width="375" height="375" src="http://clementinedaily.com/wp-content/uploads/2015/01/ContentA1-Title-Card-375x375.jpg" class="attachment-thumbnail colorbox-11403  wp-post-image" alt="ContentA1-Title-Card" /></a>
+                    <div class="sliderTitle">
+                        <a href="http://clementinedaily.com/2015/01/start-now-
+3aae
+simplifying-your-home/" title="Permalink to Start Now: Simplify Your Home (and Life)" rel="bookmark">Start Now: Simplify Your Home (and Life)</a>
+                    </div>
+                    <div class="itemCatSlider">
+                                              <span class="cat-links">
+                          <a href="http://clementinedaily.com/category/self-wellness/" rel="tag">Self &amp; Wellness</a>                        </span>
+                                          </div>
+                                  </li>
+
+              
+                <li>
+                                      <a href="http://clementinedaily.com/2015/01/try-vietnamese-iced-coffee/" rel="nofollow" title="Permanent Link to Try This: VIETNAMESE ICED COFFEE"><img width="375" height="375" src="http://clementinedaily.com/wp-content/uploads/2015/01/coffee-375x375.jpg" class="attachment-thumbnail colorbox-11407  wp-post-image" alt="coffee" /></a>
+                    <div class="sliderTitle">
+                        <a href="http://clementinedaily.com/2015/01/try-vietnamese-iced-coffee/" title="Permalink to Try This: VIETNAMESE ICED COFFEE" rel="bookmark">Try This: VIETNAMESE ICED COFFEE</a>
+                    </div>
+                    <div class="itemCatSlider">
+                                              <span class="cat-links">
+                          <a href="http://clementinedaily.com/category/food-drink/" rel="tag">Food &amp; Drink</a>                        </span>
+                                          </div>
+                                  </li>
+
+                          </ul>
+          </div>
+        </section>
+      </div>
+        <div id="container">
+	<div id="content" class="clearfix">
+		
+		<div id="main" class="col620 clearfix" role="main">
+		
+		  <div id="featured" class="clearfix">
+			<h3>The Latest in...</h3>
+
+		  <div class="item-wrap clearfix">
+						
+			
+								
+							
+
+
+						<div class="item col300">
+					
+					   <div class="item-cat">
+							<span class="cat-links">
+								Everyday Inspiration							</span>
+						</div>
+					
+					  <div class="item-content">
+						<header>
+						  <h2 class="entry-title"><a href="http://clementinedaily.com/2015/01/8-things-note-16/" title="Permalink to 8 Things of Note" rel="bookmark">8 Things of Note</a></h2>
+						</header>
+					  </div>
+					  
+					  						
+							 <a href="http://clementinedaily.com/2015/01/8-things-note-16/" rel="bookmark" title="8 Things of Note"><img width="250" height="250" src="http://clementinedaily.com/wp-content/uploads/2015/01/Dear-Clementine-sml-375x375.jpg" class="attachment-250x250 colorbox-11386  wp-post-image" alt="Dear-Clementine-sml" onload="thumb_img_onload(this)" /></a>
+							 
+						
+					</div>
+					<!-- this area is for the display of your posts the way you want it -->
+					<!-- i.e. title, exerpt(), etc. -->
+
+										
+							
+
+
+						<div class="item col300">
+					
+					   <div class="item-cat">
+							<span class="cat-links">
+								Food &amp; Drink							</span>
+						</div>
+					
+					  <div class="item-content">
+						<header>
+						  <h2 class="entry-title"><a href="http://clementinedaily.com/2014/12/get-look-sparkling-holiday-table/" title="Permalink to Get the Look: A Sparkling Holiday Table" rel="bookmark">Get the Look: A Sparkling Holiday Table</a></h2>
+						</header>
+					  </div>
+					  
+					  						
+							 <a href="http://clementinedaily.com/2014/12/get-look-sparkling-holiday-table/" rel="bookmark" title="Get the Look: A Sparkling Holiday Table"><img width="250" height="250" src="http://clementinedaily.com/wp-content/uploads/2014/12/unnamed-15-375x375.jpg" class="attachment-250x250 colorbox-10971  wp-post-image" alt="unnamed-15" onload="thumb_img_onload(this)" /></a>
+							 
+						
+					</div>
+					<!-- this area is for the display of your posts the way you want it -->
+					<!-- i.e. title, exerpt(), etc. -->
+
+										
+							
+
+
+						<div class="item col300">
+					
+					   <div class="item-cat">
+							<span class="cat-links">
+								Home &amp; Living							</span>
+						</div>
+					
+					  <div class="item-content">
+						<header>
+						  <h2 class="entry-title"><a href="http://clementinedaily.com/2014/12/make-bed/" title="Permalink to The Anatomy of a Cozy Bed" rel="bookmark">The Anatomy of a Cozy Bed</a></h2>
+						</header>
+					  </div>
+					  
+					  						
+							 <a href="http://clementinedaily.com/2014/12/make-bed/" rel="bookmark" title="The Anatomy of a Cozy Bed"><img width="250" height="250" src="http://clementinedaily.com/wp-content/uploads/2014/11/cozy-bed-2-375x375.jpg" class="attachment-250x250 colorbox-10500  wp-post-image" alt="cozy-bed-2" onload="thumb_img_onload(this)" /></a>
+							 
+						
+					</div>
+					<!-- this area is for the display of your posts the way you want it -->
+					<!-- i.e. title, exerpt(), etc. -->
+
+										
+							
+
+
+						<div class="item col300">
+					
+					   <div class="item-cat">
+							<span class="cat-links">
+								Self &amp; Wellness							</span>
+						</div>
+					
+					  <div class="item-content">
+						<header>
+						  <h2 class="entry-title"><a href="http://clementinedaily.com/2015/01/honor-resolutions/" title="Permalink to 7 Tips For Honoring Resolutions" rel="bookmark">7 Tips For Honoring Resolutions</a></h2>
+						</header>
+					  </div>
+					  
+					  						
+							 <a href="http://clementinedaily.com/2015/01/honor-resolutions/" rel="bookmark" title="7 Tips For Honoring Resolutions"><img width="250" height="250" src="http://clementinedaily.com/wp-content/uploads/2015/01/download7-375x375.jpg" class="attachment-250x250 colorbox-11122  wp-post-image" alt="download7" onload="thumb_img_onload(this)" /></a>
+							 
+						
+					</div>
+					<!-- this area is for the display of your posts the way you want it -->
+					<!-- i.e. title, exerpt(), etc. -->
+
+										
+							
+
+
+						<div class="item col300">
+					
+					   <div class="item-cat">
+							<span class="cat-links">
+								Shopping &amp; Trends							</span>
+						</div>
+					
+					  <div class="item-content">
+						<header>
+						  <h2 class="entry-title"><a href="http://clementinedaily.com/2015/01/cozy-knits-101-wear-winters-biggest-trend/" title="Permalink to How To Wear (and shop for) Winter&#8217;s Biggest Trend" rel="bookmark">How To Wear (and shop for) Winter&#8217;s Biggest Trend</a></h2>
+						</header>
+					  </div>
+					  
+					  						
+							 <a href="http://clementinedaily.com/2015/01/cozy-knits-101-wear-winters-biggest-trend/" rel="bookmark" title="How To Wear (and shop for) Winter&#8217;s Biggest Trend"><img width="250" height="250" src="http://clementinedaily.com/wp-content/uploads/2015/01/capotecoat4-375x375.jpg" class="attachment-250x250 colorbox-11304  wp-post-image" alt="capotecoat4" onload="thumb_img_onload(this)" /></a>
+							 
+						
+					</div>
+					<!-- this area is for the display of your posts the way you want it -->
+					<!-- i.e. title, exerpt(), etc. -->
+
+										
+							
+
+
+						<div class="item col300">
+					
+					   <div class="item-cat">
+							<span class="cat-links">
+								Style &amp; Beauty							</span>
+						</div>
+					
+					  <div class="item-content">
+						<header>
+						  <h2 class="entry-title"><a href="http://clementinedaily.com/2015/01/makeup-mission/" title="Permalink to Makeup With a Mission" rel="bookmark">Makeup With a Mission</a></h2>
+						</header>
+					  </div>
+					  
+					  						
+							 <a href="http://clementinedaily.com/2015/01/makeup-mission/" rel="bookmark" title="Makeup With a Mission"><img width="250" height="250" src="http://clementinedaily.com/wp-content/uploads/2015/01/be6-375x375.jpg" class="attachment-250x250 colorbox-11443  wp-post-image" alt="bareMinerals Complexion Rescue" onload="thumb_img_onload(this)" /></a>
+							 
+						
+					</div>
+					<!-- this area is for the display of your posts the way you want it -->
+					<!-- i.e. title, exerpt(), etc. -->
+
+										
+										
+									<div class="clear"></div>
+		  </div>
+	</div>
+		</div> <!-- end #main -->
+
+				<div id="sidebar" class="widget-area col300" role="complementary">
+            
+            <div id="social-media" class="clearfix">
+				<a href="/subscribe/"><img src="http://clementinedaily.com/wp-content/themes/clementine/library/images/subscribe.jpg" /></a>
+				<a href="https://twitter.com/clementinedaily"><img src="http://clementinedaily.com/wp-content/themes/clementine/library/images/sidebar_twitter.png" /></a>
+				<a href="https://www.facebook.com/clementinedailyonline"><img src="http://clementinedaily.com/wp-content/themes/clementine/library/images/sidebar_facebook.png" /></a>
+				<a href="http://pinterest.com/clementinedaily/"><img src="http://clementinedaily.com/wp-content/themes/clementine/library/images/sidebar_pinterest.png" /></a>
+				<a href="http://instagram.com/clementinedaily"><img src="http://clementinedaily.com/wp-content/themes/clementine/library/images/sidebar_instagram.png" /></a>
+            </div>
+
+			<a href="/tag/on-the-menu/"><img src="http://clementinedaily.com/wp-content/themes/clementine/library/images/onthemenu_button.jpg" /></a>
+			<a href="/tag/try-this/"><img src="http://clementinedaily.com/wp-content/themes/clementine/library/images/tipsandtricks_button.jpg" /></a>
+
+						
+				<a href="/category/everyday-inspiration/quotes/" title="Daily Thought">
+									</a>
+
+			
+			<aside id="text-2" class="widget widget_text">			<div class="textwidget"><div id="pubexchange_rail_grid_3"></div>
+<script>(function(d, s, id) {
+  var js, pjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "http://cdn.pubexchange.com/modules/partner/clementine_daily";
+  pjs.parentNode.insertBefore(js, pjs);
+}(document, 'script', 'pubexchange-jssdk'));</script></div>
+		</aside><aside id="text-3" class="widget widget_text">			<div class="textwidget"><!-- FM Badge Start -->
+<center>
+<a href="https://advertisers.federatedmedia.net/explore/view/Clementine-Daily">
+<img src="http://static.fmpub.net/assets/badges/FM_Living_Vertical.gif" style="width:100px !important; height:150px !important;min-width:100px !important;">
+</a>
+</center>
+<!-- FM Badge End --></div>
+		</aside><aside id="text-4" class="widget widget_text">			<div class="textwidget"><script src="https://widget.bloglovin.com/widget/scripts/bl.js" type="text/javascript"></script><a target="_blank" href="http://www.bloglovin.com/blog/10538553" data-img-src="http://www.bloglovin.com/widget/bilder/en/widget.gif?id=10538553" data-blog-id="10538553" class="bloglovin-widget"><img src="http://www.bloglovin.com/widget/bilder/en/widget.gif?id=10538553"></a></div>
+		</aside>		</div><!-- #sidebar .widget-area -->
+	</div> <!-- end #content -->
+		
+	
+    </div><!-- #container -->
+</div><!-- #wrapper -->
+
+<footer id="colophon" role="contentinfo">
+        <div class="access">
+          <div class="menu-menu-container"><ul id="menu-menu-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-546"><a href="http://clementinedaily.com/">HOME</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-547"><a href="http://clementinedaily.com/about-2/">ABOUT</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-614"><a href="http://clementinedaily.com/contact/">CONTACT</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-549"><a href="http://clementinedaily.com/manifesto/">MANIFESTO</a></li>
+</ul></div>        </div>
+        <div id="site-generator">
+            &copy; Clementine Daily.
+        </div>
+    </footer><!-- #colophon -->
+    <div class="footerAdWidget">
+                
+<!-- FM Leaderboard Zone -->
+<script type='text/javascript' src='http://static.fmpub.net/zone/15317'></script>
+<!-- FM Leaderboard Zone -->
+
+                </div>
+    <!-- Start of StatCounter Code -->
+    <script type="text/javascript">
+    <!-- 
+        var sc_project=9226936; 
+        var sc_security="2efb1084"; 
+      var sc_invisible=1;
+        var scJsHost = (("https:" == document.location.protocol) ?
+        "https://secure." : "http://www.");
+    //-->
+document.write("<sc"+"ript type='text/javascript' src='" +scJsHost +"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web analytics" href="http://statcounter.com/"><img class="statcounter" src="http://c.statcounter.com/9226936/0/2efb1084/1/" alt="web analytics" /></a></div></noscript>   
+    <!-- End of StatCounter Code -->
+
+		<div id="subscribepopup_container" style="display: none;">
+			<div class="subscribepopup_box subscribepopup_font_dark">
+				<div class="subscribepopup_message">
+				<p><img class="alignnone wp-image-8689 size-full" src="http://clementinedaily.com/wp-content/uploads/2014/06/04-Virtual-Shades.jpg" alt="04-Virtual-Shades" width="766" height="466" /></p>
+<p>Can't get enough of Clementine? Sign up below for exclusive interviews, inspired videos, product spotlights and genius lifestyle tips - all delivered to your inbox each week. Join us in embracing a sweeter everyday - from our desk to your home.</p>
+				</div>
+				<div id="subscribepopup_form">
+					<input class="subscribepopup_input" name="subscribepopup_name" placeholder="First Name" id="subscribepopup_name" value="First Name" onfocus="if (this.value == 'First Name') {this.value = '';}" onblur="if (this.value == '') {this.value = 'First Name';}">
+					<input class="subscribepopup_input" name="subscribepopup_email" placeholder="E-mail" id="subscribepopup_email" value="E-mail" onfocus="if (this.value == 'E-mail') {this.value = '';}" onblur="if (this.value == '') {this.value = 'E-mail';}">
+					<input type="button" id="subscribepopup_submit" value="Subscribe" onclick="subscribepopup_subscribe();">
+					<img id="subscribepopup_progress" src="http://clementinedaily.com/wp-content/plugins/subscribe-popup/images/loading.gif" alt="" width="16" height="16" >
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			subscribepopup_init();
+		</script>
+
+<!-- Quantcast Tag -->
+<script type="text/javascript">
+var _qevents = _qevents || [];
+
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+
+_qevents.push({
+qacct:"p-5dfY_XQ5oTqsU"
+});
+</script>
+
+<noscript>
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p-5dfY_XQ5oTqsU.gif" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+<!-- End Quantcast tag -->
+
+<script type="text/javascript" src="//s.skimresources.com/js/65557X1486598.skimlinks.js"></script>
+
+</body>
+</html>
+0
+

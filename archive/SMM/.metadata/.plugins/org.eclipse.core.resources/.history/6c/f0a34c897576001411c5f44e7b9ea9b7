@@ -1,0 +1,19 @@
+from scipy.stats import poisson
+
+max_children = 12
+observed_val = range(0,max_children+1)
+observed_freq = [7,45,181,478,829,1112,1343,1033,670,286,104,24,3]
+
+total = 0
+for index in range(0,max_children+1):
+    total+= observed_freq[index]*observed_val[index]
+
+observed_mean = total/6115.0
+
+squared_error = 0.0
+for index in range(0,max_children+1):
+    expected_freq = poisson.pmf(observed_val[index],observed_mean)
+    this_squared_error = ((observed_freq - expected_freq)**2)/expected_freq
+    print this_squared_error.shape()
+
+print squared_error

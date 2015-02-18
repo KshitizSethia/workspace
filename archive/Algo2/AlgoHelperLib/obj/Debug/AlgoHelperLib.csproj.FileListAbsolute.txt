@@ -1,0 +1,4 @@
+C:\Dropbox\workspace\Algo2\AlgoHelperLib\bin\Debug\AlgoHelperLib.dll
+C:\Dropbox\workspace\Algo2\AlgoHelperLib\bin\Debug\AlgoHelperLib.pdb
+C:\Dropbox\workspace\Algo2\AlgoHelperLib\obj\Debug\AlgoHelperLib.dll
+C:\Dropbox\workspace\Algo2\AlgoHelperLib\obj\Debug\AlgoHelperLib.pdb

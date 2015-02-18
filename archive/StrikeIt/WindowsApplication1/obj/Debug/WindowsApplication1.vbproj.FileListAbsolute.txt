@@ -1,0 +1,9 @@
+C:\Dropbox\workspace\StrikeIt\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+C:\Dropbox\workspace\StrikeIt\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Dropbox\workspace\StrikeIt\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Dropbox\workspace\StrikeIt\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+C:\Dropbox\workspace\StrikeIt\WindowsApplication1\obj\Debug\WindowsApplication1.Resources.resources
+C:\Dropbox\workspace\StrikeIt\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+C:\Dropbox\workspace\StrikeIt\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+C:\Dropbox\workspace\StrikeIt\WindowsApplication1\obj\Debug\WindowsApplication1.xml
+C:\Dropbox\workspace\StrikeIt\WindowsApplication1\obj\Debug\WindowsApplication1.pdb

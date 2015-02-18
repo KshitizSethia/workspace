@@ -1,0 +1,63 @@
+-- VERSION_4
+-- START DISKCACHE
+C:\Users\Kshitiz\Documents\Cloud\Copy\workspace\FA\.metadata\.plugins\org.eclipse.core.resources\.projects\As2\com.python.pydev.analysis\v2_indexcache
+StackProcessing|1410874565000|C:\Users\Kshitiz\Documents\Cloud\Copy\workspace\FA\As2\StackProcessing.py
+DoublyLinkedList|1410879755000|C:\Users\Kshitiz\Documents\Cloud\Copy\workspace\FA\As2\DoublyLinkedList.py
+Tree|1410735801000|C:\Users\Kshitiz\Documents\Cloud\Copy\workspace\FA\As2\Tree.py
+ListProcessing|1410886736000|C:\Users\Kshitiz\Documents\Cloud\Copy\workspace\FA\As2\ListProcessing.py
+SelectionSort|1410889655000|C:\Users\Kshitiz\Documents\Cloud\Copy\workspace\FA\As2\SelectionSort.py
+-- END DISKCACHE
+-- START DICTIONARY
+15
+3=StackProcessing
+7=ll_node
+6=n_node
+9=dl_node
+2=DoublyLinkedList
+10=n_node.__init__
+14=dl_list.__init__
+8=dl_list
+5=Tree
+1=ListProcessing
+15=dl_node.insert_before
+12=dl_node.__init__
+4=SelectionSort
+13=dl_list.insert_before
+11=ll_node.__init__
+-- END DICTIONARY
+-- START TREE 1
+19
+cle|1|Clean!10@
+dl_|2|dl_node!17@dl_list!17@
+eva|2|Eval!18@Eval!26@
+glo|2|global_stack!19@global_stack!27@
+ip|2|ip!27@ip!35@
+is_|2|is_empty!26@is_empty!18@
+isi|2|IsItAnOp!18@IsItAnOp!26@
+lin|1|linked_list!11@
+ll_|1|ll_node!9@
+n_a|1|n_ary_tree!43@
+n_n|1|n_node!41@
+par|2|ParentPost!42@ParentPre!42@
+pri|1|PrintPost!42@
+rep|1|replace!18@
+sam|1|sample_list!19@
+sel|3|selectionsort_iter!34@selectionsort_recur_undo!34@selectionsort_recur!34@
+sol|2|Solve!18@Solve!26@
+sta|2|StackVal!26@StackVal!18@
+swa|1|swap!34@
+-- END TREE
+-- START TREE 2
+11
+__i|4|__init__!6&42@__init__!7&10@__init__!8&18@__init__!9&18@
+__r|4|__repr__!7&10@__repr__!6&42@__repr__!8&18@__repr__!9&18@
+__s|3|__str__!9&18@__str__!6&42@__str__!7&10@
+chi|1|child!10&43@
+dat|3|data!11&11@data!10&43@data!12&19@
+fir|2|first!13&19@first!14&19@
+ins|2|insert_before!8&18@insert_before!9&18@
+las|1|last!14&19@
+nxt|2|nxt!11&11@nxt!12&19@
+prv|2|prv!15&19@prv!12&19@
+sib|1|sibling!10&43@
+-- END TREE

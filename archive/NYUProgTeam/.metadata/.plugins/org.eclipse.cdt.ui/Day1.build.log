@@ -1,0 +1,15 @@
+18:55:08 **** Build of configuration Debug for project day1 ****
+make all 
+Building file: ../src/day1.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/day1.d" -MT"src/day1.d" -o "src/day1.o" "../src/day1.cpp"
+In file included from /usr/lib/gcc/x86_64-pc-cygwin/4.8.3/include/c++/array:35:0,
+                 from ../src/day1.cpp:12:
+/usr/lib/gcc/x86_64-pc-cygwin/4.8.3/include/c++/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support is currently experimental, and must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support for the \
+  ^
+make: *** [src/day1.o] Error 1
+src/subdir.mk:18: recipe for target 'src/day1.o' failed
+
+18:55:09 Build Finished (took 1s.188ms)
+

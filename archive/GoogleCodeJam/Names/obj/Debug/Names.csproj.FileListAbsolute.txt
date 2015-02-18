@@ -1,0 +1,5 @@
+C:\Dropbox\workspace\GoogleCodeJam\Names\bin\Debug\Names.exe.config
+C:\Dropbox\workspace\GoogleCodeJam\Names\bin\Debug\Names.exe
+C:\Dropbox\workspace\GoogleCodeJam\Names\bin\Debug\Names.pdb
+C:\Dropbox\workspace\GoogleCodeJam\Names\obj\Debug\Names.exe
+C:\Dropbox\workspace\GoogleCodeJam\Names\obj\Debug\Names.pdb

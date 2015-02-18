@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;As5/GCS_copied&apos; to &apos;GCS_copied.py&apos;" description="Rename resource &apos;GCS_copied&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="GCS_copied" name="GCS_copied.py" stamp="1412785523520" updateReferences="true"/>
+</session>

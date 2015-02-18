@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;As2/DoubleLinkedList&apos; to &apos;DoubleLinkedList.py&apos;" description="Rename resource &apos;DoubleLinkedList&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="DoubleLinkedList" name="DoubleLinkedList.py" stamp="1410874091549" updateReferences="true"/>
+</session>

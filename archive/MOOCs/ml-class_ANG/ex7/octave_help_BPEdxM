@@ -1,0 +1,6 @@
+\input texinfo
+
+@deftypefn {Built-in Function} {} and (@var{x}, @var{y})
+@end deftypefn
+
+@bye

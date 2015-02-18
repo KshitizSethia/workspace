@@ -1,0 +1,9 @@
+C:\Dropbox\workspace\Algo2\PrimsAlgorithm\bin\Debug\PrimsAlgorithm.exe.config
+C:\Dropbox\workspace\Algo2\PrimsAlgorithm\bin\Debug\PrimsAlgorithm.exe
+C:\Dropbox\workspace\Algo2\PrimsAlgorithm\bin\Debug\PrimsAlgorithm.pdb
+C:\Dropbox\workspace\Algo2\PrimsAlgorithm\obj\Debug\PrimsAlgorithm.exe
+C:\Dropbox\workspace\Algo2\PrimsAlgorithm\obj\Debug\PrimsAlgorithm.pdb
+C:\Dropbox\workspace\Algo2\PrimsAlgorithm\bin\Debug\C5.dll
+C:\Dropbox\workspace\Algo2\PrimsAlgorithm\bin\Debug\C5.Mono.dll
+C:\Dropbox\workspace\Algo2\PrimsAlgorithm\bin\Debug\C5.pdb
+C:\Dropbox\workspace\Algo2\PrimsAlgorithm\bin\Debug\C5.xml

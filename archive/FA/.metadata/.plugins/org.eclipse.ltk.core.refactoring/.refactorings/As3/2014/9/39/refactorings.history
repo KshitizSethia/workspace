@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;As3/wd.exe&apos; to &apos;wd.py&apos;" description="Rename resource &apos;wd.exe&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="wd.exe" name="wd.py" stamp="1411259551670" updateReferences="true"/>
+</session>

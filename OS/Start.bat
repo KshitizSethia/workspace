@@ -1,0 +1,2 @@
+start eclipse -data .
+exit

@@ -1,0 +1,5 @@
+C:\Dropbox\workspace\Algo2\Assignment1\bin\Debug\Assignment1.exe.config
+C:\Dropbox\workspace\Algo2\Assignment1\bin\Debug\Assignment1.exe
+C:\Dropbox\workspace\Algo2\Assignment1\bin\Debug\Assignment1.pdb
+C:\Dropbox\workspace\Algo2\Assignment1\obj\Debug\Assignment1.exe
+C:\Dropbox\workspace\Algo2\Assignment1\obj\Debug\Assignment1.pdb

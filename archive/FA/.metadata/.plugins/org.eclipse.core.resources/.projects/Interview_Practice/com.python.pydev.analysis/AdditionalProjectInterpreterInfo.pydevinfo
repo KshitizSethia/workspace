@@ -1,0 +1,33 @@
+-- VERSION_4
+-- START DISKCACHE
+C:\Users\Kshitiz\Documents\Cloud\Copy\workspace\FA\.metadata\.plugins\org.eclipse.core.resources\.projects\Interview_Practice\com.python.pydev.analysis\v2_indexcache
+PreOrderToBST|1420703717598|C:\Users\Kshitiz\Documents\Cloud\Copy\workspace\FA\Interview_Practice\PreOrderToBST.py
+NumStrings|1420677403428|C:\Users\Kshitiz\Documents\Cloud\Copy\workspace\FA\Interview_Practice\NumStrings.py
+-- END DISKCACHE
+-- START DICTIONARY
+4
+3=Tree
+4=Tree.__init__
+1=PreOrderToBST
+2=NumStrings
+-- END DICTIONARY
+-- START TREE 1
+9
+ind|1|index!11@
+len|1|length_of_problem!11@
+mak|2|MakePostFromPreOrder!10@MakeBSTFromPreOrder!10@
+myt|1|myTree!11@
+new|1|NewPreOrder!11@
+num|1|NumStrings!18@
+pre|1|PreOrder!11@
+pri|1|PrintInOrder!10@
+tre|1|Tree!9@
+-- END TREE
+-- START TREE 2
+5
+__i|1|__init__!3&10@
+__r|1|__repr__!3&10@
+dat|1|data!4&11@
+lef|1|left!4&11@
+rig|1|right!4&11@
+-- END TREE

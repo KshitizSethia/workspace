@@ -1,0 +1,7 @@
+filename = "triangle.txt"
+backup = backup= [0]*100
+for line in reversed(open(filename).readlines()):
+    new_nums = line.split(" ")
+    for index in range(0, new_nums.length):
+        backup[index] = new_nums[index] if (new_nums[index]>new_nums[index+1]) else new_nums[index+1]
+     

@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenCVTest", "OpenCVTest\OpenCVTest.vcxproj", "{8EE658BE-A3AA-42BA-9192-9CD5A06FFB31}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EdgeDetectors", "EdgeDetectors\EdgeDetectors.vcxproj", "{9E6C3ECB-B3F6-476D-B806-6512C0366BC2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SIFT", "SIFT\SIFT.vcxproj", "{EDAB04E2-FFC3-4E70-8572-5075066BED36}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Main", "Main\Main.vcxproj", "{BC212591-CF29-46FA-BF60-AB574A034128}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CLAHE", "opencv-clahe-master\CLAHE.vcxproj", "{EDFB6A83-3161-411D-A142-4AA2EDA33BB9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8EE658BE-A3AA-42BA-9192-9CD5A06FFB31}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8EE658BE-A3AA-42BA-9192-9CD5A06FFB31}.Debug|Win32.Build.0 = Debug|Win32
+		{8EE658BE-A3AA-42BA-9192-9CD5A06FFB31}.Release|Win32.ActiveCfg = Release|Win32
+		{8EE658BE-A3AA-42BA-9192-9CD5A06FFB31}.Release|Win32.Build.0 = Release|Win32
+		{9E6C3ECB-B3F6-476D-B806-6512C0366BC2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9E6C3ECB-B3F6-476D-B806-6512C0366BC2}.Debug|Win32.Build.0 = Debug|Win32
+		{9E6C3ECB-B3F6-476D-B806-6512C0366BC2}.Release|Win32.ActiveCfg = Release|Win32
+		{9E6C3ECB-B3F6-476D-B806-6512C0366BC2}.Release|Win32.Build.0 = Release|Win32
+		{EDAB04E2-FFC3-4E70-8572-5075066BED36}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EDAB04E2-FFC3-4E70-8572-5075066BED36}.Debug|Win32.Build.0 = Debug|Win32
+		{EDAB04E2-FFC3-4E70-8572-5075066BED36}.Release|Win32.ActiveCfg = Release|Win32
+		{EDAB04E2-FFC3-4E70-8572-5075066BED36}.Release|Win32.Build.0 = Release|Win32
+		{BC212591-CF29-46FA-BF60-AB574A034128}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BC212591-CF29-46FA-BF60-AB574A034128}.Debug|Win32.Build.0 = Debug|Win32
+		{BC212591-CF29-46FA-BF60-AB574A034128}.Release|Win32.ActiveCfg = Release|Win32
+		{BC212591-CF29-46FA-BF60-AB574A034128}.Release|Win32.Build.0 = Release|Win32
+		{EDFB6A83-3161-411D-A142-4AA2EDA33BB9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EDFB6A83-3161-411D-A142-4AA2EDA33BB9}.Debug|Win32.Build.0 = Debug|Win32
+		{EDFB6A83-3161-411D-A142-4AA2EDA33BB9}.Release|Win32.ActiveCfg = Release|Win32
+		{EDFB6A83-3161-411D-A142-4AA2EDA33BB9}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

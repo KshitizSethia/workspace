@@ -1,0 +1,6 @@
+C:\Dropbox\workspace\Algo2\Assignment2_Q2\bin\Debug\Assignment2_Q2.pdb
+C:\Dropbox\workspace\Algo2\Assignment2_Q2\obj\Debug\Assignment2_Q2.pdb
+C:\Dropbox\workspace\Algo2\Assignment2_Q2\obj\Debug\Assignment2_Q2.csprojResolveAssemblyReference.cache
+C:\Dropbox\workspace\Algo2\Assignment2_Q2\bin\Debug\Assignment2_Q2.dll.config
+C:\Dropbox\workspace\Algo2\Assignment2_Q2\bin\Debug\Assignment2_Q2.dll
+C:\Dropbox\workspace\Algo2\Assignment2_Q2\obj\Debug\Assignment2_Q2.dll

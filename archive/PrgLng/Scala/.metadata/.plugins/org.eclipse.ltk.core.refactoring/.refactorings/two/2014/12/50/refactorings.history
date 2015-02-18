@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;two/src/Invariance.scala&apos; to &apos;Variance.scala&apos;" description="Rename resource &apos;Invariance.scala&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Invariance.scala" name="Variance.scala" stamp="1418320178469" updateReferences="true"/>
+</session>

@@ -1,0 +1,18 @@
+INDEX VERSION 1.126+C:\Dropbox\workspace\MLBook_TMitchell\.metadata\.plugins\org.eclipse.jdt.core
+683184654.index
+1144188029.index
+4149142647.index
+739078005.index
+3015671029.index
+2706502329.index
+3626931047.index
+384216248.index
+4257325822.index
+3256372620.index
+1075156909.index
+1820024274.index
+3521617142.index
+3534064665.index
+4018706093.index
+3607853606.index
+728132027.index

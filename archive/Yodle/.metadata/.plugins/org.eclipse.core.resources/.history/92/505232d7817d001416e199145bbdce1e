@@ -1,0 +1,12 @@
+filename = "triangle.txt"
+result = result= [0]*4
+for line in reversed(open(filename).readlines()):
+    new_nums = map(int, line.split(" "))
+    new_nums[0] = new_nums[0]+result[0]
+    for index in range(0, len(new_nums)-1):
+        new_nums[index+1] += result[index+1]
+        result[index] = new_nums[index] if (new_nums[index]>new_nums[index+1]) else new_nums[index+1]
+print new_nums
+print result
+answer = 2*result[0]-new_nums
+print answer

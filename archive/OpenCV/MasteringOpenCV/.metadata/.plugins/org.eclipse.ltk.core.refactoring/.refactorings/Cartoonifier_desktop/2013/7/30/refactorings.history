@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Cartoonifier_desktop/src/Cartoonifier_desktop.cpp&apos; to &apos;main_desktop.cpp&apos;" description="Rename resource &apos;Cartoonifier_desktop.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Cartoonifier_desktop.cpp" name="main_desktop.cpp" stamp="1374522188648" updateReferences="true"/>
+</session>

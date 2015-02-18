@@ -1,0 +1,46 @@
+function idx = findClosestCentroids(X, centroids)
+%FINDCLOSESTCENTROIDS computes the centroid memberships for every example
+%   idx = FINDCLOSESTCENTROIDS (X, centroids) returns the closest centroids
+%   in idx for a dataset X where each row is a single example. idx = m x 1 
+%   vector of centroid assignments (i.e. each entry in range [1..K])
+%
+
+% Set K
+K = size(centroids, 1);
+
+% You need to return the following variables correctly.
+idx = zeros(size(X,1), 1);
+
+% ====================== YOUR CODE HERE ======================
+% Instructions: Go over every example, find its closest centroid, and store
+%               the index inside idx at the appropriate location.
+%               Concretely, idx(i) should contain the index of the centroid
+%               closest to example i. Hence, it should be a value in the 
+%               range 1..K
+%
+% Note: You can use a for-loop over the examples to compute this.
+%
+
+% iterate over each example
+for exampleIndex = 1:size(X, 1)
+	% calculate this example's distance from first centroid, assume that to be minimum
+	minDistance = sum((X(exampleIndex,:) - centroids(1,:)).^2);
+	chosenCentroid = 1;
+	for centroidIndex = 2:K
+		% calculate distance from each centroid
+		distance = sum((X(exampleIndex,:) - centroids(centroidIndex,:)).^2);
+		
+		% if distance is the new minimum, then change the index and update the new minimum
+		if(distance<minDistance)
+			minDistance = distance;
+			chosenCentroid = centroidIndex;
+		endif
+		
+		% put chosenIndex's value in the answer
+		idx(exampleIndex) = chosenCentroid;
+	endfor
+endfor
+% =============================================================
+
+end
+

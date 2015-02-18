@@ -1,0 +1,248 @@
+17:44:09 **** Incremental Build of configuration Debug for project 11-14 ****
+make all 
+Building file: ../src/11-14.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/11-14.d" -MT"src/11-14.d" -o "src/11-14.o" "../src/11-14.cpp"
+../src/11-14.cpp: In function 'int main()':
+../src/11-14.cpp:21:3: error: 'String' was not declared in this scope
+   String from, to;
+   ^
+../src/11-14.cpp:21:10: error: expected ';' before 'from'
+src/subdir.mk:18: recipe for target 'src/11-14.o' failed
+   String from, to;
+          ^
+../src/11-14.cpp:22:8: error: 'from' was not declared in this scope
+   cin>>from;
+        ^
+make: *** [src/11-14.o] Error 1
+17:45:43 **** Incremental Build of configuration Debug for project 11-14 ****
+make all 
+Building file: ../src/11-14.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"C:\cygwin64\lib\gcc\x86_64-pc-cygwin\4.8.3\include\c++" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/11-14.d" -MT"src/11-14.d" -o "src/11-14.o" "../src/11-14.cpp"
+../src/11-14.cpp: In function 'int main()':
+../src/11-14.cpp:21:3: error: 'String' was not declared in this scope
+   String from, to;
+   ^
+../src/11-14.cpp:21:10: error: expected ';' before 'from'
+   String from, to;
+          ^
+../src/11-14.cpp:22:8: error: 'from' was not declared in this scope
+   cin>>from;
+        ^
+src/subdir.mk:18: recipe for target 'src/11-14.o' failed
+make: *** [src/11-14.o] Error 1
+17:46:08 **** Incremental Build of configuration Debug for project 11-14 ****
+make all 
+Building file: ../src/11-14.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"C:\cygwin64\lib\gcc\x86_64-pc-cygwin\4.8.3\include\c++" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/11-14.d" -MT"src/11-14.d" -o "src/11-14.o" "../src/11-14.cpp"
+Finished building: ../src/11-14.cpp
+ 
+Building target: 11-14.exe
+Invoking: Cygwin C++ Linker
+g++  -o "11-14.exe"  ./src/11-14.o   
+Finished building target: 11-14.exe
+ 
+17:46:53 **** Incremental Build of configuration Debug for project 11-14 ****
+make all 
+Building file: ../src/11-14.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"C:\cygwin64\lib\gcc\x86_64-pc-cygwin\4.8.3\include\c++" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/11-14.d" -MT"src/11-14.d" -o "src/11-14.o" "../src/11-14.cpp"
+Finished building: ../src/11-14.cpp
+ 
+Building target: 11-14.exe
+Invoking: Cygwin C++ Linker
+g++  -o "11-14.exe"  ./src/11-14.o   
+Finished building target: 11-14.exe
+ 
+17:48:36 **** Incremental Build of configuration Debug for project 11-14 ****
+make all 
+make: Nothing to be done for 'all'.
+17:48:40 **** Incremental Build of configuration Debug for project 11-14 ****
+make all 
+make: Nothing to be done for 'all'.
+17:49:29 **** Incremental Build of configuration Debug for project 11-14 ****
+make all 
+Building file: ../src/11-14.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"C:\cygwin64\lib\gcc\x86_64-pc-cygwin\4.8.3\include\c++" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/11-14.d" -MT"src/11-14.d" -o "src/11-14.o" "../src/11-14.cpp"
+../src/11-14.cpp: In function 'int main()':
+../src/11-14.cpp:22:3: error: 'String' was not declared in this scope
+   String from, to;
+   ^
+../src/11-14.cpp:22:10: error: expected ';' before 'from'
+   String from, to;
+          ^
+../src/11-14.cpp:23:8: error: 'from' was not declared in this scope
+   cin>>from;
+        ^
+../src/11-14.cpp: At global scope:
+../src/11-14.cpp:29:2: error: expected unqualified-id before 'return'
+  return 0;
+  ^
+../src/11-14.cpp:30:1: error: expected declaration before '}' token
+ }
+ ^
+make: *** [src/11-14.o] Error 1
+src/subdir.mk:18: recipe for target 'src/11-14.o' failed
+17:51:03 **** Incremental Build of configuration Debug for project 11-14 ****
+make all 
+Building file: ../src/11-14.cpp
+Invoking: Cygwin C++ Compiler
+g++ -I"C:\cygwin64\lib\gcc\x86_64-pc-cygwin\4.8.3\include\c++" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/11-14.d" -MT"src/11-14.d" -o "src/11-14.o" "../src/11-14.cpp"
+../src/11-14.cpp:29:2: error: expected unqualified-id before 'return'
+  return 0;
+  ^
+../src/11-14.cpp:30:1: error: expected declaration before '}' token
+ }
+ ^
+src/subdir.mk:18: recipe for target 'src/11-14.o' failed
+make: *** [src/11-14.o] Error 1
+17:54:08 **** Build of configuration Debug for project 11-14_2 ****
+make all 
+Building file: ../src/11-14_2.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/11-14_2.d" -MT"src/11-14_2.d" -o "src/11-14_2.o" "../src/11-14_2.cpp"
+Finished building: ../src/11-14_2.cpp
+ 
+Building target: 11-14_2.exe
+Invoking: Cygwin C++ Linker
+g++  -o "11-14_2.exe"  ./src/11-14_2.o   
+Finished building target: 11-14_2.exe
+ 
+17:54:31 **** Clean-only build of configuration Debug for project 11-14 ****
+make clean 
+rm -rf  ./src/11-14.o  ./src/11-14.d  11-14.exe
+ 
+17:54:31 **** Clean-only build of configuration Debug for project 11-14_2 ****
+make clean 
+rm -rf  ./src/11-14_2.o  ./src/11-14_2.d  11-14_2.exe
+ 
+17:54:31 **** Clean-only build of configuration Debug for project day1 ****
+make clean 
+rm -rf  ./src/day1.o  ./src/day1.d  day1.exe
+ 
+17:54:31 **** Clean-only build of configuration Debug for project day2 ****
+make clean 
+rm -rf  ./src/day2.o  ./src/day2.d  day2.exe
+ 
+17:54:34 **** Build of configuration Debug for project 11-14_2 ****
+make all 
+Building file: ../src/11-14_2.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/11-14_2.d" -MT"src/11-14_2.d" -o "src/11-14_2.o" "../src/11-14_2.cpp"
+Finished building: ../src/11-14_2.cpp
+ 
+Building target: 11-14_2.exe
+Invoking: Cygwin C++ Linker
+g++  -o "11-14_2.exe"  ./src/11-14_2.o   
+Finished building target: 11-14_2.exe
+ 
+18:01:37 **** Incremental Build of configuration Debug for project 11-14_2 ****
+make all 
+make: Nothing to be done for 'all'.
+18:02:36 **** Incremental Build of configuration Debug for project 11-14_2 ****
+make all 
+Building file: ../src/11-14_2.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/11-14_2.d" -MT"src/11-14_2.d" -o "src/11-14_2.o" "../src/11-14_2.cpp"
+Finished building: ../src/11-14_2.cpp
+ 
+Building target: 11-14_2.exe
+Invoking: Cygwin C++ Linker
+g++  -o "11-14_2.exe"  ./src/11-14_2.o   
+Finished building target: 11-14_2.exe
+ 
+18:02:59 **** Incremental Build of configuration Debug for project 11-14_2 ****
+make all 
+Building file: ../src/11-14_2.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/11-14_2.d" -MT"src/11-14_2.d" -o "src/11-14_2.o" "../src/11-14_2.cpp"
+Finished building: ../src/11-14_2.cpp
+ 
+Building target: 11-14_2.exe
+Invoking: Cygwin C++ Linker
+g++  -o "11-14_2.exe"  ./src/11-14_2.o   
+Finished building target: 11-14_2.exe
+ 
+18:03:33 **** Incremental Build of configuration Debug for project 11-14_2 ****
+make all 
+Building file: ../src/11-14_2.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/11-14_2.d" -MT"src/11-14_2.d" -o "src/11-14_2.o" "../src/11-14_2.cpp"
+Finished building: ../src/11-14_2.cpp
+ 
+Building target: 11-14_2.exe
+Invoking: Cygwin C++ Linker
+g++  -o "11-14_2.exe"  ./src/11-14_2.o   
+Finished building target: 11-14_2.exe
+ 
+18:12:40 **** Build of configuration Debug for project 11-14 ****
+make all 
+Building file: ../src/11-14.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/11-14.d" -MT"src/11-14.d" -o "src/11-14.o" "../src/11-14.cpp"
+Finished building: ../src/11-14.cpp
+ 
+Building target: 11-14.exe
+Invoking: Cygwin C++ Linker
+g++  -o "11-14.exe"  ./src/11-14.o   
+Finished building target: 11-14.exe
+ 
+18:55:08 **** Build of configuration Debug for project day1 ****
+make all 
+Building file: ../src/day1.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/day1.d" -MT"src/day1.d" -o "src/day1.o" "../src/day1.cpp"
+In file included from /usr/lib/gcc/x86_64-pc-cygwin/4.8.3/include/c++/array:35:0,
+                 from ../src/day1.cpp:12:
+/usr/lib/gcc/x86_64-pc-cygwin/4.8.3/include/c++/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support is currently experimental, and must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support for the \
+  ^
+make: *** [src/day1.o] Error 1
+src/subdir.mk:18: recipe for target 'src/day1.o' failed
+19:00:38 **** Build of configuration Debug for project 11-14 ****
+make all 
+make: Nothing to be done for 'all'.
+19:01:18 **** Incremental Build of configuration Debug for project 11-14 ****
+make all 
+make: Nothing to be done for 'all'.
+19:01:48 **** Incremental Build of configuration Debug for project 11-14 ****
+make all 
+Building file: ../src/11-14.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/11-14.d" -MT"src/11-14.d" -o "src/11-14.o" "../src/11-14.cpp"
+Finished building: ../src/11-14.cpp
+ 
+Building target: 11-14.exe
+Invoking: Cygwin C++ Linker
+g++  -o "11-14.exe"  ./src/11-14.o   
+Finished building target: 11-14.exe
+ 
+19:02:07 **** Incremental Build of configuration Debug for project 11-14 ****
+make all 
+Building file: ../src/11-14.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/11-14.d" -MT"src/11-14.d" -o "src/11-14.o" "../src/11-14.cpp"
+../src/11-14.cpp: In function 'int main()':
+../src/11-14.cpp:17:2: error: expected ';' before 'return'
+  return 0;
+  ^
+src/subdir.mk:18: recipe for target 'src/11-14.o' failed
+make: *** [src/11-14.o] Error 1
+19:02:12 **** Incremental Build of configuration Debug for project 11-14 ****
+make all 
+Building file: ../src/11-14.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/11-14.d" -MT"src/11-14.d" -o "src/11-14.o" "../src/11-14.cpp"
+Finished building: ../src/11-14.cpp
+ 
+Building target: 11-14.exe
+Invoking: Cygwin C++ Linker
+g++  -o "11-14.exe"  ./src/11-14.o   
+Finished building target: 11-14.exe
+ 
+19:02:24 **** Incremental Build of configuration Debug for project 11-14 ****
+make all 
+make: Nothing to be done for 'all'.
