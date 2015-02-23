@@ -1,0 +1,31 @@
+regularization: 1e-06
+0.0
+13.2
+regularization: 1e-05
+0.266666666667
+12.8
+regularization: 0.0001
+4.26666666667
+19.8
+regularization: 0.001
+4.26666666667
+19.8
+regularization: 0.01
+4.26666666667
+19.8
+regularization: 0.1
+4.26666666667
+19.8
+regularization: 1.0
+4.26666666667
+19.8
+regularization: 10.0
+4.26666666667
+19.8
+avg time taken: 38.950424761
+best loss: 12.8 with lambda: 1e-05
+war, private, spielberg, realistic, hanks, 
+paulie, bird, subtle, small, quite, 
+anastasia, animation, disney, disney's, occasionally, 
+driver, bob, xfiles, marty, mulder, 
+romy, school, high, garofalo, heather, 

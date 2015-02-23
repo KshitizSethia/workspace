@@ -39,7 +39,7 @@ def run(X, y, params):
         params - parameters for the algo
     Returns:
         theta_hist - the history of parameter vector, 2D numpy array of size (num_iter+1, num_features) 
-        loss_hist - the history of regularized loss value, 1D numpy array
+        loss_hist - the history of regularized loss_hinge value, 1D numpy array
     """
     
     (num_instances, num_features) = X.shape
@@ -54,7 +54,7 @@ def objective(X, y, lambda_reg):
     
 def compute_loss(X, y, theta, lambda_reg):
     """
-    Given a set of X, y, theta, compute the square loss for predicting y with X*theta
+    Given a set of X, y, theta, compute the square loss_hinge for predicting y with X*theta
     
     Args:
         X - the feature vector, 2D numpy array of size (num_instances, num_features)
@@ -63,7 +63,7 @@ def compute_loss(X, y, theta, lambda_reg):
         lambda_reg - the regularization coefficient
     
     Returns:
-        loss - the square loss, scalar
+        loss_hinge - the square loss_hinge, scalar
     """
-    loss = batch_gradient_descent.compute_loss(X, y, theta) + lambda_reg*np.dot(theta,theta)#(np.linalg.norm(theta)**2)
-    return loss
+    loss_hinge = batch_gradient_descent.compute_loss(X, y, theta) + lambda_reg*np.dot(theta,theta)#(np.linalg.norm(theta)**2)
+    return loss_hinge

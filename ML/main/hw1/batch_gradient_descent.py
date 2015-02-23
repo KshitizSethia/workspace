@@ -35,7 +35,7 @@ class params:
 def run(X, y, params):
     """
     In this question you will implement batch gradient descent to
-    minimize the square loss objective
+    minimize the square loss_hinge objective
     
     Args:
         X - the feature vector, 2D numpy array of size (num_instances, num_features)
@@ -58,7 +58,7 @@ def run(X, y, params):
         if(not params.use_grad_checker\
            or generic_gradient_checker(X, y, theta, compute_loss, compute_loss_gradient)):
             #above line introduces inefficiency as it is already computes
-            #loss and gradient for theta, which is again computed below
+            #loss_hinge and gradient for theta, which is again computed below
             loss_hist[iteration] = compute_loss(X, y, theta)
             theta = theta - params.alpha*compute_loss_gradient(X, y, theta)   
             theta_hist[iteration+1] = theta
@@ -146,10 +146,10 @@ def generic_gradient_checker(X, y, theta, objective_func, gradient_func, epsilon
         return True
 
 ########################################
-###Q2.2b: compute the gradient of square loss function
+###Q2.2b: compute the gradient of square loss_hinge function
 def compute_loss_gradient(X, y, theta):
     """
-    Compute gradient of the square loss (as defined in compute_loss), at the point theta.
+    Compute gradient of the square loss_hinge (as defined in compute_loss), at the point theta.
     
     Args:
         X - the feature vector, 2D numpy array of size (num_instances, num_features)
@@ -165,11 +165,11 @@ def compute_loss_gradient(X, y, theta):
     return grad/y.size
 
 ########################################
-####Q2.2a: The square loss function
+####Q2.2a: The square loss_hinge function
 
 def compute_loss(X, y, theta):
     """
-    Given a set of X, y, theta, compute the square loss for predicting y with X*theta
+    Given a set of X, y, theta, compute the square loss_hinge for predicting y with X*theta
     
     Args:
         X - the feature vector, 2D numpy array of size (num_instances, num_features)
@@ -177,10 +177,10 @@ def compute_loss(X, y, theta):
         theta - the parameter vector, 1D array of size (num_features)
     
     Returns:
-        loss - the square loss, scalar
+        loss_hinge - the square loss_hinge, scalar
     """
     term = np.dot(X,theta)
     term = (term - y)
-    #loss = (np.linalg.norm(term)**2)/(2*y.size)
-    loss = np.dot(term, term)/(2*y.size)
-    return loss
+    #loss_hinge = (np.linalg.norm(term)**2)/(2*y.size)
+    loss_hinge = np.dot(term, term)/(2*y.size)
+    return loss_hinge

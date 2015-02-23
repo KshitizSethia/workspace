@@ -32,16 +32,16 @@ def doConjugateDescentLassoWithHomotopy(data):
         weights_for_warm_starting, loss_hist = minimize(X, y, lambda_reg, weights_for_warm_starting)
         time_taken += timeit.default_timer() - start
         
-        loss = batch_gradient_descent.compute_loss(data.validation_x, data.validation_y, weights_for_warm_starting)
-        losses.append(loss)
-        if(loss<best_loss):
-            best_loss = loss
+        loss_hinge = batch_gradient_descent.compute_loss(data.validation_x, data.validation_y, weights_for_warm_starting)
+        losses.append(loss_hinge)
+        if(loss_hinge<best_loss):
+            best_loss = loss_hinge
             best_weights = weights_for_warm_starting
             best_lambda = lambda_reg
         plt.plot(loss_hist, label="lambda: " +str(lambda_reg))
     plt.legend()
     
-    print "best loss: " +str(best_loss) + " at lambda: " +str(best_lambda)
+    print "best loss_hinge: " +str(best_loss) + " at lambda: " +str(best_lambda)
     print "number of weights in vicinity of zero: " +str((best_weights[np.abs(best_weights)<(10**-2)]).size)
     print "avg time taken: " +str(time_taken/lambdas.size)
     

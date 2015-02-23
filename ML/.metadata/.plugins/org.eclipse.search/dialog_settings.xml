@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="">
+		<item value="1000" key="org.eclipse.search.resultpage.limit"/>
+	</section>
+	<section name="">
+		<item value="1000" key="org.eclipse.search.resultpage.limit"/>
+	</section>
 	<section name="DialogBounds_SearchDialog">
 		<item value="799" key="DIALOG_WIDTH"/>
 		<item value="389" key="DIALOG_Y_ORIGIN"/>
-		<item value="472" key="DIALOG_HEIGHT"/>
 		<item value="692" key="DIALOG_X_ORIGIN"/>
+		<item value="472" key="DIALOG_HEIGHT"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="Search">
@@ -30,6 +36,9 @@
 			<item value="org.eclipse.pde.internal.ui.search.SearchPage"/>
 			<item value="com.python.pydev.ui.search.pySearchPage"/>
 		</list>
+	</section>
+	<section name="com.python.pydev.refactoring.search.FindOccurrencesSearchResultPage">
+		<item value="1000" key="org.eclipse.search.resultpage.limit"/>
 	</section>
 	<section name="SearchDialog.ScopePart">
 		<item value="0" key="scope"/>

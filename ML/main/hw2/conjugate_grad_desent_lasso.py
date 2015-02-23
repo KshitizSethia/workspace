@@ -27,16 +27,16 @@ def doConjugateDescentLasso(data):
         weights, loss_hist = minimize(X, y, lambda_reg, initial_weights)
         time_taken += timeit.default_timer() - start
         
-        loss = batch_gradient_descent.compute_loss(data.validation_x, data.validation_y, weights)
-        losses.append(loss)
-        if(loss<best_loss):
-            best_loss = loss
+        loss_hinge = batch_gradient_descent.compute_loss(data.validation_x, data.validation_y, weights)
+        losses.append(loss_hinge)
+        if(loss_hinge<best_loss):
+            best_loss = loss_hinge
             best_weights = weights
             best_lambda = lambda_reg
         plt.plot(loss_hist, label="lambda: " +str(lambda_reg))
     plt.legend()
     
-    print "best loss: " +str(best_loss) + " at lambda: " +str(best_lambda)
+    print "best loss_hinge: " +str(best_loss) + " at lambda: " +str(best_lambda)
     print "number of weights in vicinity(10^-2) of zero: " +str((best_weights[np.abs(best_weights)<(10**-2)]).size)
     print "avg time taken: " +str(time_taken/lambdas.size)
     
@@ -61,8 +61,8 @@ def minimize(X, y, lambda_reg, weights):
             c_dim = 2*(np.dot(X[:,dim], term ))
             weights[dim] = soft(c_dim/a_dim, lambda_reg/a_dim)
             
-            loss = batch_gradient_descent.compute_loss(X,y,weights)
-            losses.append(loss)
+            loss_hinge = batch_gradient_descent.compute_loss(X,y,weights)
+            losses.append(loss_hinge)
             iter+=1
         gain = np.abs(np.linalg.norm(weights-weights_old))
         #print "gain: " +str(gain)
@@ -93,8 +93,8 @@ def minimize_slow(X, y, lambda_reg, weights):
             
             weights[dim] = soft(c_dim/a_dim, lambda_reg/a_dim)
             
-            loss = batch_gradient_descent.compute_loss(X,y,weights)
-            losses.append(loss)
+            loss_hinge = batch_gradient_descent.compute_loss(X,y,weights)
+            losses.append(loss_hinge)
             iter+=1
         gain = np.abs(np.linalg.norm(weights-weights_old))
         

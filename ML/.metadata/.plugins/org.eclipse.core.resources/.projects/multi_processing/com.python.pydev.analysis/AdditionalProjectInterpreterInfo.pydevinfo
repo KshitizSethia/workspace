@@ -1,0 +1,34 @@
+-- VERSION_4
+-- START DISKCACHE
+C:\Cloud\workspace\ML\.metadata\.plugins\org.eclipse.core.resources\.projects\multi_processing\com.python.pydev.analysis\v2_indexcache
+main|1424728544797|C:\Cloud\workspace\ML\multi_processing\main.py
+-- END DISKCACHE
+-- START DICTIONARY
+1
+1=main
+-- END DICTIONARY
+-- START TREE 1
+8
+!<m|0|
+hig|0|
+mai|1|main!10@
+qu|0|
+qul|0|
+res|0|
+run|0|
+thr|0|
+-- END TREE
+-- START TREE 2
+11
+__i|0|
+arg|0|
+hig|0|
+ns|0|
+qu|0|
+qul|0|
+res|0|
+run|0|
+sel|0|
+sha|0|
+thr|0|
+-- END TREE

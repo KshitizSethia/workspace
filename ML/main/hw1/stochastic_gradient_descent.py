@@ -49,7 +49,7 @@ def run(X, y, params):
     
     Returns:
         theta_hist - the history of parameter vector, 3D numpy array of size (num_iter, num_instances, num_features) 
-        loss hist - the history of regularized loss function vector, 2D numpy array of size(num_iter, num_instances)
+        loss_hinge hist - the history of regularized loss_hinge function vector, 2D numpy array of size(num_iter, num_instances)
     """
     num_instances, num_features = X.shape[0], X.shape[1]
     theta = np.ones(num_features) #Initialize theta
@@ -78,10 +78,10 @@ def run(X, y, params):
                                                   theta, params.lambda_reg)
                 theta = theta - (gradient*step)
                 theta_hist[epoch, instance, :] = theta
-                loss = hw1.regularized_gradient_descent.compute_loss(X[instance], y[instance], theta, params.lambda_reg)
-                loss_hist[epoch, instance] = loss
-                if(loss<least_loss):
-                    least_loss = loss
+                loss_hinge = hw1.regularized_gradient_descent.compute_loss(X[instance], y[instance], theta, params.lambda_reg)
+                loss_hist[epoch, instance] = loss_hinge
+                if(loss_hinge<least_loss):
+                    least_loss = loss_hinge
                     best_theta=theta
                 iter+=1
             

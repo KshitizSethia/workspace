@@ -38,7 +38,7 @@ def run(X, y, params):
         params - parameters for the algo
     Returns:
         theta_hist - the history of parameter vector, 2D numpy array of size (num_iter+1, num_features) 
-        loss_hist - the history of regularized loss value, 1D numpy array
+        loss_hist - the history of regularized loss_hinge value, 1D numpy array
     """
     
     (num_instances, num_features) = X.shape
@@ -53,7 +53,7 @@ def run(X, y, params):
         if(not params.use_grad_checker or\
            generic_regularized_gradient_checker(X, y, theta, params.lambda_reg, compute_loss, compute_loss_gradient)):
             #above line introduces inefficiency as it is already computes
-            #loss and gradient for theta, which is again computed below
+            #loss_hinge and gradient for theta, which is again computed below
             loss_hist[iteration] = compute_loss(X, y, theta, params.lambda_reg)
             theta = theta - params.alpha\
                             *compute_loss_gradient(X, y, theta, params.lambda_reg)                        
@@ -110,7 +110,7 @@ def regularized_gradient_checker(X, y, theta, lambda_reg, epsilon=0.01, toleranc
 ###Q2.5a: Compute the gradient of Regularized Batch Gradient Descent
 def compute_loss_gradient(X, y, theta, lambda_reg):
     """
-    Compute the gradient of L2-regularized square loss function given X, y and theta
+    Compute the gradient of L2-regularized square loss_hinge function given X, y and theta
     
     Args:
         X - the feature vector, 2D numpy array of size (num_instances, num_features)
@@ -126,7 +126,7 @@ def compute_loss_gradient(X, y, theta, lambda_reg):
 
 def compute_loss(X, y, theta, lambda_reg):
     """
-    Given a set of X, y, theta, compute the square loss for predicting y with X*theta
+    Given a set of X, y, theta, compute the square loss_hinge for predicting y with X*theta
     
     Args:
         X - the feature vector, 2D numpy array of size (num_instances, num_features)
@@ -135,7 +135,7 @@ def compute_loss(X, y, theta, lambda_reg):
         lambda_reg - the regularization coefficient
     
     Returns:
-        loss - the square loss, scalar
+        loss_hinge - the square loss_hinge, scalar
     """
-    loss = batch_gradient_descent.compute_loss(X, y, theta) + lambda_reg*np.dot(theta, theta)
-    return loss
+    loss_hinge = batch_gradient_descent.compute_loss(X, y, theta) + lambda_reg*np.dot(theta, theta)
+    return loss_hinge

@@ -1,7 +1,0 @@
-loading the dataset
-range of y: 13.5010188967
-Split into Train and Test
-Scaling all to [0, 1]
- training loss: 1.86421263627 test_loss: 1.40059370033 time taken: 0.0176857039073 Batch Gradient Descent, params: alpha: 0.01 num_iter: 1000 checking gradient?: False
- training loss: 2.63222134528 test_loss: 1.81254350228 time taken: 0.0254169518936 Regularized Gradient Descent, params: initial_bias: 10 alpha: 0.01 lambda_reg: 0.1 num_iter: 1000 checking gradient?: False
- training loss: 3.3094071284 test_loss: 1.99757413446 time taken: 0.00425720668337 Stochastic Gradient Descent, params: initial_bias: 1 alpha: 0.1 lambda_reg: 0.1 num_iter: 3

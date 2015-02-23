@@ -53,9 +53,9 @@ def batch_analysis(X_train, y_train, X_test, y_test):
     #plot training losses
     plt.subplot(121)
     for index in range(len(alphas)):
-        batch_params = hw1.batch_gradient_descent.params(alphas[index], iterations, False)
-        theta_hist, loss_hist = hw1.batch_gradient_descent.run(X_train, y_train, batch_params)
-        test_losses[index] = hw1.batch_gradient_descent.compute_loss(X_test, y_test, theta_hist[-1,:])
+        batch_params = batch_gradient_descent.params(alphas[index], iterations, False)
+        theta_hist, loss_hist = batch_gradient_descent.run(X_train, y_train, batch_params)
+        test_losses[index] = batch_gradient_descent.compute_loss(X_test, y_test, theta_hist[-1,:])
         plt.plot(np.log(loss_hist), label=str(alphas[index]))
         
     

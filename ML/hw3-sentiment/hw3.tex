@@ -1,0 +1,368 @@
+%% LyX 2.1.2 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[ruled]{article}
+\usepackage{courier}
+\usepackage[latin9]{inputenc}
+\usepackage[letterpaper]{geometry}
+\geometry{verbose}
+\usepackage{url}
+\usepackage{algorithm2e}
+\usepackage{amsmath}
+\usepackage[unicode=true,
+ bookmarks=false,
+ breaklinks=false,pdfborder={0 0 1},backref=section,colorlinks=false]
+ {hyperref}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\providecommand{\LyX}{\texorpdfstring%
+  {L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
+  {LyX}}
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\title{Machine Learning and Computational Statistics, Spring 2015\\
+Homework 3: SVM and Sentiment Analysis} 
+\date{}
+%\date{Due: February $20^{th}$, 4pm}
+
+
+
+
+\usepackage{amsfonts}\usepackage{capt-of}
+%\usepackage{url}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{bbm}
+\usepackage{enumerate}
+\newcommand{\carlos}[1]{\textcolor{red}{Carlos: #1}}
+\newcommand{\field}[1]{\mathbb{#1}} 
+\newcommand{\hide}[1]{#1}
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+\providecommand{\m}[1]{\mathbf{#1}}
+\providecommand{\norm}[1]{\left\|#1\right\|}
+\providecommand{\sign}[1]{\text{sign}\left(#1\right)}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\providecommand{\what}{\m{\hat{w}}}
+\providecommand{\dw}{\Delta w}
+\providecommand{\dmw}{\Delta \m{w}}
+\providecommand{\hy}{\hat{y}}
+
+\makeatother
+
+\begin{document}
+\global\long\def\reals{\mathbf{R}}
+ \global\long\def\integers{\mathbf{Z}}
+\global\long\def\naturals{\mathbf{N}}
+ \global\long\def\rationals{\mathbf{Q}}
+\global\long\def\ca{\mathcal{A}}
+\global\long\def\cb{\mathcal{B}}
+ \global\long\def\cc{\mathcal{C}}
+ \global\long\def\cd{\mathcal{D}}
+\global\long\def\ce{\mathcal{E}}
+\global\long\def\cf{\mathcal{F}}
+\global\long\def\cg{\mathcal{G}}
+\global\long\def\ch{\mathcal{H}}
+\global\long\def\ci{\mathcal{I}}
+\global\long\def\cj{\mathcal{J}}
+\global\long\def\ck{\mathcal{K}}
+\global\long\def\cl{\mathcal{L}}
+\global\long\def\cm{\mathcal{M}}
+\global\long\def\cn{\mathcal{N}}
+\global\long\def\co{\mathcal{O}}
+\global\long\def\cp{\mathcal{P}}
+\global\long\def\cq{\mathcal{Q}}
+\global\long\def\calr{\mathcal{R}}
+\global\long\def\cs{\mathcal{S}}
+\global\long\def\ct{\mathcal{T}}
+\global\long\def\cu{\mathcal{U}}
+\global\long\def\cv{\mathcal{V}}
+\global\long\def\cw{\mathcal{W}}
+\global\long\def\cx{\mathcal{X}}
+\global\long\def\cy{\mathcal{Y}}
+\global\long\def\cz{\mathcal{Z}}
+\global\long\def\ind#1{1(#1)}
+\global\long\def\pr{\mathbb{P}}
+\global\long\def\predsp{\cy}
+\global\long\def\outsp{\cy}
+\global\long\def\prxy{P_{\cx\times\cy}}
+\global\long\def\prx{P_{\cx}}
+\global\long\def\prygivenx{P_{\cy\mid\cx}}
+\global\long\def\ex{\mathbb{E}}
+\global\long\def\var{\textrm{Var}}
+\global\long\def\cov{\textrm{Cov}}
+\global\long\def\sgn{\textrm{sgn}}
+\global\long\def\sign{\textrm{sign}}
+\global\long\def\kl{\textrm{KL}}
+\global\long\def\law{\mathcal{L}}
+\global\long\def\eps{\varepsilon}
+\global\long\def\as{\textrm{ a.s.}}
+\global\long\def\io{\textrm{ i.o.}}
+\global\long\def\ev{\textrm{ ev.}}
+\global\long\def\convd{\stackrel{d}{\to}}
+\global\long\def\eqd{\stackrel{d}{=}}
+\global\long\def\del{\nabla}
+\global\long\def\loss{\ell}
+\global\long\def\risk{R}
+\global\long\def\emprisk{\hat{R}_{\ell}}
+\global\long\def\lossfnl{L}
+\global\long\def\emplossfnl{\hat{L}}
+\global\long\def\empminimizer#1{\hat{#1}_{\ell}}
+\global\long\def\minimizer#1{#1_{*}}
+\global\long\def\etal{\textrm{et. al.}}
+\global\long\def\tr{\operatorname{tr}}
+\global\long\def\trace{\operatorname{trace}}
+\global\long\def\diag{\text{diag}}
+\global\long\def\rank{\text{rank}}
+\global\long\def\linspan{\text{span}}
+\global\long\def\proj{\text{Proj}}
+\global\long\def\argmax{\operatornamewithlimits{arg\, max}}
+\global\long\def\argmin{\operatornamewithlimits{arg\, min}}
+\global\long\def\bfx{\mathbf{x}}
+\global\long\def\bfy{\mathbf{y}}
+\global\long\def\bfl{\mathbf{\lambda}}
+\global\long\def\bfm{\mathbf{\mu}}
+\global\long\def\calL{\mathcal{L}}
+\global\long\def\vw{\boldsymbol{w}}
+\global\long\def\vx{\boldsymbol{x}}
+\global\long\def\vxi{\boldsymbol{\xi}}
+\global\long\def\valpha{\boldsymbol{\alpha}}
+\global\long\def\vbeta{\boldsymbol{\beta}}
+\global\long\def\vsigma{\boldsymbol{\sigma}}
+\global\long\def\vmu{\boldsymbol{\mu}}
+\global\long\def\vtheta{\boldsymbol{\theta}}
+\global\long\def\vd{\boldsymbol{d}}
+\global\long\def\vs{\boldsymbol{s}}
+\global\long\def\vt{\boldsymbol{t}}
+\global\long\def\vh{\boldsymbol{h}}
+\global\long\def\ve{\boldsymbol{e}}
+\global\long\def\vf{\boldsymbol{f}}
+\global\long\def\vg{\boldsymbol{g}}
+\global\long\def\vz{\boldsymbol{z}}
+\global\long\def\vk{\boldsymbol{k}}
+\global\long\def\va{\boldsymbol{a}}
+\global\long\def\vb{\boldsymbol{b}}
+\global\long\def\vv{\boldsymbol{v}}
+\global\long\def\vy{\boldsymbol{y}}
+\global\long\def\hil{\ch}
+\global\long\def\rkhs{\hil}
+\maketitle
+
+\textbf{Due: Monday, February 23, 2015, at 4pm (Submit via NYU Classes)}
+
+\textbf{Instructions}: Your answers to the questions below, including
+plots and mathematical work, should be submitted as a single PDF file.
+You may include your code inline or submit it as a separate file.
+You may either scan hand-written work or, preferably, write your answers
+using software that typesets mathematics (e.g. \LaTeX, \LyX{}, or
+MathJax via iPython). 
+
+
+\section{Introduction}
+
+In this assignment, we'll be working with natural language data. In
+particular, we'll be doing sentiment analysis on movie reviews. This
+problem will give you the opportunity to try your hand at feature
+engineering, which is one of the most important parts of many data
+science problems. From a technical standpoint, this homework has two
+new pieces. First, you'll be implementing Pegasos. Pegasos is essentially
+SGD for the SVM, and it even comes with a schedule for the step-size,
+so nothing to tweak there. Second, because in natural langauge domains
+we typically have huge feature spaces, we work with sparse representations
+of feature vectors, where only the non-zero entries are explicitly
+recorded. This will require coding your gradient and SGD code using
+hash tables (dictionaries in Python), rather than numpy arrays. 
+
+
+\section{The Data}
+
+We will be using the ``polarity dataset v2.0'', constructed by Pang
+and Lee (\url{http://www.cs.cornell.edu/People/pabo/movie\%2Dreview\%2Ddata/}).
+It has the full text from 2000 movies reivews: 1000 reviews are classified
+as ``positive'' and 1000 as ``negative.'' Our goal is to predict
+whether a review has positive or negative sentiment from the text
+of the review. Each review is stored in a separate file: the positive
+reviews are in a folder called ``pos'', and the negative reviews
+are in ``neg''. We have provided some code in \texttt{load.py} to
+assist with reading these files. You can use the code, or write your
+own version. The code removes some special symbols from the reviews.
+Later you can check if this helps or hurts your results.
+\begin{enumerate}
+\item Load all the data and randomly split it into 1500 training examples
+and 500 test examples. 
+\end{enumerate}
+
+\section{Sparse Representations}
+
+The most basic way to represent text documents for machine learning
+is with a ``bag-of-words'' representation. Here every possible word
+is a feature, and the value of a word feature is the number of times
+that word appears in the document. Of course, most words will not
+appear in any particular document, and those counts will be zero.
+Rather than store a huge number of zeros, we use a sparse representation,
+in which we only store the counts that are nonzero. The counts are
+stored in a key/value store (such as a dictionary in Python). For
+example, ``Harry Potter and Harry Potter II'' would be represented
+as the following Python dict: x=\{`Harry':2, `Potter':2, `and':1,
+'II':1\}. We will be using linear classifiers of the form $f(x)=w^{T}x$,
+and we can store the $w$ vector in a sparse format as well, such
+as w=\{`minimal':1.3,`Harry':-1.1,`viable':-4.2,`and':2.2,`product':9.1\}.
+The inner product between $w$ and $x$ would only involve the features
+that appear in both x and w, since whatever doesn't appear is assumed
+to be zero. For this example, the inner product would be x{[}Harry{]}
+{*} w{[}Harry{]} + x{[}and{]} {*} w{[}and{]} = 2{*}(-1.1) + 1{*}(2.2).
+Although we hate to spoil the fun, to help you along, we've included
+two functions for working with sparse vectors: 1) a dot product between
+two vectors represented as dict's and 2) a function that increments
+one sparse vector by a scaled multiple of another vector, which is
+a very common operation. These functions are located in \texttt{util.py}.
+\begin{enumerate}
+\item Write a function that converts an example (e.g. a list of words) into
+a sparse bag-of-words representation. You may find Python's Counter
+class to be useful here: \url{https://docs.python.org/2/library/collections.html}.
+Note that a Counter is also a dict.
+\item Write a version of \texttt{generic\_gradient\_checker} from Homework
+1 that works with sparse vectors represented as dict types. See Homework
+1 solutions if you didn't do that part. Since we'll be using it for
+stochastic methods, it should take a single $(x,y)$ pair, rather
+than the entire dataset. Be sure to use the dotProduct and increment
+primitives we provide, or make your own. 
+\end{enumerate}
+
+\section{Support Vector Machine via Pegasos}
+
+In this question you will build an SVM using the Pegasos algorithm.
+To align with the notation used in the Pegasos paper%
+\footnote{Shalev-Shwartz et al.'s ``Pegasos: Primal Estiamted sub-GrAdient
+SOlver for SVM'' \url{http://ttic.uchicago.edu/~nati/Publications/PegasosMPB.pdf}%
+}, we're considering the following formulation of the SVM objective
+function:
+\[
+\min_{w\in\reals^{n}}\frac{\lambda}{2}\|w\|^{2}+\frac{1}{m}\sum_{i=1}^{m}\max\left\{ 0,1-y_{i}w^{T}x_{i}\right\} .
+\]
+Note that, for simplicity, we are leaving off the unregularized bias
+term $b$, and the expression with ``max'' is just another way to
+write $\left(1-y_{i}w^{T}x\right)_{+}$. Pegasos is stochastic subgradient
+descent using a step size rule $\eta_{t}=1/\left(\lambda t\right)$.
+The pseudocode is given below:
+
+\begin{center}
+\begin{tabular}{l}
+\hline 
+Input: $\lambda>0$. Choose $w_{1}=0,t=0$\tabularnewline
+While epoch $\le$ max\_epochs\tabularnewline
+\ \ For $j=1,\ldots,m$ (assumes data is randomly permuted)\tabularnewline
+\ \ \ \ $t=t+1$\tabularnewline
+\ \ \ \ $\eta_{t}=1/\left(t\lambda\right)$;\tabularnewline
+\ \ \ \ If $y_{j}w_{t}^{T}x_{j}<1$\tabularnewline
+\ \ \ \ \ \ $w_{t+1}=(1-\eta_{t}\lambda)w_{t}+\eta_{t}y_{j}x_{j}$\tabularnewline
+\ \ \ \ Else \tabularnewline
+\ \ \ \ \ \ $w_{t+1}=(1-\eta_{t}\lambda)w_{t}$\tabularnewline
+\hline 
+\end{tabular}
+\par\end{center}
+\begin{enumerate}
+\item {[}Written{]} Compute a subgradient for the ``stochastic'' SVM objective,
+which assumes a single training point. Show that if your step size
+rule is $\eta_{t}=1/\left(\lambda t\right)$, then the the corresponding
+SGD update is the same as given in the pseudocode.
+\item Implement the Pegasos algorithm to run on a sparse data representation.
+The output should be a sparse weight vector $w$. {[}As should be
+your habit, please check your gradient using \texttt{generic\_gradient\_checker}
+while you are in the testing phase. That will be our first question
+if you ask for help debugging. Once you're convinced it works, take
+it out so it doesn't slow down your code.{]} 
+\item Write a function that takes the sparse weight vector $w$ and a collection
+of $(x,y)$ pairs, and returns the percent error when predicting $y$
+using $\sign(w^{T}x)$ (that is, report the 0-1 loss). 
+\item Using the bag-of-words feature representation described above, search
+for the regularization parameter that gives the minimal percent error
+on your test set. A good search strategy is to start with a set of
+lambdas spanning a broad range of orders of magnitude. Then, continue
+to zoom in until you're convinced that additional search will not
+significantly improve your test performance\@. Once you have a sense
+of the general range of regularization parameters that give good results,
+you do not have to search over orders of magnitude every time you
+change something (such as adding new feature). 
+\item Recall that the ``score'' is the value of the prediction $f(x)=w^{T}x$.
+We like to think that the magnitude of the score represents the confidence
+of the prediction. This is something we can directly verify or refute.
+Break the predictions into groups based on the score (you can play
+with the size of the groups to get a result you think is informative).
+For each group, examine the percentage error. You can make a table
+or graph. Summarize the results. Is there a correlation between higher
+magnitude scores and accuracy?
+\end{enumerate}
+
+\section{Error Analysis}
+
+The natural language processing domain is particularly nice in that
+one can often interpret why a model has performed well or poorly on
+a specific example, and sometimes it is not very difficult to come
+up with ideas for new features that might help fix a problem. The
+first step in this process is to look closely at the errors that our
+model makes.
+\begin{enumerate}
+\item Choose some examples that the model got wrong. List the features that
+contributed most heavily to the descision (e.g. rank them by $\left|w_{i}x_{i}\right|$),
+along with $x_{i},w_{i},xw_{i}$. Do you understand why the model
+was incorrect? Can you think of a new feature that might be able to
+fix the issue? Include a short analysis for at least 3 incorrect examples.
+\end{enumerate}
+
+\section{Features}
+
+For a problem like this, the features you use are far more important
+than the learning model you choose. Whenever you enter a new problem
+domain, one of your first orders of business is to beg, borrow, or
+steal the best features you can find. This means looking at any relevant
+published work and seeing what they've used. Maybe it means asking
+a colleague what features they use. But eventually you'll need to
+engineer new features that help in your particular situation. To get
+ideas for this dataset, you might check the discussion board on this
+Kaggle competition, which is using a very similar dataset \url{https://www.kaggle.com/c/sentiment-analysis-on-movie-reviews}.
+There are also a very large number of academic research papers on
+sentiment analysis that you can look at for ideas.
+\begin{enumerate}
+\item Based on your error analysis, or on some idea you have, find a new
+feature (or group of features) that improve your test performance.
+Describe the features and what kind of improvement they give. At this
+point, it's important to consider the standard errors ($\sqrt{p(1-p)/n}$)
+on your performance estimates, to know whether the improvement is
+statistically significant. 
+\item {[}Optional{]} Try to get the best performance possible by generating
+lots of new features, changing the pre-processing, or any other method
+you want, so long as you are using the same core SVM model. Describe
+what you tried, and how much improvement each thing brought to the
+model. To get you thinking on features, here are some basic ideas
+of varying quality: 1) how many words are in the review? 2) How many
+``negative'' words are there? (You'd have to construct or find a
+list of negative words.) 3) Word n-gram features: Instead of single-word
+features, you can make every pair of consecutive words a feature.
+4) Character n-gram features: Ignore word boundaries and make every
+sequence of n characters into a feature (this will be a lot). 5) Adding
+an extra feature whenever a word is preceded by ``not''. For example
+``not amazing'' becomes its own feature. 6) Do we really need to
+eliminate those funny characters in the data loading phase? Might
+there be useful signal there? 7) Use tf-idf instead of raw word counts.
+The tf-idf is calculated as 
+\begin{equation}
+\mbox{tfidf}(f_{i})=\frac{FF_{i}}{\log(DF_{i})}
+\end{equation}
+where $FF_{i}$ is the feature frequency of feature $f_{i}$ and $DF_{i}$
+is the number of document containing $f_{i}$. In this way we increase
+the weight of rare words. Sometimes this scheme helps, sometimes it
+makes things worse. You could try using both! {[}Extra credit points
+will be awarded in proportion to how much improvement you achieve.{]} 
+\end{enumerate}
+
+\section{Feedback (not graded)}
+\begin{enumerate}
+\item Approximately how long did it take to complete this assignment?
+\item Did you find the Python programming challenging (in particular, converting
+your code to use sparse representations)? 
+\item Any other feedback?\end{enumerate}
+
+\end{document}

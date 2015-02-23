@@ -53,27 +53,27 @@ def doGridSearch(data, params):
         params.lambda_reg = lambda_reg
         #old ridge: my code
         #theta_hist, loss_hist = regularized_gradient_descent.run(data.train_x, data.train_y, params)
-        #loss = batch_gradient_descent.compute_loss(data.validation_x, data.validation_y, theta_hist[-1,:])
+        #loss_hinge = batch_gradient_descent.compute_loss(data.validation_x, data.validation_y, theta_hist[-1,:])
         
         # new ridge: using numpy optimize
         theta = regularized_gradient_descent_optimize.run(data.train_x, data.train_y, params)    
-        loss = batch_gradient_descent.compute_loss(data.validation_x, data.validation_y, theta)
+        loss_hinge = batch_gradient_descent.compute_loss(data.validation_x, data.validation_y, theta)
         
         #scikit's ridge
         #ridge_runner = Ridge(alpha=params.lambda_reg, max_iter=1000)
         #ridge_runner.fit(data.train_x, data.train_y)
-        #loss = batch_gradient_descent.compute_loss(data.validation_x, data.validation_y, ridge_runner.coef_)
+        #loss_hinge = batch_gradient_descent.compute_loss(data.validation_x, data.validation_y, ridge_runner.coef_)
         
-        losses.insert(-1, loss)
-        #print "lambda: " +str(lambda_reg) +", loss: " +str(loss)
-        if(loss<best_loss):
-            best_loss = loss
+        losses.insert(-1, loss_hinge)
+        #print "lambda: " +str(lambda_reg) +", loss_hinge: " +str(loss_hinge)
+        if(loss_hinge<best_loss):
+            best_loss = loss_hinge
             best_lambda = params.lambda_reg
             #best_theta = ridge_runner.coef_
             #best_theta = theta_hist[-1,:]
             best_theta = theta
     
-    print "best loss: " +str(best_loss) +", for lambda: " +str(best_lambda)
+    print "best loss_hinge: " +str(best_loss) +", for lambda: " +str(best_lambda)
     print "number of zeros in best theta: " +str((best_theta[best_theta==0]).size)
     print "number of weights in vicinity (10^-2) of zero: " +str((best_theta[np.abs(best_theta)<(10**-2)]).size)
     #print best_theta
