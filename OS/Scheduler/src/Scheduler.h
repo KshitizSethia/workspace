@@ -59,7 +59,9 @@ public:
 		{
 			addProcess(element);
 		}
+		int numProcesses = createdQueue.size();
 		createdQueue.clear();
+		createdQueue.reserve(numProcesses);
 
 		run();
 
@@ -116,12 +118,13 @@ private:
 		double totalTurnaroundTime, totalWaitTime;
 		for (auto& process : createdQueue) {
 			//todo print priority as well
-			printf("%04d: %d %d %d %d %d | %d %d %d %d\n", process.pid,
+			printf("%04d: %d %d %d %d %d | %d %d %d %d", process.pid,
 					process.arrivalTime, process.cpuTimeInitial,
 					process.cpuBurst, process.ioBurst, process.staticPriority,
 					process.finishingTime,
 					process.finishingTime - process.arrivalTime,
 					process.totalIOTaken, process.totalReadyWait);
+			cout<<endl;
 			totalTurnaroundTime += process.finishingTime - process.arrivalTime;
 			totalWaitTime += process.totalReadyWait;
 		}
@@ -133,6 +136,7 @@ private:
 				double(totalTurnaroundTime / numProcesses),
 				double(totalWaitTime / numProcesses),
 				double(numProcesses * 100.0 / time));
+		cout<<endl;
 	}
 };
 

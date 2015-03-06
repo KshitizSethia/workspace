@@ -51,7 +51,7 @@ int main(int argc, char *argv[]) {
 
 	logVerbose=true;
 	algo=FCFS;
-	inputFilePath="C:\\Cloud\\Dropbox\\NYU\\Courses\\OS\\lab2_assign\\input1";
+	inputFilePath="C:\\Cloud\\Dropbox\\NYU\\Courses\\OS\\lab2_assign\\input2";
 	randFilePath = "C:\\Cloud\\Dropbox\\NYU\\Courses\\OS\\lab2_assign\\rfile";
 
 	Scheduler *scheduler;
