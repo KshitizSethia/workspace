@@ -135,7 +135,7 @@ public:
 		for (Process process : spareQueue) {
 			unsigned long waitTime = process.finishTime - process.arrivalTime
 					- process.cpuTime - process.totalIoTaken;
-			printf("%04lu: %lu %lu %lu %lu %lu | %lu %lu %lu %lu", process.pid,
+			printf("%04d: %4lu %4lu %4lu %4lu %1lu | %5lu %5lu %5lu %5lu", process.pid,
 					process.arrivalTime, process.cpuTime, process.cpuBurst,
 					process.ioBurst, process.staticPrio, process.finishTime,
 					process.finishTime - process.arrivalTime,
