@@ -3,6 +3,7 @@ import winsound
 import multiprocessing 
 from collections import Counter
 
+import settings
 import sparse_gradient_descent
 import timeit
 
@@ -38,7 +39,7 @@ class Runner(multiprocessing.Process):
     
     def execute(self, reg):
         strout = "regularization: " + str(reg)
-        params = sparse_gradient_descent.params(lambda_reg=reg, max_epochs=10, checkGradient=False)
+        params = sparse_gradient_descent.params(lambda_reg=reg, max_epochs=settings.max_epochs, checkGradient=False)
         
         start = timeit.default_timer()
         weights = sparse_gradient_descent.run(self.words_train, self.labels_train, params)

@@ -24,7 +24,7 @@ def calculate_best_weights_parallel(words_train, words_test, labels_train, label
     threads = []
     threadCreationTime = 0
     start = timeit.default_timer()
-    for index in range(3):
+    for index in range(settings.num_processes):
         threads.append(thread_runner.Runner(sharedData, words_train, words_test, labels_train, labels_test))
         threads[index].start()
     
@@ -224,7 +224,7 @@ def main():
     weights = cPickle.load(open(settings.path_best_weights,"rb"))
     #weights_histogram(weights)
     #visualizeConfidenceScore(weights, labels, words_test, labels_test)
-    evaluateWorstMisclassifications(weights, labels, words_test, labels_test)
+    #evaluateWorstMisclassifications(weights, labels, words_test, labels_test)
     #classification_histogram(words_test, labels_test, weights)
     #visualizeClassificationExtremes(weights, labels, words_test, labels_test)
     

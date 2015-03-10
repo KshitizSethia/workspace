@@ -1,0 +1,1458 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\title{Machine Learning and Computational Statistics, Spring 2015\\
+Homework 3: SVM and Sentiment Analysis} 
+\date{}
+%\date{Due: February $20^{th}$, 4pm}
+
+
+
+
+\usepackage{amsfonts}\usepackage{capt-of}
+%\usepackage{url}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{bbm}
+\usepackage{enumerate}
+\newcommand{\carlos}[1]{\textcolor{red}{Carlos: #1}}
+\newcommand{\field}[1]{\mathbb{#1}} 
+\newcommand{\hide}[1]{#1}
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+\providecommand{\m}[1]{\mathbf{#1}}
+\providecommand{\norm}[1]{\left\|#1\right\|}
+\providecommand{\sign}[1]{\text{sign}\left(#1\right)}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\providecommand{\what}{\m{\hat{w}}}
+\providecommand{\dw}{\Delta w}
+\providecommand{\dmw}{\Delta \m{w}}
+\providecommand{\hy}{\hat{y}}
+\end_preamble
+\options ruled
+\use_default_options false
+\begin_modules
+algorithm2e
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter courier
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks false
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref section
+\pdf_pdfusetitle false
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\reals}{\mathbf{R}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\integers}{\mathbf{Z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\naturals}{\mathbf{N}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\rationals}{\mathbf{Q}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ca}{\mathcal{A}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cb}{\mathcal{B}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cc}{\mathcal{C}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cd}{\mathcal{D}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ce}{\mathcal{E}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cf}{\mathcal{F}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cg}{\mathcal{G}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ch}{\mathcal{H}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ci}{\mathcal{I}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cj}{\mathcal{J}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ck}{\mathcal{K}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cl}{\mathcal{L}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cm}{\mathcal{M}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cn}{\mathcal{N}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\co}{\mathcal{O}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cp}{\mathcal{P}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cq}{\mathcal{Q}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\calr}{\mathcal{R}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cs}{\mathcal{S}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ct}{\mathcal{T}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cu}{\mathcal{U}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cv}{\mathcal{V}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cw}{\mathcal{W}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cx}{\mathcal{X}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cy}{\mathcal{Y}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cz}{\mathcal{Z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ind}[1]{1(#1)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pr}{\mathbb{P}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\predsp}{\cy}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\outsp}{\cy}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\prxy}{P_{\cx\times\cy}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\prx}{P_{\cx}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\prygivenx}{P_{\cy\mid\cx}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ex}{\mathbb{E}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\var}{\textrm{Var}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cov}{\textrm{Cov}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sgn}{\textrm{sgn}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sign}{\textrm{sign}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\kl}{\textrm{KL}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\law}{\mathcal{L}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\eps}{\varepsilon}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\as}{\textrm{ a.s.}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\io}{\textrm{ i.o.}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ev}{\textrm{ ev.}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\convd}{\stackrel{d}{\to}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\eqd}{\stackrel{d}{=}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\del}{\nabla}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\loss}{\ell}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\risk}{R}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\emprisk}{\hat{R}_{\ell}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\lossfnl}{L}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\emplossfnl}{\hat{L}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\empminimizer}[1]{\hat{#1}_{\ell}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\minimizer}[1]{#1_{*}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\etal}{\textrm{et. al.}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tr}{\operatorname{tr}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\trace}{\operatorname{trace}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\diag}{\text{diag}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\rank}{\text{rank}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\linspan}{\text{span}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\proj}{\text{Proj}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\argmax}{\operatornamewithlimits{arg\, max}}
+{\mbox{argmax}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\argmin}{\operatornamewithlimits{arg\, min}}
+{\mbox{argmin}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\bfx}{\mathbf{x}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\bfy}{\mathbf{y}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\bfl}{\mathbf{\lambda}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\bfm}{\mathbf{\mu}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\calL}{\mathcal{L}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vw}{\boldsymbol{w}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vx}{\boldsymbol{x}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vxi}{\boldsymbol{\xi}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\valpha}{\boldsymbol{\alpha}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vbeta}{\boldsymbol{\beta}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vsigma}{\boldsymbol{\sigma}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vmu}{\boldsymbol{\mu}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vtheta}{\boldsymbol{\theta}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vd}{\boldsymbol{d}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vs}{\boldsymbol{s}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vt}{\boldsymbol{t}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vh}{\boldsymbol{h}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ve}{\boldsymbol{e}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vf}{\boldsymbol{f}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vg}{\boldsymbol{g}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vz}{\boldsymbol{z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vk}{\boldsymbol{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\va}{\boldsymbol{a}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vb}{\boldsymbol{b}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vv}{\boldsymbol{v}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vy}{\boldsymbol{y}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\hil}{\ch}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\rkhs}{\hil}
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+maketitle
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Due: Monday, February 23, 2015, at 4pm (Submit via NYU Classes)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Instructions
+\series default
+: Your answers to the questions below, including plots and mathematical
+ work, should be submitted as a single PDF file.
+ You may include your code inline or submit it as a separate file.
+ You may either scan hand-written work or, preferably, write your answers
+ using software that typesets mathematics (e.g.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+, LyX, or MathJax via iPython).
+ 
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+In this assignment, we'll be working with natural language data.
+ In particular, we'll be doing sentiment analysis on movie reviews.
+ This problem will give you the opportunity to try your hand at feature
+ engineering, which is one of the most important parts of many data science
+ problems.
+ From a technical standpoint, this homework has two new pieces.
+ First, you'll be implementing Pegasos.
+ Pegasos is essentially SGD for the SVM, and it even comes with a schedule
+ for the step-size, so nothing to tweak there.
+ Second, because in natural langauge domains we typically have huge feature
+ spaces, we work with sparse representations of feature vectors, where only
+ the non-zero entries are explicitly recorded.
+ This will require coding your gradient and SGD code using hash tables (dictiona
+ries in Python), rather than numpy arrays.
+ 
+\end_layout
+
+\begin_layout Section
+The Data
+\end_layout
+
+\begin_layout Standard
+We will be using the 
+\begin_inset Quotes eld
+\end_inset
+
+polarity dataset v2.0
+\begin_inset Quotes erd
+\end_inset
+
+, constructed by Pang and Lee (
+\begin_inset Flex Flex:URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.cs.cornell.edu/People/pabo/movie
+\backslash
+%2Dreview
+\backslash
+%2Ddata/
+\end_layout
+
+\end_inset
+
+).
+ It has the full text from 2000 movies reivews: 1000 reviews are classified
+ as 
+\begin_inset Quotes eld
+\end_inset
+
+positive
+\begin_inset Quotes erd
+\end_inset
+
+ and 1000 as 
+\begin_inset Quotes eld
+\end_inset
+
+negative.
+\begin_inset Quotes erd
+\end_inset
+
+ Our goal is to predict whether a review has positive or negative sentiment
+ from the text of the review.
+ Each review is stored in a separate file: the positive reviews are in a
+ folder called 
+\begin_inset Quotes eld
+\end_inset
+
+pos
+\begin_inset Quotes erd
+\end_inset
+
+, and the negative reviews are in 
+\begin_inset Quotes eld
+\end_inset
+
+neg
+\begin_inset Quotes erd
+\end_inset
+
+.
+ We have provided some code in 
+\family typewriter
+load.py
+\family default
+ to assist with reading these files.
+ You can use the code, or write your own version.
+ The code removes some special symbols from the reviews.
+ Later you can check if this helps or hurts your results.
+\end_layout
+
+\begin_layout Enumerate
+Load all the data and randomly split it into 1500 training examples and
+ 500 test examples.
+ 
+\end_layout
+
+\begin_layout Section
+Sparse Representations
+\end_layout
+
+\begin_layout Standard
+The most basic way to represent text documents for machine learning is with
+ a 
+\begin_inset Quotes eld
+\end_inset
+
+bag-of-words
+\begin_inset Quotes erd
+\end_inset
+
+ representation.
+ Here every possible word is a feature, and the value of a word feature
+ is the number of times that word appears in the document.
+ Of course, most words will not appear in any particular document, and those
+ counts will be zero.
+ Rather than store a huge number of zeros, we use a sparse representation,
+ in which we only store the counts that are nonzero.
+ The counts are stored in a key/value store (such as a dictionary in Python).
+ For example, 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+``Harry Potter and Harry Potter II'' would be represented as the following
+ Python dict: x={`Harry':2, `Potter':2, `and':1, 'II':1}.
+ We will be using linear classifiers of the form 
+\begin_inset Formula $f(x)=w^{T}x$
+\end_inset
+
+, and we can store the 
+\begin_inset Formula $w$
+\end_inset
+
+ vector in a sparse format as well, such as w={`minimal':1.3,`Harry':-1.1,`viable'
+:-4.2,`and':2.2,`product':9.1}.
+ The inner product between 
+\begin_inset Formula $w$
+\end_inset
+
+ and 
+\begin_inset Formula $x$
+\end_inset
+
+ would only involve the features that appear in both x and w, since whatever
+ doesn't appear is assumed to be zero.
+ For this example, the inner product would be x[Harry] * w[Harry] + x[and]
+ * w[and] = 2*(-1.1) + 1*(2.2).
+ Although we hate to spoil the fun, to help you along, we've included two
+ functions for working with sparse vectors: 1) a dot product between two
+ vectors represented as dict's and 2) a function that increments one sparse
+ vector by a scaled multiple of another vector, which is a very common operation.
+ These functions are located in 
+\family typewriter
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+util.py
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+.
+\end_layout
+
+\begin_layout Enumerate
+Write a function that converts an example (e.g.
+ a list of words) into a sparse bag-of-words representation.
+ You may find Python's Counter class to be useful here: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://docs.python.org/2/library/collections.html
+\end_layout
+
+\end_inset
+
+.
+ Note that a Counter is also a dict.
+\end_layout
+
+\begin_layout Enumerate
+Write a version of 
+\family typewriter
+generic_gradient_checker
+\family default
+ from Homework 1 that works with sparse vectors represented as dict types.
+ See Homework 1 solutions if you didn't do that part.
+ Since we'll be using it for stochastic methods, it should take a single
+ 
+\begin_inset Formula $(x,y)$
+\end_inset
+
+ pair, rather than the entire dataset.
+ Be sure to use the dotProduct and increment primitives we provide, or make
+ your own.
+ 
+\end_layout
+
+\begin_layout Section
+Support Vector Machine via Pegasos
+\end_layout
+
+\begin_layout Standard
+In this question you will build an SVM using the Pegasos algorithm.
+ To align with the notation used in the Pegasos paper
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Shalev-Shwartz et al.'s 
+\begin_inset Quotes eld
+\end_inset
+
+Pegasos: Primal Estiamted sub-GrAdient SOlver for SVM
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://ttic.uchicago.edu/~nati/Publications/PegasosMPB.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, we're considering the following formulation of the SVM objective function:
+\begin_inset Formula 
+\[
+\min_{w\in\reals^{n}}\frac{\lambda}{2}\|w\|^{2}+\frac{1}{m}\sum_{i=1}^{m}\max\left\{ 0,1-y_{i}w^{T}x_{i}\right\} .
+\]
+
+\end_inset
+
+Note that, for simplicity, we are leaving off the unregularized bias term
+ 
+\begin_inset Formula $b$
+\end_inset
+
+, and the expression with 
+\begin_inset Quotes eld
+\end_inset
+
+max
+\begin_inset Quotes erd
+\end_inset
+
+ is just another way to write 
+\begin_inset Formula $\left(1-y_{i}w^{T}x\right)_{+}$
+\end_inset
+
+.
+ Pegasos is stochastic subgradient descent using a step size rule 
+\begin_inset Formula $\eta_{t}=1/\left(\lambda t\right)$
+\end_inset
+
+.
+ The pseudocode is given below:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="1">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Input: 
+\begin_inset Formula $\lambda>0$
+\end_inset
+
+.
+ Choose 
+\begin_inset Formula $w_{1}=0,t=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+While epoch 
+\begin_inset Formula $\le$
+\end_inset
+
+ max_epochs
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+For 
+\begin_inset Formula $j=1,\ldots,m$
+\end_inset
+
+ (assumes data is randomly permuted)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Formula $t=t+1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Formula $\eta_{t}=1/\left(t\lambda\right)$
+\end_inset
+
+;
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+If 
+\begin_inset Formula $y_{j}w_{t}^{T}x_{j}<1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Formula $w_{t+1}=(1-\eta_{t}\lambda)w_{t}+\eta_{t}y_{j}x_{j}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+Else 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Formula $w_{t+1}=(1-\eta_{t}\lambda)w_{t}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+[Written] Compute a subgradient for the 
+\begin_inset Quotes eld
+\end_inset
+
+stochastic
+\begin_inset Quotes erd
+\end_inset
+
+ SVM objective, which assumes a single training point.
+ Show that if your step size rule is 
+\begin_inset Formula $\eta_{t}=1/\left(\lambda t\right)$
+\end_inset
+
+, then the the corresponding SGD update is the same as given in the pseudocode.
+\end_layout
+
+\begin_layout Enumerate
+Implement the Pegasos algorithm to run on a sparse data representation.
+ The output should be a sparse weight vector 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ [As should be your habit, please check your gradient using 
+\family typewriter
+generic_gradient_checker
+\family default
+ while you are in the testing phase.
+ That will be our first question if you ask for help debugging.
+ Once you're convinced it works, take it out so it doesn't slow down your
+ code.] 
+\end_layout
+
+\begin_layout Enumerate
+Write a function that takes the sparse weight vector 
+\begin_inset Formula $w$
+\end_inset
+
+ and a collection of 
+\begin_inset Formula $(x,y)$
+\end_inset
+
+ pairs, and returns the percent error when predicting 
+\begin_inset Formula $y$
+\end_inset
+
+ using 
+\begin_inset Formula $\sign(w^{T}x)$
+\end_inset
+
+ (that is, report the 0-1 loss).
+ 
+\end_layout
+
+\begin_layout Enumerate
+Using the bag-of-words feature representation described above, search for
+ the regularization parameter that gives the minimal percent error on your
+ test set.
+ A good search strategy is to start with a set of lambdas spanning a broad
+ range of orders of magnitude.
+ Then, continue to zoom in until you're convinced that additional search
+ will not significantly improve your test performance\SpecialChar \@.
+ Once you have a sense
+ of the general range of regularization parameters that give good results,
+ you do not have to search over orders of magnitude every time you change
+ something (such as adding new feature).
+ 
+\end_layout
+
+\begin_layout Enumerate
+Recall that the 
+\begin_inset Quotes eld
+\end_inset
+
+score
+\begin_inset Quotes erd
+\end_inset
+
+ is the value of the prediction 
+\begin_inset Formula $f(x)=w^{T}x$
+\end_inset
+
+.
+ We like to think that the magnitude of the score represents the confidence
+ of the prediction.
+ This is something we can directly verify or refute.
+ Break the predictions into groups based on the score (you can play with
+ the size of the groups to get a result you think is informative).
+ For each group, examine the percentage error.
+ You can make a table or graph.
+ Summarize the results.
+ Is there a correlation between higher magnitude scores and accuracy?
+\end_layout
+
+\begin_layout Section
+Error Analysis
+\end_layout
+
+\begin_layout Standard
+The natural language processing domain is particularly nice in that one
+ can often interpret why a model has performed well or poorly on a specific
+ example, and sometimes it is not very difficult to come up with ideas for
+ new features that might help fix a problem.
+ The first step in this process is to look closely at the errors that our
+ model makes.
+\end_layout
+
+\begin_layout Enumerate
+Choose some examples that the model got wrong.
+ List the features that contributed most heavily to the descision (e.g.
+ rank them by 
+\begin_inset Formula $\left|w_{i}x_{i}\right|$
+\end_inset
+
+), along with 
+\begin_inset Formula $x_{i},w_{i},xw_{i}$
+\end_inset
+
+.
+ Do you understand why the model was incorrect? Can you think of a new feature
+ that might be able to fix the issue? Include a short analysis for at least
+ 3 incorrect examples.
+\end_layout
+
+\begin_layout Section
+Features
+\end_layout
+
+\begin_layout Standard
+For a problem like this, the features you use are far more important than
+ the learning model you choose.
+ Whenever you enter a new problem domain, one of your first orders of business
+ is to beg, borrow, or steal the best features you can find.
+ This means looking at any relevant published work and seeing what they've
+ used.
+ Maybe it means asking a colleague what features they use.
+ But eventually you'll need to engineer new features that help in your particula
+r situation.
+ To get ideas for this dataset, you might check the discussion board on
+ this Kaggle competition, which is using a very similar dataset 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.kaggle.com/c/sentiment-analysis-on-movie-reviews
+\end_layout
+
+\end_inset
+
+.
+ There are also a very large number of academic research papers on sentiment
+ analysis that you can look at for ideas.
+\end_layout
+
+\begin_layout Enumerate
+Based on your error analysis, or on some idea you have, find a new feature
+ (or group of features) that improve your test performance.
+ Describe the features and what kind of improvement they give.
+ At this point, it's important to consider the standard errors (
+\begin_inset Formula $\sqrt{p(1-p)/n}$
+\end_inset
+
+) on your performance estimates, to know whether the improvement is statisticall
+y significant.
+ 
+\end_layout
+
+\begin_layout Enumerate
+[Optional] Try to get the best performance possible by generating lots of
+ new features, changing the pre-processing, or any other method you want,
+ so long as you are using the same core SVM model.
+ Describe what you tried, and how much improvement each thing brought to
+ the model.
+ To get you thinking on features, here are some basic ideas of varying quality:
+ 1) how many words are in the review? 2) How many 
+\begin_inset Quotes eld
+\end_inset
+
+negative
+\begin_inset Quotes erd
+\end_inset
+
+ words are there? (You'd have to construct or find a list of negative words.)
+ 3) Word n-gram features: Instead of single-word features, you can make
+ every pair of consecutive words a feature.
+ 4) Character n-gram features: Ignore word boundaries and make every sequence
+ of n characters into a feature (this will be a lot).
+ 5) Adding an extra feature whenever a word is preceded by 
+\begin_inset Quotes eld
+\end_inset
+
+not
+\begin_inset Quotes erd
+\end_inset
+
+.
+ For example 
+\begin_inset Quotes eld
+\end_inset
+
+not amazing
+\begin_inset Quotes erd
+\end_inset
+
+ becomes its own feature.
+ 6) Do we really need to eliminate those funny characters in the data loading
+ phase? Might there be useful signal there? 7) Use tf-idf instead of raw
+ word counts.
+ The tf-idf is calculated as 
+\begin_inset Formula 
+\begin{equation}
+\mbox{tfidf}(f_{i})=\frac{FF_{i}}{\log(DF_{i})}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $FF_{i}$
+\end_inset
+
+ is the feature frequency of feature 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $DF_{i}$
+\end_inset
+
+ is the number of document containing 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+.
+ In this way we increase the weight of rare words.
+ Sometimes this scheme helps, sometimes it makes things worse.
+ You could try using both! [Extra credit points will be awarded in proportion
+ to how much improvement you achieve.] 
+\end_layout
+
+\begin_layout Section
+Feedback (not graded)
+\end_layout
+
+\begin_layout Enumerate
+Approximately how long did it take to complete this assignment?
+\end_layout
+
+\begin_layout Enumerate
+Did you find the Python programming challenging (in particular, converting
+ your code to use sparse representations)? 
+\end_layout
+
+\begin_layout Enumerate
+Any other feedback?
+\end_layout
+
+\end_body
+\end_document
