@@ -1,0 +1,1 @@
+g++48 -o ./scheduler.out ./src/main.cpp -static-libstdc++ -std=c++11 -w

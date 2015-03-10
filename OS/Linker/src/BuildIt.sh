@@ -1,0 +1,1 @@
+g++48 -o linker -static-libstdc++ -std=c++11 ./Linker.cpp
