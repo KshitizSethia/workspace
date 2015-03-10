@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;Linker/Debug/temp.txt&apos;" deleteContents="false" description="Delete resource &apos;Linker/Debug/temp.txt&apos;" element1="/Linker/Debug/temp.txt" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1424095709904"/>
-</session>
