@@ -32,11 +32,11 @@ public:
 
 	void readTasks() {
 		ifstream file(params.inputFilePath.c_str());
-		int pid = 0;
+		unsigned long pid = 0;
 		while (!file.eof()) {
-			int arrivalTime, cpuTime, cpuBurst, ioBurst;
+			unsigned long arrivalTime, cpuTime, cpuBurst, ioBurst;
 			if (file >> arrivalTime >> cpuTime >> cpuBurst >> ioBurst) {
-				int staticPriority = getRandomNum(_MAX_PRIO);
+				unsigned long staticPriority = getRandomNum(_MAX_PRIO);
 				Process process(pid, arrivalTime, cpuTime, cpuBurst, ioBurst,
 						staticPriority);
 				spareQueue.push_back(process);
@@ -50,6 +50,7 @@ public:
 	void simulate() {
 		for (Process &process : spareQueue) {
 			putProcess(process);
+			hackArray.push_back(0);
 		}
 		spareQueue.clear();
 
@@ -62,73 +63,42 @@ public:
 			int wait = time > proc.returnsAt ? time - proc.arrivalTime : 0;
 
 			switch (proc.state) {
-			case CREATED: {
-				assert(wait == 0);
-				printMessage(proc, wait, READY);
-				proc.state = READY;
-				proc.readySince = time;
-				putProcess(proc);
-				putReadyProcess(proc);
+			case ProcessState::CREATED: {
+				CreatedToReady(wait, proc);
 				break;
 			}
-			case BLOCKED: {
-				assert(wait == 0);
-				printMessage(proc, proc.lastIoBurst + wait, READY);
-				proc.state = READY;
-				proc.readySince = time;
-				putProcess(proc);
-				putReadyProcess(proc);
+			case ProcessState::BLOCKED: {
+				BlockedToReady(wait, proc);
 				break;
 			}
-			case READY: {
+			case ProcessState::READY: {
 				assert(wait == 0);
-				if (processorBusyTill > proc.returnsAt) {
-					proc.totalReadyWait += processorBusyTill - proc.returnsAt;
-					proc.returnsAt = processorBusyTill;
-					proc.isPostponed = true;
-					if (params.isVerbose) {
-						printf("\t\t%d %d: Processor busy, postponed to %d\n",
-								time, proc.pid, proc.returnsAt);
-					}
-					putProcess(proc);
-				} else {
+				if (processorBusyTill > proc.returnsAt) { //proccessor is busy
+					ReadyPostponed(proc);
+				} else { //processor is ready to take process
 					proc = getReadyProcess();
-					proc.isPostponed = false;
-					proc.lastCpuBurst = getRandomNum(proc.cpuBurst);
-					proc.lastCpuBurst =
-							proc.lastCpuBurst > proc.cpuTimeLeft ?
-									proc.cpuTimeLeft : proc.lastCpuBurst;
-					printMessage(proc, time - proc.readySince, RUNNING);
-					proc.state = RUNNING;
-					proc.returnsAt = time + proc.lastCpuBurst;
-					processorBusyTill = proc.returnsAt;
-					proc.cpuTimeLeft -= proc.lastCpuBurst;
-					totalCpuUsed += proc.lastCpuBurst;
-					putProcess(proc);
+					if (!(params.algo == SchedulingAlgo::RR //not RR or PRIO
+					|| params.algo == SchedulingAlgo::PRIO)) {
+						ReadyToRunning_nopreemption(proc);
+					} else { //RR or PRIO
+						ReadyToRunning_withPreemption(proc);
+					}
 				}
 				break;
 			}
-			case RUNNING: {
+			case ProcessState::RUNNING: {
 				if (proc.cpuTimeLeft > 0) {
-					proc.lastIoBurst = getRandomNum(proc.ioBurst);
-					proc.totalIoTaken += proc.lastIoBurst;
-					printMessage(proc, proc.lastCpuBurst, BLOCKED);
-					proc.state = BLOCKED;
-					proc.returnsAt = time + proc.lastIoBurst;
-
-					if (ioBusyTill < time) {
-						totalIoUsed += proc.lastIoBurst;
-					} else {
-						totalIoUsed += proc.returnsAt - ioBusyTill;
+					if (!(params.algo == SchedulingAlgo::RR // send to blocked
+					|| params.algo == SchedulingAlgo::PRIO)
+							|| ((params.algo == SchedulingAlgo::RR
+									|| params.algo == SchedulingAlgo::PRIO)
+									&& !proc.cpuBurstRemaining > 0)) {
+						RunningToBlocked(proc);
+					} else { //send to ready
+						RunningToReady(proc);
 					}
-					ioBusyTill = proc.returnsAt;
-
-					putProcess(proc);
-				} else {
-					printMessage(proc, proc.lastCpuBurst, DONE);
-					proc.state = DONE;
-					proc.finishTime = time;
-					spareQueue.push_back(proc);
+				} else {						//(proc.cpuTimeLeft == 0)
+					RunningToDone(proc);
 				}
 				break;
 			}
@@ -140,11 +110,20 @@ public:
 
 	void printSummary() {
 		switch (params.algo) {
-		case FCFS:
+		case SchedulingAlgo::FCFS:
 			cout << "FCFS";
 			break;
-		case LCFS:
+		case SchedulingAlgo::LCFS:
 			cout << "LCFS";
+			break;
+		case SchedulingAlgo::SJF:
+			cout << "SJF";
+			break;
+		case SchedulingAlgo::RR:
+			cout << "RR " << params.algoQuantum;
+			break;
+		case SchedulingAlgo::PRIO:
+			cout << "PRIO " << params.algoQuantum;
 			break;
 		}
 		cout << endl;
@@ -154,18 +133,21 @@ public:
 
 		double totalTurnaroundTime, totalWaitTime;
 		for (Process process : spareQueue) {
-			printf("%04d: %d %d %d %d %d | %d %d %d %d", process.pid,
+			unsigned long waitTime = process.finishTime - process.arrivalTime
+					- process.cpuTime - process.totalIoTaken;
+			printf("%04lu: %lu %lu %lu %lu %lu | %lu %lu %lu %lu", process.pid,
 					process.arrivalTime, process.cpuTime, process.cpuBurst,
 					process.ioBurst, process.staticPrio, process.finishTime,
 					process.finishTime - process.arrivalTime,
-					process.totalIoTaken, process.totalReadyWait);
+					process.totalIoTaken, waitTime);
+			//hackArray[process.pid]);//process.totalReadyWait);
 			cout << endl;
 			totalTurnaroundTime += process.finishTime - process.arrivalTime;
-			totalWaitTime += process.totalReadyWait;
+			totalWaitTime += waitTime;//hackArray[process.pid];//process.totalReadyWait;
 		}
 
-		int numProcesses = spareQueue.size();
-		printf("SUM: %d %.2lf %.2lf %.2lf %.2lf %.3lf", time,
+		unsigned long numProcesses = spareQueue.size();
+		printf("SUM: %lu %.2lf %.2lf %.2lf %.2lf %.3lf", time,
 				double(totalCpuUsed * 100.0 / time),
 				double(totalIoUsed * 100.0 / time),
 				double(totalTurnaroundTime / numProcesses),
@@ -178,40 +160,52 @@ protected:
 	InputParams params;
 	ifstream randFile;
 	vector<Process> spareQueue;
-	unsigned time = 0;
-	unsigned processorBusyTill = 0, ioBusyTill = 0;
-	unsigned totalCpuUsed = 0, totalIoUsed = 0;
+	unsigned long time = 0;
+	unsigned long processorBusyTill = 0, ioBusyTill = 0;
+	unsigned long totalCpuUsed = 0, totalIoUsed = 0;
+	vector<unsigned long> hackArray;
 
 	void printMessage(Process process, int inStateSince,
 			ProcessState finalState) {
 		if (params.isVerbose) {
 			switch (finalState) {
-			case DONE: {
-				printf("%d %d %d: %s", time, process.pid, inStateSince,
+			case ProcessState::DONE: {
+				printf("%lu %lu %lu: %s", time, process.pid, inStateSince,
 						Process::StateToString(finalState));
 				break;
 			}
 			default: {
-				printf("%d %d %d: %s -> %s", time, process.pid, inStateSince,
+				printf("%lu %lu %lu: %s -> %s", time, process.pid, inStateSince,
 						Process::StateToString(process.state),
 						Process::StateToString(finalState));
 				break;
 			}
 			}
 
-			if (process.state == READY && finalState == RUNNING)
-				printf(" cb=%d rem=%d prio=%d", process.lastCpuBurst,
-						process.cpuTimeLeft, process.runtimePrio);
-			else if (process.state == RUNNING && finalState == BLOCKED)
-				printf(" ib=%d rem=%d", process.lastIoBurst,
-						process.cpuTimeLeft);
-
+			if (process.state == ProcessState::READY
+					&& finalState == ProcessState::RUNNING)
+				if (params.algo == SchedulingAlgo::RR
+						|| params.algo == SchedulingAlgo::PRIO) {
+					printf(" cb=%lu rem=%lu prio=%d", process.cpuBurstRemaining,
+							process.cpuTimeLeft, process.runtimePrio);
+				} else {
+					printf(" cb=%lu rem=%lu prio=%d", process.lastCpuBurst,
+							process.cpuTimeLeft, process.runtimePrio);
+				}
+			else if (process.state == ProcessState::RUNNING) {
+				if (finalState == ProcessState::BLOCKED)
+					printf(" ib=%lu rem=%lu", process.lastIoBurst,
+							process.cpuTimeLeft);
+				else if (finalState == ProcessState::READY)
+					printf(" cb=%lu rem=%lu prio=%d", process.cpuBurstRemaining,
+							process.cpuTimeLeft, process.runtimePrio);
+			}
 			cout << endl;
 		}
 	}
 
-	long getRandomNum(int upperBound) {
-		long result;
+	unsigned long getRandomNum(unsigned long upperBound) {
+		unsigned long result;
 		randFile >> result;
 		if (!randFile || randFile.eof()) //last line reached
 				{
@@ -223,11 +217,152 @@ protected:
 		return result;
 	}
 
-	virtual Process getProcess()=0;
-	virtual void putProcess(Process)=0;
-	virtual bool empty()=0;
+	vector<Process> processingQueue;
+	Process getProcess() {
+		Process proc = processingQueue[0];
+		processingQueue.erase(processingQueue.begin());
+		if (params.isVeryVerbose) {
+			printf("\t\tpid %lu extracted, queue ", proc.pid);
+			printQueue();
+		}
+		return proc;
+	}
+
+	void putProcess(Process proc) {
+		unsigned insertAt = processingQueue.size();
+		for (unsigned index = 0; index < processingQueue.size(); index++) {
+			Process other = processingQueue[index];
+
+			if (proc.returnsAt < other.returnsAt) {
+				insertAt = index;
+				break;
+			}
+		}
+		processingQueue.insert(processingQueue.begin() + insertAt, proc);
+
+		if (params.isVeryVerbose) {
+			printf("\t\tpid %lu inserted, queue: ", proc.pid);
+			printQueue();
+		}
+	}
+
+	bool empty() {
+		return processingQueue.empty();
+	}
+
+	void printQueue() {
+		for (Process p : processingQueue) {
+			printf("%lu(%s) -> ", p.pid, Process::StateToString(p.state));
+		}
+		cout << endl;
+	}
+
 	virtual Process getReadyProcess()=0;
 	virtual void putReadyProcess(Process)=0;
+	virtual Process peekReadyProcess()=0;
+
+	void CreatedToReady(int wait, Process& proc) {
+		assert(wait == 0);
+		printMessage(proc, wait, ProcessState::READY);
+		proc.state = ProcessState::READY;
+		proc.readySince = time;
+		putProcess(proc);
+		putReadyProcess(proc);
+	}
+
+	void BlockedToReady(int wait, Process& proc) {
+		assert(wait == 0);
+		printMessage(proc, proc.lastIoBurst + wait, ProcessState::READY);
+		proc.state = ProcessState::READY;
+		proc.readySince = time;
+		putProcess(proc);
+		putReadyProcess(proc);
+	}
+
+	void ReadyPostponed(Process& proc) {
+		//proccessor is busy
+		Process proc2 = peekReadyProcess();
+		//proc.totalReadyWait += processorBusyTill - proc.returnsAt;
+		hackArray[proc2.pid] += processorBusyTill - proc.returnsAt;
+		proc.returnsAt = processorBusyTill;
+		if (params.isVeryVerbose) {
+			printf(
+					"\t\t%lu %lu: Processor busy, postponed to %lu, total wait %lu\n",
+					time, proc2.pid, proc.returnsAt, hackArray[proc2.pid]); //proc.totalReadyWait);
+		}
+		putProcess(proc);
+	}
+
+	void ReadyToRunning_nopreemption(Process& proc) {
+		proc.lastCpuBurst = min(getRandomNum(proc.cpuBurst), proc.cpuTimeLeft);
+		printMessage(proc, time - proc.readySince, ProcessState::RUNNING);
+		proc.state = ProcessState::RUNNING;
+		proc.returnsAt = time + proc.lastCpuBurst;
+		processorBusyTill = proc.returnsAt;
+		proc.cpuTimeLeft -= proc.lastCpuBurst;
+		totalCpuUsed += proc.lastCpuBurst;
+		putProcess(proc);
+	}
+
+	void ReadyToRunning_withPreemption(Process& proc) {
+		//RR or PRIO
+		if (!proc.cpuBurstRemaining > 0) {
+			proc.cpuBurstRemaining = min(proc.cpuTimeLeft,
+					getRandomNum(proc.cpuBurst));
+		}
+		proc.lastCpuBurst = min(proc.cpuBurstRemaining, params.algoQuantum);
+		printMessage(proc, time - proc.readySince, ProcessState::RUNNING);
+		proc.state = ProcessState::RUNNING;
+		proc.returnsAt = time + proc.lastCpuBurst;
+		processorBusyTill = proc.returnsAt;
+		proc.cpuTimeLeft -= proc.lastCpuBurst;
+		totalCpuUsed += proc.lastCpuBurst;
+		proc.cpuBurstRemaining -= proc.lastCpuBurst;
+		putProcess(proc);
+	}
+
+	void RunningToBlocked(Process& proc) {
+		proc.lastIoBurst = getRandomNum(proc.ioBurst);
+		proc.totalIoTaken += proc.lastIoBurst;
+		printMessage(proc, proc.lastCpuBurst, ProcessState::BLOCKED);
+		proc.state = ProcessState::BLOCKED;
+		proc.returnsAt = time + proc.lastIoBurst;
+		proc.runtimePrio = proc.staticPrio - 1;
+
+		if (ioBusyTill < time) {
+			ioBusyTill = time;
+		}
+		if (proc.returnsAt > ioBusyTill) {
+			totalIoUsed += proc.returnsAt - ioBusyTill;
+			ioBusyTill = proc.returnsAt;
+		}
+		if (params.isVeryVerbose) {
+			printf("\t\ttotalIoUsed %lu", totalIoUsed);
+			cout << endl;
+		}
+
+		putProcess(proc);
+	}
+
+	void RunningToReady(Process& proc) {
+		//send to ready
+		printMessage(proc, proc.lastCpuBurst, ProcessState::READY);
+		proc.state = ProcessState::READY;
+		proc.readySince = time;
+		if (params.algo == SchedulingAlgo::PRIO) {
+			proc.runtimePrio--;
+		}
+		putProcess(proc);
+		putReadyProcess(proc);
+	}
+
+	void RunningToDone(Process& proc) {
+		//(proc.cpuTimeLeft == 0)
+		printMessage(proc, proc.lastCpuBurst, ProcessState::DONE);
+		proc.state = ProcessState::DONE;
+		proc.finishTime = time;
+		spareQueue.push_back(proc);
+	}
 };
 
 #endif /* SCHEDULER_H_ */

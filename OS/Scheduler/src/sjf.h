@@ -1,22 +1,23 @@
 /*
- * LCFS.h
+ * SJF.h
  *
  *  Created on: Mar 7, 2015
  *      Author: Kshitiz
  */
 
-#ifndef LCFS_H_
-#define LCFS_H_
+#ifndef SJF_H_
+#define SJF_H_
 
 #include <queue>
+#include <algorithm>
 
 #include "scheduler.h"
 #include "helpers.h"
 #include "process.h"
 
-class LCFScheduler: public Scheduler {
+class SJFScheduler: public Scheduler {
 public:
-	LCFScheduler(InputParams params) :
+	SJFScheduler(InputParams params) :
 			Scheduler(params) {
 	}
 
@@ -31,8 +32,8 @@ protected:
 	}
 
 	Process getReadyProcess() {
-		Process result = readyQueue.back();
-		readyQueue.pop_back();
+		Process result = readyQueue[0];
+		readyQueue.erase(readyQueue.begin());
 
 		if (params.isVeryVerbose) {
 			printf("\t\tRQ: pid %lu extracted, queue: ", result.pid);
@@ -42,17 +43,21 @@ protected:
 		return result;
 	}
 
+	Process peekReadyProcess(){
+		return readyQueue[0];
+	}
+
 	void putReadyProcess(Process p) {
 		readyQueue.push_back(p);
+
+		auto sorter = [](Process p1, Process p2){return p1.cpuTimeLeft<p2.cpuTimeLeft;};
+		sort(readyQueue.begin(), readyQueue.end(), sorter);
+
 		if (params.isVeryVerbose) {
 			printf("\t\tRQ: pid %lu inserted, queue: ", p.pid);
 			printReadyQueue();
 		}
 	}
-
-	Process peekReadyProcess(){
-		return readyQueue.back();
-	}
 };
 
-#endif /* LCFS_H_ */
+#endif /* SJF_H_ */
