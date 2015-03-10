@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item value="0" key="org.eclipse.cdt.uiformatter_page.white_space_tab_page.node"/>
+	<item value="1" key="org.eclipse.cdt.uiformatter_page.line_wrapping_tab_page.last_category_index"/>
+	<item value="1347" key="org.eclipse.cdt.uiformatter_pagemodify_dialog.preferred_height"/>
+	<item value="0" key="org.eclipse.cdt.uiformatter_pagemodify_dialog.preferred_x"/>
+	<item value="0" key="org.eclipse.cdt.uiformatter_pagemodify_dialog.preferred_y"/>
+	<item value="1" key="org.eclipse.cdt.uiformatter_pagemodify_dialog.last_focus"/>
+	<item value="1751" key="org.eclipse.cdt.uiformatter_pagemodify_dialog.preferred_width"/>
 	<item value="Default C++ source template" key="LastUsedSourceTemplate"/>
 	<item value="Default C++ header template" key="LastUsedHeaderTemplate"/>
+	<item value="4" key="formatter_page.modify_dialog_tab_page.last_focus_index"/>
+	<item value="0" key="org.eclipse.cdt.uiformatter_page.white_space.c_view.inner"/>
 	<section name="OptionalMessageDialog.hide.">
 		<item value="0" key="askReindex.detail"/>
 		<item value="true" key="askReindex"/>
 	</section>
 	<section name="ExtractFunctionWizard">
-		<item value="private" key="AccessModifier"/>
+		<item value="protected" key="AccessModifier"/>
 	</section>
 	<section name="completion_proposal_size">
 	</section>
@@ -32,7 +41,9 @@
 	</section>
 	<section name="RefactoringWizard.preview">
 		<item value="400" key="height"/>
-		<item value="600" key="width"/>
+		<item value="889" key="width"/>
+	</section>
+	<section name="org.eclipse.ltk.ui.refactoring.settings">
 	</section>
 	<section name="NewClassWizardPage">
 		<item value="false" key="stubSelected1"/>
@@ -53,6 +64,13 @@
 		<item value="false" key="comment"/>
 		<item value="" key="workingset"/>
 		<item value="false" key="references_inv"/>
+	</section>
+	<section name="org.eclipse.cdt.ui.OPEN_ACTION_SELECTION_DIALOG_SECTION">
+		<item value="658" key="DIALOG_WIDTH"/>
+		<item value="229" key="DIALOG_Y_ORIGIN"/>
+		<item value="762" key="DIALOG_X_ORIGIN"/>
+		<item value="711" key="DIALOG_HEIGHT"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
 	</section>

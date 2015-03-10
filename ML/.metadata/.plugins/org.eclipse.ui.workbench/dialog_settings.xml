@@ -23,22 +23,22 @@
 		<item value="43" key="DIALOG_Y_ORIGIN"/>
 		<item value="344" key="DIALOG_X_ORIGIN"/>
 	</section>
-	<section name="InstallationDialogSettings">
-		<item value="1166" key="DIALOG_WIDTH"/>
-		<item value="-433" key="DIALOG_Y_ORIGIN"/>
-		<item value="1217" key="DIALOG_HEIGHT"/>
-		<item value="-237" key="DIALOG_X_ORIGIN"/>
-		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
-	</section>
 	<section name="NewWizardAction">
 		<item value="org.python.pydev.ui.wizards.project.PythonProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="org.python.pydev.PythonCategory"/>
 		</list>
 	</section>
-	<section name="org.eclipse.ui.preferences.keysPreferencePage">
+	<section name="InstallationDialogSettings">
+		<item value="1166" key="DIALOG_WIDTH"/>
+		<item value="-433" key="DIALOG_Y_ORIGIN"/>
+		<item value="-237" key="DIALOG_X_ORIGIN"/>
+		<item value="1217" key="DIALOG_HEIGHT"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="EditorSelectionDialog">
+	</section>
+	<section name="org.eclipse.ui.preferences.keysPreferencePage">
 	</section>
 	<section name="ImportExportAction">
 		<item value="org.eclipse.ui.wizards.import.FileSystem" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>

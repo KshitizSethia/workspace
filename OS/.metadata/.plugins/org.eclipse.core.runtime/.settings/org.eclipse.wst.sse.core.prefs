@@ -1,2 +1,2 @@
 eclipse.preferences.version=1
-task-tag-projects-already-scanned=Linker,RemoteSystemsTempFiles
+task-tag-projects-already-scanned=Linker,RemoteSystemsTempFiles,Scheduler,functional_test,lab2_main,Scheduler_old

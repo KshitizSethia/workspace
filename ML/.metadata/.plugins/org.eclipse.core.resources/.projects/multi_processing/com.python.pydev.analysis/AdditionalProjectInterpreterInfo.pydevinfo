@@ -1,34 +1,29 @@
 -- VERSION_4
 -- START DISKCACHE
 C:\Cloud\workspace\ML\.metadata\.plugins\org.eclipse.core.resources\.projects\multi_processing\com.python.pydev.analysis\v2_indexcache
-main|1424728544797|C:\Cloud\workspace\ML\multi_processing\main.py
+runner|1424731460215|C:\Cloud\workspace\ML\multi_processing\runner.py
+main|1424731482754|C:\Cloud\workspace\ML\multi_processing\main.py
 -- END DISKCACHE
 -- START DICTIONARY
-1
+5
+3=ThreadSharedData
+2=runner
+5=runner.__init__
+4=ThreadSharedData.__init__
 1=main
 -- END DICTIONARY
 -- START TREE 1
-8
-!<m|0|
-hig|0|
+3
 mai|1|main!10@
-qu|0|
-qul|0|
-res|0|
-run|0|
-thr|0|
+run|1|runner!17@
+thr|1|ThreadSharedData!17@
 -- END TREE
 -- START TREE 2
-11
-__i|0|
-arg|0|
-hig|0|
-ns|0|
-qu|0|
-qul|0|
-res|0|
-run|0|
-sel|0|
-sha|0|
-thr|0|
+6
+__i|2|__init__!2&18@__init__!3&18@
+ns|1|ns!4&19@
+qu|1|qu!4&19@
+run|1|run!2&18@
+sha|1|sharedData!5&19@
+thr|1|threadNum!5&19@
 -- END TREE
