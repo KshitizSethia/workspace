@@ -24,6 +24,9 @@ $RECYCLE.BIN/
 *.history*
 *.lock
 *.log
+*/Debug/*
+*\Debug\*
+*/.metadata/*
 
 # =========================
 # Python Files
