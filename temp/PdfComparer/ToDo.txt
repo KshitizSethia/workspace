@@ -1,0 +1,8 @@
+Details:
+	Font better
+	table border thinner
+	clickable images
+summary:
+	33%
+images:
+	tiff
