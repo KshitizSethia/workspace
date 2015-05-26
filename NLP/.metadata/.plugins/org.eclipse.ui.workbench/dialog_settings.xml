@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="708" key="DIALOG_X_ORIGIN"/>
+		<item value="119" key="DIALOG_Y_ORIGIN"/>
+	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item value="1620" key="dialogWidth"/>
 		<item value="1009" key="dialogHeight"/>
-		<list key="orderedProviders">
-		</list>
-		<list key="textArray">
+		<item value="1620" key="dialogWidth"/>
+		<list key="textEntries">
 		</list>
 		<list key="orderedElements">
 		</list>
-		<list key="textEntries">
+		<list key="orderedProviders">
+		</list>
+		<list key="textArray">
 		</list>
 	</section>
 	<section name="NewWizardAction">
@@ -21,5 +25,7 @@
 			<item value="org.eclipse.wst.jsdt.ui.java"/>
 			<item value="org.nodeclipse.ui.wizards.category"/>
 		</list>
+	</section>
+	<section name="ImportExportAction">
 	</section>
 </section>
