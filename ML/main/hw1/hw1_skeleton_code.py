@@ -57,7 +57,6 @@ def batch_analysis(X_train, y_train, X_test, y_test):
         theta_hist, loss_hist = batch_gradient_descent.run(X_train, y_train, batch_params)
         test_losses[index] = batch_gradient_descent.compute_loss(X_test, y_test, theta_hist[-1,:])
         plt.plot(np.log(loss_hist), label=str(alphas[index]))
-        
     
     plt.xlabel("iteration")
     plt.ylabel("log(training loss)")
