@@ -1,31 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="353" key="DIALOG_WIDTH"/>
-		<item value="224" key="DIALOG_Y_ORIGIN"/>
-		<item value="1721" key="DIALOG_X_ORIGIN"/>
-		<item value="513" key="DIALOG_HEIGHT"/>
-		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
-	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item value="true" key="wrap"/>
-		<item value="false" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
+		<item value="test" key="selection"/>
+		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
-		<item value="total_length" key="selection"/>
 		<list key="findhistory">
+			<item value="train"/>
+			<item value="Y"/>
+			<item value="X"/>
+			<item value="subplot"/>
 			<item value="total_length"/>
 			<item value="feature_add"/>
 			<item value="time_taken"/>
 			<item value="plt"/>
-			<item value="words"/>
-			<item value="weights"/>
-			<item value="gradient_func"/>
-			<item value="X"/>
 		</list>
 		<list key="replacehistory">
+			<item value="test"/>
+			<item value="Y_train"/>
+			<item value="X_train"/>
 			<item value="stochastic"/>
 		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="353" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="513" key="DIALOG_HEIGHT"/>
+		<item value="340" key="DIALOG_Y_ORIGIN"/>
+		<item value="1013" key="DIALOG_X_ORIGIN"/>
 	</section>
 </section>
