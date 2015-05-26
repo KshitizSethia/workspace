@@ -1,0 +1,32 @@
+Round 1: previous word=false, 2 previous word=false, use capitalization info=false
+	misclassification error: 	0.044120707
+	true positives: 			2138.0
+	actual positives: 			2545.0
+	predicted_positives: 		2614.0
+	Recall: 					0.8400786
+	Precision: 					0.8179036
+	F1 score: 					0.8288428
+Round 2: previous word=true, 2 previous word=false, use capitalization info=false
+	misclassification error: 	0.032778356
+	true positives: 			2248.0
+	actual positives: 			2545.0
+	predicted_positives: 		2586.0
+	Recall: 					0.8833006
+	Precision: 					0.8692962
+	F1 score: 					0.8762424
+Round 3: previous word=true, 2 previous word=true, use capitalization info=false
+	misclassification error: 	0.033402704
+	true positives: 			2238.0
+	actual positives: 			2545.0
+	predicted_positives:		2580.0
+	Recall: 					0.87937135
+	Precision: 					0.86744183
+	F1 score: 					0.8733659
+Round 4: previous word=true, 2 previous word=true, use capitalization info=true
+	misclassification error: 	0.03309053
+	true positives: 			2242.0
+	actual positives: 			2545.0
+	predicted_positives: 		2583.0
+	Recall: 					0.880943
+	Precision: 					0.867983
+	F1 score: 					0.87441504
