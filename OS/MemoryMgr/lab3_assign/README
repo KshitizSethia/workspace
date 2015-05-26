@@ -1,0 +1,20 @@
+The tarfile comes with a set of generated outputfiles.
+You can see which options were used for each of the 
+files.
+
+The script  ./runit_genclass.sh ./outputs mmu-executable
+was used to generate this output.
+
+You can generate the same output for your executable
+using the same script (just provide a different executable).
+and a different output directory.
+
+After that you can run 
+./gradeit.sh ./outputs ./myoutputs 
+to see how you are doing in the grading.
+
+In the final testing. More input files and different
+combinations of frames will be used.
+
+Due to space I can not provide more detailed 
+outputs for large input files ...

@@ -1,0 +1,1 @@
+g++48 ./src/MemoryManager.cpp -o mmu -std=c++11 -static-libstdc++
